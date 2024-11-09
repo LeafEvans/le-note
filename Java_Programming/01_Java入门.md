@@ -1,48 +1,58 @@
 # 程序概念
 
-程序指的是**一系列动作的执行过程**，并且有明确的执行顺序。
+程序是指**一系列按特定顺序执行的动作**。
 
 <img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928114124827.png" alt="程序概念图" style="zoom:50%;" />
 
+---
+
 # Java 的起源与发展
 
-Java 是 Sun Microsystems 于 1995 年发布的一种高级编程语言。
+Java 是 Sun Microsystems 于 1995 年推出的高级编程语言。
 
-<img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928115337671.png" alt="Java 发展史" style="zoom:50%;" />
+<img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928115337671.png" alt="Java 发展史" style="zoom: 33%;" />
+
+---
 
 # Java 的应用领域
 
-- **桌面应用开发**：例如银行系统、商场结算软件。
-- **互联网应用开发**：例如淘宝、京东等电商网站。
+- **桌面应用开发**：如银行系统、商场结算软件。
+- **互联网应用开发**：如淘宝、京东等电商网站。
 
 <img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928115637531.png" alt="Java 应用场景" style="zoom:50%;" />
 
+---
+
 # Java 技术简介
 
-- **Java SE（Standard Edition）:**
-  1. Java 的基础与核心部分。
-  2. 主要用于开发桌面应用程序。
+### Java 技术体系
 
-- **Java EE（Enterprise Edition）:**
-  1. 提供企业级应用开发的完整解决方案。
-  2. 许多大型网站采用 Java EE 技术进行开发。
+- **Java SE（Standard Edition）**：
+  - Java 的基础和核心部分。
+  - 主要用于开发桌面应用程序。
+
+- **Java EE（Enterprise Edition）**：
+  - 提供企业级应用开发的完整解决方案。
+  - 大型网站和企业级系统广泛使用 Java EE 技术。
 
 ### JDK 和 JRE 的区别
 
 - **JDK（Java 开发工具包）**：包括开发和运行环境。
-- **JRE（Java 运行时环境）**：只包含运行环境。
+- **JRE（Java 运行时环境）**：仅包含运行环境。安装 JDK 时，JRE 会一同安装。
 
-安装 JDK 时，JRE 也会被同时安装。
+---
 
 # Java 程序开发流程
 
 1. **编写**：创建 `.java` 源文件。
-2. **编译**：使用 `javac` 命令进行编译。
+2. **编译**：使用 `javac` 命令编译源文件。
 3. **运行**：使用 `java` 命令运行编译后的程序。
 
 <img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928120313700.png" alt="Java 开发步骤" style="zoom:50%;" />
 
-**Java 的特点：一次编译，到处运行。**
+**Java 特点：一次编译，到处运行。**
+
+---
 
 # Java 虚拟机与跨平台实现
 
@@ -50,11 +60,15 @@ Java 是 Sun Microsystems 于 1995 年发布的一种高级编程语言。
 
 **Java 虚拟机（JVM）**：将 Java 字节码转换为机器码，从而实现跨平台运行。
 
+---
+
 # 使用记事本编写和运行 Java 程序
 
 1. 编写 `.java` 文件。
 2. 使用 `javac` 命令编译：`javac Hello.java`
-3. 使用 `java` 命令运行：`java Hello`（无需加 `.class` 后缀）。
+3. 使用 `java` 命令运行：`java Hello`（注意不加 `.class` 后缀）。
+
+---
 
 # Java 程序结构示例
 
@@ -66,22 +80,24 @@ public class Hello {
 }
 ```
 
+---
+
 # 输出中的换行
 
-- 使用 `System.out.println()` 会在打印后自动换行：
-
+- 使用 `System.out.println()`：自动换行。
   ```java
   System.out.println();
   ```
+- 使用 `System.out.print()`：不自动换行。
 
-- 使用 `System.out.print()` 不会自动换行。
+---
 
-# 转义符号
+# 转义字符
 
-| 转义符 | 说明               |
-| ------ | ------------------ |
-| `\n`   | 换行               |
-| `\t`   | 水平制表符（缩进） |
+| 转义字符 | 说明               |
+| -------- | ------------------ |
+| `\n`     | 换行               |
+| `\t`     | 水平制表符（缩进） |
 
 示例代码：
 
@@ -99,12 +115,16 @@ public class T2 {
 
 <img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928140635996.png" alt="转义符示例" style="zoom:50%;" />
 
+---
+
 # Java 编码规范
 
 1. 类名使用 `public` 修饰。
 2. 每行只写一条语句。
-3. `{}` 应规范放置，保证代码可读性。
-4. 确保代码的缩进格式一致。
+3. `{}` 应规范放置，提升代码可读性。
+4. 保持代码的缩进格式一致。
+
+---
 
 # 示例练习：输出图书清单
 
@@ -122,8 +142,11 @@ public class T3 {
 }
 ```
 
-<img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928142815841.png" alt="图书清单" style="zoom:50%;" />
+<img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928142815841.png" alt="图书清单示例" style="zoom:50%;" />
+
+---
 
 # IDE 使用技巧
 
 <img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928143515472.png" alt="IDE 技巧" style="zoom:50%;" />
+
