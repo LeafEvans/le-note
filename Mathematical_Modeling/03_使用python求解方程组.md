@@ -7,8 +7,8 @@
 $$
 \begin{cases}
 10x - y - 2z = 72 \\
-- x + 10y - 2z = 83 \\
-- x - y + 5z = 42
+-x + 10y -2z = 83 \\
+-x - y + 5z = 42
 \end{cases}
 $$
 
@@ -132,7 +132,8 @@ print(sp.latex(integral_f))
 ```
 
 $$
-- \frac{\sqrt{- \frac{1}{y}} \log{\left(x - y \sqrt{- \frac{1}{y}} \right)}}{2} + \frac{\sqrt{- \frac{1}{y}} \log{\left(x + y \sqrt{- \frac{1}{y}} \right)}}{2}
+-\frac{\sqrt{- \frac{1}{y}} \log{\left(x - y \sqrt{- \frac{1}{y}} \right)}}{2} 
++\frac{\sqrt{- \frac{1}{y}} \log{\left(x + y \sqrt{- \frac{1}{y}} \right)}}{2}
 $$
 
 指定一个数是正数：
@@ -144,7 +145,7 @@ print(sp.latex(sp.integrate(1 / (x**2 + a), x)))
 ```
 
 $$
-\frac{\operatorname{atan}{\left(\frac{x}{\sqrt{a}} \right)}}{\sqrt{a}}
+\frac{\text{atan}{\left(\frac{x}{\sqrt{a}} \right)}}{\sqrt{a}}
 $$
 
 ---
@@ -178,8 +179,9 @@ res = sp.linsolve([eq1, eq2], (x, y))
 
 res
 ```
-
-$\displaystyle \left\{\left( 23, \  12\right)\right\}$
+$$
+\[ (23,\ 12) \]
+$$
 
 或者：
 
@@ -204,9 +206,11 @@ print(sp.latex(sp.solve(x**2 + x - 20, x)))
 ```
 
 $$
-\left[ 1\right] \\
-\left\{ x : 23, \  y : 12\right\} \\
-\left[ -5, \  4\right]
+\begin{align*}
+[1] \\
+\{ x : 23, \  y : 12\} \\
+[ -5, \ 4]
+\end{align*}
 $$
 
 解方程组时，常常使用列表的形式，如上述代码第三行。
@@ -220,7 +224,7 @@ print(sp.latex(solution))
 ```
 
 $$
-\left\{\left( -2, \  -2\right), \left( 0, \  0\right)\right\}
+\{ ( -2, \  -2), ( 0, \  0)\}
 $$
 
 但它并不是总是正确：
@@ -232,7 +236,7 @@ print(sp.latex(solution))
 ```
 
 $$
-\left\{\left( \left\{a\; \middle|\; a \in \mathbb{C} \wedge - a + \sin{\left(a \right)} = 0 \right\},\right)\right\}
+\{(\{a\; |\; a \in \mathbb{C} \wedge - a + \sin{(a)} = 0 \},)\}
 $$
 
 此为错解。
@@ -247,7 +251,7 @@ print(sp.latex(f(x).diff(x)))
 ```
 
 $$
-\frac{\cos{\left(x \right)}}{x} - \frac{\sin{\left(x \right)}}{x^{2}}
+\frac{\cos{(x )}}{x} - \frac{\sin{(x )}}{x^{2}}
 $$
 
 ```python
