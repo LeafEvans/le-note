@@ -16,7 +16,7 @@
 
 1. 克隆项目到本地：
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/LeafEvans/LE-Note.git
    ```
 
 2. 浏览各个文件夹，查找所需的编程语言笔记。
