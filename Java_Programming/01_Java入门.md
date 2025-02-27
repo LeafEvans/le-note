@@ -18,7 +18,7 @@ Java 是 Sun Microsystems 于 1995 年推出的高级编程语言。
 
 ## Java 的应用领域
 
-- **桌面应用开发**：如银行系统、商场结算软件；
+- **桌面应用开发**：如银行系统、商场结算软件。
 - **互联网应用开发**：如淘宝、京东等电商网站。
 
 <img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20240928115637531.png" alt="Java 应用场景" style="zoom:50%;" />
@@ -30,11 +30,11 @@ Java 是 Sun Microsystems 于 1995 年推出的高级编程语言。
 ### Java 技术体系
 
 - **Java SE（Standard Edition）**：
-  - Java 的基础和核心部分；
+  - Java 的基础和核心部分。
   - 主要用于开发桌面应用程序。
 
 - **Java EE（Enterprise Edition）**：
-  - 提供企业级应用开发的完整解决方案；
+  - 提供企业级应用开发的完整解决方案。
   - 大型网站和企业级系统广泛使用 Java EE 技术。
 
 ### JDK 和 JRE 的区别

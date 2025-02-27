@@ -29,4 +29,4 @@
 
 ## 许可证 📜
 
-本项目采用 [CC BY 4.0](./LICENSE) 许可证。作者：LeafEvans。详情请参阅 LICENSE 文件。
+本项目采用 [CC BY-NC-SA 4.0](./LICENSE) 许可证。作者：LeafEvans。详情请参阅 LICENSE 文件。
