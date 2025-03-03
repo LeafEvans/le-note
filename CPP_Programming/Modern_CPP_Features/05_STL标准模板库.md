@@ -262,3 +262,22 @@ STL 作为泛型编程典型代表，实现了其他编程方式难以实现的�
 
 ## 算法
 
+**Microsoft 官方文档链接**：[<algorithm>](https://learn.microsoft.com/zh-cn/cpp/standard-library/algorithm?view=msvc-170)
+
+## 仿函数（函数对象）
+
+仿函数是一个可调用 `()` 运算符的类对象，将 `operator ()` 重载的类的对象就是仿函数。
+
+**Microsoft 官方文档链接**：[<functional>](https://learn.microsoft.com/zh-cn/cpp/standard-library/functional?view=msvc-170)
+
+## 适配器与分配器
+
+适配器是使一种事物的行为类似另外一种事物的行为的一种机制。适配器对容器进行包装，使其表现出另一种行为。例如，`stack` 实现了栈的功能，默认使用 `deque` 容器来存储数据。
+
+标准库提供了三种顺序容器适配器（无关联容器适配器）：
+
+1. `queue`（队列）
+2. `priority_queue`（优先队列）
+3. `stack`（栈）
+
+在动态分配内存时，直接使用 `new`、`delete` 容易产生内存碎片化的问题，不同的分配器有不同的分配内存方法。可以大幅度提高程序对堆内存的使用效率，直接使用默认分配器即可。
