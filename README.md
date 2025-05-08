@@ -4,20 +4,19 @@
 
 ## 目录结构 📂
 
-- `Web_Programming/`: 包含 HTML、CSS 和 JavaScript 的基础知识和示例。
-- `Java_Programming/`: 涵盖 Java 的基本概念、开发流程和示例代码。
-- `C_Programming/`: 提供 C 语言的基础知识、数组和指针、文件输入输出等内容。
-- `CPP_Programming/`: 介绍 C++ 的编程方式、标准和应用。
-- `Qt_Programming/`: 涵盖 Qt 的常见部件、UI 布局设计和程序发布等内容。
-- `YOLO/`: 提供 YOLO 模型的预测和数据集构建指南。
-- `Operating_System/`: 涵盖操作系统的基本概念、进程与线程管理、内存管理、文件系统以及常见操作系统的使用与配置（如 Linux 和 Windows）。还包括命令行工具的使用、Shell 脚本编写以及系统性能优化等内容。
+- `java-programming/`: 涵盖 Java 的基本概念、开发流程和示例代码。
+- `c-programming/`: 提供 C 语言的基础知识、数组和指针、文件输入输出等内容。
+- `cpp-programming/`: 介绍 C++ 的编程方式、标准和应用。
+- `qt-programming/`: 涵盖 Qt 的常见部件、UI 布局设计和程序发布等内容。
+- `yolo/`: 提供 YOLO 模型的预测和数据集构建指南。
+- `operating-system/`: 涵盖操作系统的基本概念、进程与线程管理、内存管理、文件系统以及常见操作系统的使用与配置（如 Linux 和 Windows）。还包括命令行工具的使用、Shell 脚本编写以及系统性能优化等内容。
 
 ## 使用说明 📖
 
 1. 克隆项目到本地：
 
    ```bash
-   git clone https://github.com/LeafEvans/LE-Note.git
+   git clone https://github.com/LeafEvans/le-note.git
    ```
 
 2. 浏览各个文件夹，查找所需的编程语言笔记。
