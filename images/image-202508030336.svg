@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520.017" height="204.017">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#222" stroke-width="2"
+                d="M640 386h62.4v-71q0-5 5-5H744M640 386h104M640 386h62.4v71q0 5 5 5H744"
+                transform="translate(-336.988 -283.987)" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(10.012 82.513)">
+                <path fill="#382c74" stroke="#382c74" stroke-width="0"
+                    d="M5 0h283s5 0 5 5v29s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="263" height="29" x="0" y="0" data-height="29" data-offsetx="0"
+                    data-width="263"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:24px;font-weight:700;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>I/O 设备按传输速率分类</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="297" height="43" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(407.012 10.013)">
+                <path fill="#a1d5bc" stroke-width="0"
+                    d="M5 0h93s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>低速设备</p>
+                    </div>
+                </foreignObject>
+                <rect width="107" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(407.012 86.013)">
+                <path fill="#a1d5bc" stroke-width="0"
+                    d="M5 0h93s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>中速设备</p>
+                    </div>
+                </foreignObject>
+                <rect width="107" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(407.012 162.013)">
+                <path fill="#a1d5bc" stroke-width="0"
+                    d="M5 0h93s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>高速设备</p>
+                    </div>
+                </foreignObject>
+                <rect width="107" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
+    </g>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
+</svg>

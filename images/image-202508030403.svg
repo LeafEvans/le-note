@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="607.017" height="143.017">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#90726e" stroke-width="3"
+                d="M1065.5 387.5h62.4V353q0-5 5-5h36.6M1065.5 387.5h62.4V422q0 5 5 5h36.6"
+                transform="translate(-682.988 -315.987)" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(14.512 50.513)">
+                <path fill="#cf7969" stroke="#cf7969" stroke-width="3"
+                    d="M21 1.5h326a19.5 19.5 0 0 1 0 39H21a19.5 19.5 0 0 1 0-39"
+                    class="smm-node-shape" />
+                <foreignObject width="335" height="29" x="0" y="0" data-height="29" data-offsetx="0"
+                    data-width="335"
+                    style="line-height:1.2;font-family:MiSans,Microsoft YaHei;font-size:24px;font-weight:700;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>I/O 设备按信息交换的单位分类</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="372" height="46" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(486.512 14.513)">
+                <path fill="#efd2cf" stroke="#debab7" stroke-width="3"
+                    d="M17.5 1.5h53a16 16 0 0 1 0 32h-53a16 16 0 0 1 0-32" class="smm-node-shape" />
+                <foreignObject width="55" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="55"
+                    style="line-height:1.2;font-family:MiSans,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#904f44;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>块设备</p>
+                    </div>
+                </foreignObject>
+                <rect width="92" height="39" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(486.512 93.513)">
+                <path fill="#efd2cf" stroke="#debab7" stroke-width="3"
+                    d="M17.5 1.5h71a16 16 0 0 1 0 32h-71a16 16 0 0 1 0-32" class="smm-node-shape" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:MiSans,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#904f44;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>字符设备</p>
+                    </div>
+                </foreignObject>
+                <rect width="110" height="39" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
+    </g>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
+</svg>

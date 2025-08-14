@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="411.517" height="279.017">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#549688" d="M136.017 139.502h62.4v-107.5q0-5 5-5h36.6" />
+            <path fill="none" stroke="#549688"
+                d="M136.017 139.502h62.4v-32.5q0-5 5-5h36.6M136.017 139.502h62.4v32.5q0 5 5 5h36.6" />
+            <path fill="none" stroke="#549688" d="M136.017 139.502h62.4v107.5q0 5 5 5h36.6" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(10.017 124.502)">
+                <path fill="#549688" stroke="transparent" stroke-width="0"
+                    d="M5 0h116s5 0 5 5v20s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="96" height="20" x="0" y="0" data-height="20" data-offsetx="0"
+                    data-width="96"
+                    style="line-height:1.2;font-family:霞鹜新晰黑,Microsoft YaHei;font-size:16px;font-weight:700;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>I/O 控制方式</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="130" height="34" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(240.017 11.502)">
+                <path fill="#fff" stroke="#549688"
+                    d="M5.5.5h149s5 0 5 5v20s0 5-5 5H5.5s-5 0-5-5v-20s0-5 5-5Z"
+                    class="smm-node-shape" />
+                <foreignObject width="129" height="20" x="0" y="0" data-height="20" data-offsetx="0"
+                    data-width="129"
+                    style="line-height:1.2;font-family:霞鹜新晰黑,Microsoft YaHei;font-size:16px;font-weight:400;font-style:normal;text-decoration:none;color:#565656;text-align:left"
+                    transform="translate(15.5 5.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>程序直接控制方式</p>
+                    </div>
+                </foreignObject>
+                <rect width="164" height="35" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(240.017 86.502)">
+                <path fill="#fff" stroke="#549688"
+                    d="M5.5.5h117s5 0 5 5v20s0 5-5 5H5.5s-5 0-5-5v-20s0-5 5-5Z"
+                    class="smm-node-shape" />
+                <foreignObject width="97" height="20" x="0" y="0" data-height="20" data-offsetx="0"
+                    data-width="97"
+                    style="line-height:1.2;font-family:霞鹜新晰黑,Microsoft YaHei;font-size:16px;font-weight:400;font-style:normal;text-decoration:none;color:#565656;text-align:left"
+                    transform="translate(15.5 5.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>中断驱动方式</p>
+                    </div>
+                </foreignObject>
+                <rect width="132" height="35" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(240.017 161.502)">
+                <path fill="#fff" stroke="#549688"
+                    d="M5.5.5h97s5 0 5 5v20s0 5-5 5h-97s-5 0-5-5v-20s0-5 5-5Z"
+                    class="smm-node-shape" />
+                <foreignObject width="77" height="20" x="0" y="0" data-height="20" data-offsetx="0"
+                    data-width="77"
+                    style="line-height:1.2;font-family:霞鹜新晰黑,Microsoft YaHei;font-size:16px;font-weight:400;font-style:normal;text-decoration:none;color:#565656;text-align:left"
+                    transform="translate(15.5 5.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>DMA 方式</p>
+                    </div>
+                </foreignObject>
+                <rect width="112" height="35" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(240.017 236.502)">
+                <path fill="#fff" stroke="#549688"
+                    d="M5.5.5h117s5 0 5 5v20s0 5-5 5H5.5s-5 0-5-5v-20s0-5 5-5Z"
+                    class="smm-node-shape" />
+                <foreignObject width="97" height="20" x="0" y="0" data-height="20" data-offsetx="0"
+                    data-width="97"
+                    style="line-height:1.2;font-family:霞鹜新晰黑,Microsoft YaHei;font-size:16px;font-weight:400;font-style:normal;text-decoration:none;color:#565656;text-align:left"
+                    transform="translate(15.5 5.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>通道控制方式</p>
+                    </div>
+                </foreignObject>
+                <rect width="132" height="35" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
+    </g>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
+</svg>
