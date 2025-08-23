@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="808.0166625976562" height="294.01666259765625">
+  <title>思维导图</title>
+  <g class="smm-container" transform="matrix(1,0,0,1,-336.9928632463731,-238.9857264927457)">
+    <g class="smm-line-container">
+      <path d="M 522,386L 584.4,386L 584.4,274Q 584.4,269 589.4,269L 626,269"
+        stroke-dasharray="none" stroke-width="2" stroke="#36aaa9" fill="none"></path>
+      <path d="M 522,386L 584.4,386L 584.4,352Q 584.4,347 589.4,347L 626,347"
+        stroke-dasharray="none" stroke-width="2" stroke="#36aaa9" fill="none"></path>
+      <path d="M 522,386L 584.4,386L 584.4,420Q 584.4,425 589.4,425L 626,425"
+        stroke-dasharray="none" stroke-width="2" stroke="#36aaa9" fill="none"></path>
+      <path d="M 522,386L 584.4,386L 584.4,498Q 584.4,503 589.4,503L 626,503"
+        stroke-dasharray="none" stroke-width="2" stroke="#36aaa9" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,347,366.5)">
+        <path
+          d="
+      M5,0
+      L170,0
+      C170,0 175,0 175,5
+      L175,34
+      C175,34 175,39 170,39
+      L5,39
+      C5,39 0,39 0,34
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#3e58ea"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="145" data-height="29" data-offsetx="0" opacity="1">
+            <foreignObject width="145" height="29"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 24px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>缓冲区的作用</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="179" height="43" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,626,252)">
+        <path
+          d="
+      M5,0
+      L382,0
+      C382,0 387,0 387,5
+      L387,27
+      C387,27 387,32 382,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#e3fbff"
+          stroke-dasharray="none" stroke-width="2" stroke="#50a4b4"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="357" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="357" height="22"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(88, 170, 188); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>缓和 CPU 与 I/O 设备之间速度不匹配的矛盾</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="393" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,626,330)">
+        <path
+          d="
+      M5,0
+      L499,0
+      C499,0 504,0 504,5
+      L504,27
+      C504,27 504,32 499,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#e3fbff"
+          stroke-dasharray="none" stroke-width="2" stroke="#50a4b4"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="474" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="474" height="22"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(88, 170, 188); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>减少对 CPU 的中断频率，放宽对 CPU 中断相应时间的限制</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="510" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,626,408)">
+        <path
+          d="
+      M5,0
+      L242,0
+      C242,0 247,0 247,5
+      L247,27
+      C247,27 247,32 242,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#e3fbff"
+          stroke-dasharray="none" stroke-width="2" stroke="#50a4b4"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="217" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="217" height="22"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(88, 170, 188); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>解决数据粒度不匹配的问题</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="253" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,626,486)">
+        <path
+          d="
+      M5,0
+      L310,0
+      C310,0 315,0 315,5
+      L315,27
+      C315,27 315,32 310,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#e3fbff"
+          stroke-dasharray="none" stroke-width="2" stroke="#50a4b4"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="285" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="285" height="22"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(88, 170, 188); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>提高 CPU 与 I/O 设备之间的并行性</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="321" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>

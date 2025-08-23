@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="243" height="244"
+    style="background:0 0;background-color:transparent;color-scheme:light"
+    viewBox="-0.5 -0.5 243 244">
+    <g data-cell-id="0">
+        <g data-cell-id="1">
+            <circle cx="121" cy="121" r="120" fill="#1ba1e2" stroke="#fff" stroke-width="2"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-46" pointer-events="all"
+                style="fill:#1ba1e2;stroke:#fff" />
+            <circle cx="121" cy="121" r="110" fill="#60a917" stroke="#fff" stroke-width="2"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-45" pointer-events="all"
+                style="fill:#60a917;stroke:#fff" />
+            <circle cx="121" cy="121" r="100" fill="#1ba1e2" stroke="#fff" stroke-width="2"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-44" pointer-events="all"
+                style="fill:#1ba1e2;stroke:#fff" />
+            <circle cx="121" cy="121" r="90" fill="#fa6800" stroke="#fff" stroke-width="2"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-43" pointer-events="all"
+                style="fill:#fa6800;stroke:#fff" />
+            <circle cx="121" cy="121" r="80" fill="#1ba1e2" stroke="#fff" stroke-width="2"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-42" pointer-events="all"
+                style="fill:#1ba1e2;stroke:#fff" />
+            <circle cx="121" cy="121" r="70" fill="#60a917" stroke="#fff" stroke-width="2"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-41" pointer-events="all"
+                style="fill:#60a917;stroke:#fff" />
+            <circle cx="121" cy="121" r="60" fill="#1ba1e2" stroke="#fff" stroke-width="2"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-40" pointer-events="all"
+                style="fill:#1ba1e2;stroke:#fff" />
+            <circle cx="121" cy="121" r="50" fill="#60a917" stroke="#fff" stroke-width="2"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-39" pointer-events="all"
+                style="fill:#60a917;stroke:#fff" />
+            <circle cx="121" cy="121" r="40" fill="#fff" data-cell-id="UCqwbkeyomXhD8HceX9e-35"
+                pointer-events="all" style="fill:#fff" />
+            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M121 161v80"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-47" pointer-events="stroke" style="stroke:#fff" />
+            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                d="m149.28 149.28 56.82 56.33" data-cell-id="UCqwbkeyomXhD8HceX9e-48"
+                pointer-events="stroke" style="stroke:#fff" />
+            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M161 121h80"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-49" pointer-events="stroke" style="stroke:#fff" />
+            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                d="m149.28 92.72 56.57-56.57" data-cell-id="UCqwbkeyomXhD8HceX9e-50"
+                pointer-events="stroke" style="stroke:#fff" />
+            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M121 81V1"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-51" pointer-events="stroke" style="stroke:#fff" />
+            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                d="M92.72 149.28 35.9 205.61" data-cell-id="UCqwbkeyomXhD8HceX9e-52"
+                pointer-events="stroke" style="stroke:#fff" />
+            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M81 121H1"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-53" pointer-events="stroke" style="stroke:#fff" />
+            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                d="m36.15 36.15 56.57 56.57" data-cell-id="UCqwbkeyomXhD8HceX9e-54"
+                pointer-events="stroke" style="stroke:#fff" />
+            <path stroke="#000" d="M191 91h20v20h-20z" data-cell-id="UCqwbkeyomXhD8HceX9e-63"
+                pointer-events="all" style="fill:#000;stroke:#000" />
+            <path stroke="#000" stroke-miterlimit="10"
+                d="M198.09 111.5h5.82v4.27h5.48L201 120.5l-8.39-4.73h5.48Z"
+                data-cell-id="UCqwbkeyomXhD8HceX9e-64" pointer-events="all"
+                style="fill:#000;stroke:#000" />
+        </g>
+    </g>
+</svg>

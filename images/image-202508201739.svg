@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="525.5" height="211">
+  <title>思维导图</title>
+  <g class="smm-container" transform="matrix(1,0,0,1,-683,-282)">
+    <g class="smm-line-container">
+      <path d="M 779.5,387.5L 841.9,387.5L 841.9,326Q 841.9,321 846.9,321L 883.5,321"
+        stroke-dasharray="none" stroke-width="3" stroke="#4a8baa" fill="none"></path>
+      <path d="M 779.5,387.5L 841.9,387.5L 841.9,433.5Q 841.9,438.5 846.9,438.5L 883.5,438.5"
+        stroke-dasharray="none" stroke-width="3" stroke="#4a8baa" fill="none"></path>
+      <path d="M 1043.5,321L 1075.9,321L 1075.9,310.5Q 1075.9,305.5 1080.9,305.5L 1097.5,305.5"
+        stroke-dasharray="none" stroke-width="3" stroke="#4a8baa" fill="none"></path>
+      <path d="M 1043.5,321L 1075.9,321L 1075.9,331.5Q 1075.9,336.5 1080.9,336.5L 1097.5,336.5"
+        stroke-dasharray="none" stroke-width="3" stroke="#4a8baa" fill="none"></path>
+      <path d="M 1007.5,438.5L 1039.9,438.5L 1039.9,412.5Q 1039.9,407.5 1044.9,407.5L 1061.5,407.5"
+        stroke-dasharray="none" stroke-width="3" stroke="#4a8baa" fill="none"></path>
+      <path d="M 1007.5,438.5L 1039.9,438.5L 1039.9,438.5L 1061.5,438.5" stroke-dasharray="none"
+        stroke-width="3" stroke="#4a8baa" fill="none"></path>
+      <path d="M 1007.5,438.5L 1039.9,438.5L 1039.9,464.5Q 1039.9,469.5 1044.9,469.5L 1061.5,469.5"
+        stroke-dasharray="none" stroke-width="3" stroke="#4a8baa" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,697.5,366.5)">
+        <path
+          d="
+      M19.5,0
+      L59.5,0
+      A19.5,19.5 0 0,1 59.5,39 
+      L19.5,39
+      A19.5,19.5 0 0,1 19.5,0
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1.5,1.5)" fill="#3395ff"
+          stroke-dasharray="none" stroke-width="3" stroke="#3395ff"></path>
+        <g transform="matrix(1,0,0,1,16.5,6.5)">
+          <g data-width="49" data-height="29" data-offsetx="0" opacity="1">
+            <foreignObject width="49" height="29"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 24px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>线程</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="86" height="46" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,883.5,303.5)">
+        <path
+          d="
+      M5,0
+      L152,0
+      C152,0 157,0 157,5
+      L157,27
+      C157,27 157,32 152,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1.5,1.5)" fill="#4a8baa"
+          stroke-dasharray="none" stroke-width="3" stroke=""></path>
+        <g transform="matrix(1,0,0,1,16.5,6.5)">
+          <g data-width="127" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="127" height="22"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>线程的实现方式</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="164" height="39" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+        <rect fill="transparent" width="20" height="35" x="160" y="0"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,883.5,421)">
+        <path
+          d="
+      M5,0
+      L116,0
+      C116,0 121,0 121,5
+      L121,27
+      C121,27 121,32 116,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1.5,1.5)" fill="#4a8baa"
+          stroke-dasharray="none" stroke-width="3" stroke=""></path>
+        <g transform="matrix(1,0,0,1,16.5,6.5)">
+          <g data-width="91" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="91" height="22"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>多线程模型</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="128" height="39" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+        <rect fill="transparent" width="20" height="35" x="124" y="0"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1097.5,292)">
+        <path
+          d="
+      M5,0
+      L96,0
+      C96,0 101,0 101,5
+      L101,22
+      C101,22 101,27 96,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="71" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="71" height="17"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>用户级线程</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="105" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1097.5,323)">
+        <path
+          d="
+      M5,0
+      L96,0
+      C96,0 101,0 101,5
+      L101,22
+      C101,22 101,27 96,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="71" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="71" height="17"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>内核级线程</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="105" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1061.5,394)">
+        <path
+          d="
+      M5,0
+      L96,0
+      C96,0 101,0 101,5
+      L101,22
+      C101,22 101,27 96,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="71" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="71" height="17"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>一对一模型</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="105" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1061.5,425)">
+        <path
+          d="
+      M5,0
+      L96,0
+      C96,0 101,0 101,5
+      L101,22
+      C101,22 101,27 96,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="71" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="71" height="17"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>多对一模型</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="105" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1061.5,456)">
+        <path
+          d="
+      M5,0
+      L96,0
+      C96,0 101,0 101,5
+      L101,22
+      C101,22 101,27 96,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="71" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="71" height="17"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>多对多模型</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="105" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>

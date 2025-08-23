@@ -1,191 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:svgjs="http://svgjs.dev/svgjs" width="612.0166625976562" height="204.01666259765625">
-  <title>思维导图</title>
-  <g class="smm-container"
-    transform="matrix(1,0,0,0.9999999999999999,-336.9833384195964,-283.9873076908174)">
-    <g class="smm-line-container">
-      <path d="M 642,386L 704.4,386L 704.4,315Q 704.4,310 709.4,310L 746,310"
-        stroke-dasharray="none" stroke-width="3" stroke="#4b514e" fill="none"></path>
-      <path d="M 642,386L 704.4,386L 704.4,386L 746,386" stroke-dasharray="none" stroke-width="3"
-        stroke="#4b514e" fill="none"></path>
-      <path d="M 642,386L 704.4,386L 704.4,457Q 704.4,462 709.4,462L 746,462"
-        stroke-dasharray="none" stroke-width="3" stroke="#4b514e" fill="none"></path>
+<svg xmlns="http://www.w3.org/2000/svg" width="612.017" height="204.017">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#4b514e" stroke-width="3"
+                d="M642 386h62.4v-71q0-5 5-5H746M642 386h104M642 386h62.4v71q0 5 5 5H746"
+                transform="translate(-336.983 -283.987)" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(10.017 82.513)">
+                <path fill="#24b360" stroke-width="0"
+                    d="M5 0h285s5 0 5 5v29s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="265" height="29" x="0" y="0" data-height="29" data-offsetx="0"
+                    data-width="265"
+                    style="line-height:1.2;font-family:寒蝉半圆体,Microsoft YaHei;font-size:24px;font-weight:400;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>设备分配时应考虑的因素</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="299" height="43" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(409.017 10.013)">
+                <path fill="#fec70d" stroke-width="0"
+                    d="M5 0h147s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="127" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="127"
+                    style="line-height:1.2;font-family:寒蝉半圆体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>设备的固有属性</p>
+                    </div>
+                </foreignObject>
+                <rect width="161" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(409.017 86.013)">
+                <path fill="#fec70d" stroke-width="0"
+                    d="M5 0h129s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="109" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="109"
+                    style="line-height:1.2;font-family:寒蝉半圆体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>设备分配算法</p>
+                    </div>
+                </foreignObject>
+                <rect width="143" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(409.017 162.013)">
+                <path fill="#fec70d" stroke-width="0"
+                    d="M5 0h183s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="163" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="163"
+                    style="line-height:1.2;font-family:寒蝉半圆体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>设备分配中的安全性</p>
+                    </div>
+                </foreignObject>
+                <rect width="197" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
     </g>
-    <g class="smm-outer-frame-container"></g>
-    <g class="smm-node-container">
-      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,347,366.5)">
-        <path
-          d="
-      M5,0
-      L290,0
-      C290,0 295,0 295,5
-      L295,34
-      C295,34 295,39 290,39
-      L5,39
-      C5,39 0,39 0,34
-      L0,5
-      C0,5 0,0 5,0
-      Z
-    "
-          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#24b360"
-          stroke-dasharray="none" stroke-width="0" stroke=""></path>
-        <g transform="matrix(1,0,0,1,15,5)">
-          <g data-width="265" data-height="29" data-offsetx="0" opacity="1">
-            <foreignObject width="265" height="29"
-              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 24px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
-              x="0" y="0">
-              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
-                style="max-width: 500px;">
-                <p>设备分配时应考虑的因素</p>
-              </div>
-              <style>
-                * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                }
-              </style>
-            </foreignObject>
-          </g>
-        </g>
-        <rect width="299" height="43" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
-          stroke="#5ec8f8"></rect>
-      </g>
-      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,746,294)">
-        <path
-          d="
-      M5,0
-      L152,0
-      C152,0 157,0 157,5
-      L157,27
-      C157,27 157,32 152,32
-      L5,32
-      C5,32 0,32 0,27
-      L0,5
-      C0,5 0,0 5,0
-      Z
-    "
-          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#fec70d"
-          stroke-dasharray="none" stroke-width="0" stroke=""></path>
-        <g transform="matrix(1,0,0,1,15,5)">
-          <g data-width="127" data-height="22" data-offsetx="0" opacity="1">
-            <foreignObject width="127" height="22"
-              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
-              x="0" y="0">
-              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
-                style="max-width: 500px;">
-                <p>设备的固有属性</p>
-              </div>
-            </foreignObject>
-          </g>
-        </g>
-        <rect width="161" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
-          stroke="#5ec8f8"></rect>
-      </g>
-      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,746,370)">
-        <path
-          d="
-      M5,0
-      L134,0
-      C134,0 139,0 139,5
-      L139,27
-      C139,27 139,32 134,32
-      L5,32
-      C5,32 0,32 0,27
-      L0,5
-      C0,5 0,0 5,0
-      Z
-    "
-          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#fec70d"
-          stroke-dasharray="none" stroke-width="0" stroke=""></path>
-        <g transform="matrix(1,0,0,1,15,5)">
-          <g data-width="109" data-height="22" data-offsetx="0" opacity="1">
-            <foreignObject width="109" height="22"
-              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
-              x="0" y="0">
-              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
-                style="max-width: 500px;">
-                <p>设备分配算法</p>
-              </div>
-            </foreignObject>
-          </g>
-        </g>
-        <rect width="143" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
-          stroke="#5ec8f8"></rect>
-      </g>
-      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,746,446)">
-        <path
-          d="
-      M5,0
-      L188,0
-      C188,0 193,0 193,5
-      L193,27
-      C193,27 193,32 188,32
-      L5,32
-      C5,32 0,32 0,27
-      L0,5
-      C0,5 0,0 5,0
-      Z
-    "
-          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#fec70d"
-          stroke-dasharray="none" stroke-width="0" stroke=""></path>
-        <g transform="matrix(1,0,0,1,15,5)">
-          <g data-width="163" data-height="22" data-offsetx="0" opacity="1">
-            <foreignObject width="163" height="22"
-              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
-              x="0" y="0">
-              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
-                style="max-width: 500px;">
-                <p>设备分配中的安全性</p>
-              </div>
-            </foreignObject>
-          </g>
-        </g>
-        <rect width="197" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
-          stroke="#5ec8f8"></rect>
-      </g>
-    </g>
-    <g class="smm-associative-line-container"></g>
-    <g class="smm-other-container"></g>
-  </g>
-  <style>
-    /* 鼠标hover和激活时渲染的矩形 */
-    .smm-hover-node{
-    display: none;
-    opacity: 0.6;
-    stroke-width: 1;
-    }
-
-    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
-    display: block;
-    }
-
-    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
-    display: block;
-    opacity: 1;
-    stroke-width: 2;
-    }
-
-    .smm-text-node-wrap, .smm-expand-btn-text {
-    user-select: none;
-    }
-
-    .smm-richtext-node-wrap {
-    word-break: break-all;
-    user-select: none;
-    }
-
-    .ql-editor .ql-align-left,
-    .smm-richtext-node-wrap .ql-align-left {
-    text-align: left;
-    }
-
-    .smm-richtext-node-wrap .ql-align-right {
-    text-align: right;
-    }
-
-    .smm-richtext-node-wrap .ql-align-center {
-    text-align: center;
-    }
-  </style>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
 </svg>

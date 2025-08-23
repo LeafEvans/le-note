@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="462.01666259765625" height="331.01666259765625">
+  <title>思维导图</title>
+  <g class="smm-container" transform="matrix(1,0,0,1,-687.4881155831476,-215.99286324637296)">
+    <g class="smm-line-container">
+      <path d="M 808.5,381.5L 870.9,381.5L 870.9,244.5Q 870.9,239.5 875.9,239.5L 912.5,239.5"
+        stroke-dasharray="none" stroke-width="3" stroke="#33383e" fill="none"></path>
+      <path d="M 808.5,381.5L 870.9,381.5L 870.9,315.5Q 870.9,310.5 875.9,310.5L 912.5,310.5"
+        stroke-dasharray="none" stroke-width="3" stroke="#33383e" fill="none"></path>
+      <path d="M 808.5,381.5L 870.9,381.5L 870.9,381.5L 912.5,381.5" stroke-dasharray="none"
+        stroke-width="3" stroke="#33383e" fill="none"></path>
+      <path d="M 808.5,381.5L 870.9,381.5L 870.9,447.5Q 870.9,452.5 875.9,452.5L 912.5,452.5"
+        stroke-dasharray="none" stroke-width="3" stroke="#33383e" fill="none"></path>
+      <path d="M 808.5,381.5L 870.9,381.5L 870.9,518.5Q 870.9,523.5 875.9,523.5L 912.5,523.5"
+        stroke-dasharray="none" stroke-width="3" stroke="#33383e" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,697.5,366.5)">
+        <path
+          d="
+      M5,0
+      L106,0
+      C106,0 111,0 111,5
+      L111,25
+      C111,25 111,30 106,30
+      L5,30
+      C5,30 0,30 0,25
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#33383e"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="81" data-height="20" data-offsetx="0" opacity="1">
+            <foreignObject width="81" height="20"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 16px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(247, 208, 160); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>死锁的概念</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="115" height="34" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,912.5,226)">
+        <path
+          d="
+      M5,0
+      L96,0
+      C96,0 101,0 101,5
+      L101,22
+      C101,22 101,27 96,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#efd1b0"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="71" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="71" height="17"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(81, 58, 42); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>什么是死锁</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="105" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,912.5,297)">
+        <path
+          d="
+      M5,0
+      L222,0
+      C222,0 227,0 227,5
+      L227,22
+      C227,22 227,27 222,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#efd1b0"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="197" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="197" height="17"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(81, 58, 42); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>进程死锁、饥饿、死循环的区别</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="231" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,912.5,368)">
+        <path
+          d="
+      M5,0
+      L152,0
+      C152,0 157,0 157,5
+      L157,22
+      C157,22 157,27 152,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#efd1b0"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="127" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="127" height="17"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(81, 58, 42); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>死锁产生的必要条件</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="161" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,912.5,439)">
+        <path
+          d="
+      M5,0
+      L152,0
+      C152,0 157,0 157,5
+      L157,22
+      C157,22 157,27 152,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#efd1b0"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="127" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="127" height="17"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(81, 58, 42); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>什么时候会发生死锁</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="161" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,912.5,510)">
+        <path
+          d="
+      M5,0
+      L124,0
+      C124,0 129,0 129,5
+      L129,22
+      C129,22 129,27 124,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#efd1b0"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="99" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="99" height="17"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(81, 58, 42); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>死锁的处理策略</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="133" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>

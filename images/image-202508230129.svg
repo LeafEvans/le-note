@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="959.017" height="204.017">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#ad7b5b" stroke-width="4"
+                d="M364.012 102.007h62.4v-71q0-5 5-5h36.6M364.012 102.007h104M364.012 102.007h62.4v71q0 5 5 5h36.6" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(10.012 82.507)">
+                <path fill="#ca754f" stroke-width="0"
+                    d="M5 0h344s5 0 5 5v29s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="324" height="29" x="0" y="0" data-height="29" data-offsetx="0"
+                    data-width="324"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:24px;font-weight:400;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>一次磁盘读/写操作需要的时间</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="358" height="43" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(468.012 10.007)">
+                <path fill="#f5e7d8" stroke-width="0"
+                    d="M5 0h471s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="451" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="451"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#7d562a;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>寻找时间（寻道时间）：启动磁臂、移动磁头所花的时间</p>
+                    </div>
+                </foreignObject>
+                <rect width="485" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(468.012 86.007)">
+                <path fill="#f5e7d8" stroke-width="0"
+                    d="M5 0h399s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="379" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="379"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#7d562a;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>延迟时间：将目标扇区转到磁头下面所花的时间</p>
+                    </div>
+                </foreignObject>
+                <rect width="413" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(468.012 162.007)">
+                <path fill="#f5e7d8" stroke-width="0"
+                    d="M5 0h281s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="261" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="261"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#7d562a;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>传输时间：读/写数据花费的时间</p>
+                    </div>
+                </foreignObject>
+                <rect width="295" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
+    </g>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
+</svg>

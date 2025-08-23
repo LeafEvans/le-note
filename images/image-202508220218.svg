@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="509.017" height="372.017">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#e68a83" stroke-width="3"
+                d="M161.012 186.007h62.4v-151q0-5 5-5h36.6" />
+            <path fill="none" stroke="#e68a83" stroke-width="3"
+                d="M161.012 186.007h62.4v-73q0-5 5-5h36.6m-104 78h104m-104 0h62.4v73q0 5 5 5h36.6" />
+            <path fill="none" stroke="#e68a83" stroke-width="3"
+                d="M161.012 186.007h62.4v151q0 5 5 5h36.6" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(10.012 166.507)">
+                <path fill="#cf2c2c" stroke-width="0"
+                    d="M5 0h141s5 0 5 5v29s0 5-5 5H5s-5 0-5-5V5s0-5 5-5" class="smm-node-shape" />
+                <foreignObject width="121" height="29" x="0" y="0" data-height="29" data-offsetx="0"
+                    data-width="121"
+                    style="line-height:1.2;font-family:MiSans VF,Microsoft YaHei;font-size:24px;font-weight:400;font-style:normal;text-decoration:none;color:#ffe99d;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>磁盘的结构</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="155" height="43" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(265.012 13.007)">
+                <path fill="#fff" stroke="#de6555" stroke-width="2"
+                    d="M6 1h219s5 0 5 5v22s0 5-5 5H6s-5 0-5-5V6s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="199" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="199"
+                    style="line-height:1.2;font-family:MiSans VF,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#d33a15;text-align:left"
+                    transform="translate(16 6)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>磁盘、磁道、扇区的概念</p>
+                    </div>
+                </foreignObject>
+                <rect width="235" height="38" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(265.012 91.007)">
+                <path fill="#fff" stroke="#de6555" stroke-width="2"
+                    d="M6 1h209s5 0 5 5v22s0 5-5 5H6s-5 0-5-5V6s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="189" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="189"
+                    style="line-height:1.2;font-family:MiSans VF,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#d33a15;text-align:left"
+                    transform="translate(16 6)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>如何在磁盘中读/写数据</p>
+                    </div>
+                </foreignObject>
+                <rect width="225" height="38" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(265.012 169.007)">
+                <path fill="#fff" stroke="#de6555" stroke-width="2"
+                    d="M6 1h165s5 0 5 5v22s0 5-5 5H6s-5 0-5-5V6s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="145" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="145"
+                    style="line-height:1.2;font-family:MiSans VF,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#d33a15;text-align:left"
+                    transform="translate(16 6)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>盘面、柱面的概念</p>
+                    </div>
+                </foreignObject>
+                <rect width="181" height="38" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(265.012 247.007)">
+                <path fill="#fff" stroke="#de6555" stroke-width="2"
+                    d="M6 1h147s5 0 5 5v22s0 5-5 5H6s-5 0-5-5V6s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="127" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="127"
+                    style="line-height:1.2;font-family:MiSans VF,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#d33a15;text-align:left"
+                    transform="translate(16 6)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>磁盘的物理地址</p>
+                    </div>
+                </foreignObject>
+                <rect width="163" height="38" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(265.012 325.007)">
+                <path fill="#fff" stroke="#de6555" stroke-width="2"
+                    d="M6 1h111s5 0 5 5v22s0 5-5 5H6s-5 0-5-5V6s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="91" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="91"
+                    style="line-height:1.2;font-family:MiSans VF,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#d33a15;text-align:left"
+                    transform="translate(16 6)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>磁盘的分类</p>
+                    </div>
+                </foreignObject>
+                <rect width="127" height="38" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
+    </g>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
+</svg>

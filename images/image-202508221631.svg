@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="723.517" height="273.017">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#4a8baa" stroke-width="3"
+                d="M192.512 136.507h62.4v-77q0-5 5-5h36.6m-104 82h62.4v61.5q0 5 5 5h36.6m276-148.5h32.4v-26q0-5 5-5h16.6m-54 31h54m-54 0h32.4v26q0 5 5 5h16.6m-188 117.5h32.4v-41.5q0-5 5-5h16.6" />
+            <path fill="none" stroke="#4a8baa" stroke-width="3"
+                d="M438.512 203.007h32.4v-10.5q0-5 5-5h16.6m-54 15.5h32.4v10.5q0 5 5 5h16.6" />
+            <path fill="none" stroke="#4a8baa" stroke-width="3"
+                d="M438.512 203.007h32.4v41.5q0 5 5 5h16.6" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(14.512 115.507)">
+                <path fill="#3395ff" stroke="#3395ff" stroke-width="3"
+                    d="M21 1.5h136a19.5 19.5 0 0 1 0 39H21a19.5 19.5 0 0 1 0-39"
+                    class="smm-node-shape" />
+                <foreignObject width="145" height="29" x="0" y="0" data-height="29" data-offsetx="0"
+                    data-width="145"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:24px;font-weight:400;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>磁盘调度算法</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="182" height="46" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(296.512 37.007)">
+                <path fill="#4a8baa" stroke-width="3"
+                    d="M6.5 1.5h263s5 0 5 5v22s0 5-5 5H6.5s-5 0-5-5v-22s0-5 5-5"
+                    class="smm-node-shape" />
+                <foreignObject width="243" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="243"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>一次磁盘读/写操作需要的时间</p>
+                    </div>
+                </foreignObject>
+                <rect width="280" height="39" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+                <path fill="transparent" d="M276 0h20v35h-20z" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(296.512 185.507)">
+                <path fill="#4a8baa" stroke-width="3"
+                    d="M6.5 1.5h129s5 0 5 5v22s0 5-5 5H6.5s-5 0-5-5v-22s0-5 5-5"
+                    class="smm-node-shape" />
+                <foreignObject width="109" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="109"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>磁盘调度算法</p>
+                    </div>
+                </foreignObject>
+                <rect width="146" height="39" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+                <path fill="transparent" d="M142 0h20v35h-20z" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(626.512 10.007)">
+                <path fill="transparent" stroke="transparent" stroke-width="0"
+                    d="M5 0h77s5 0 5 5v17s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="57" height="17" x="0" y="0" data-height="17" data-offsetx="0"
+                    data-width="57"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>寻找时间</p>
+                    </div>
+                </foreignObject>
+                <rect width="91" height="31" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(626.512 41.007)">
+                <path fill="transparent" stroke="transparent" stroke-width="0"
+                    d="M5 0h77s5 0 5 5v17s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="57" height="17" x="0" y="0" data-height="17" data-offsetx="0"
+                    data-width="57"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>延迟时间</p>
+                    </div>
+                </foreignObject>
+                <rect width="91" height="31" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(626.512 72.007)">
+                <path fill="transparent" stroke="transparent" stroke-width="0"
+                    d="M5 0h77s5 0 5 5v17s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="57" height="17" x="0" y="0" data-height="17" data-offsetx="0"
+                    data-width="57"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>传输时间</p>
+                    </div>
+                </foreignObject>
+                <rect width="91" height="31" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(492.512 143.007)">
+                <path fill="transparent" stroke="transparent" stroke-width="0"
+                    d="M5 0h152s5 0 5 5v17s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="132" height="17" x="0" y="0" data-height="17" data-offsetx="0"
+                    data-width="132"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>先来先服务（FCFS）</p>
+                    </div>
+                </foreignObject>
+                <rect width="166" height="31" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(492.512 174.007)">
+                <path fill="transparent" stroke="transparent" stroke-width="0"
+                    d="M5 0h193s5 0 5 5v17s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="173" height="17" x="0" y="0" data-height="17" data-offsetx="0"
+                    data-width="173"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>最短寻找时间优先（SSTF）</p>
+                    </div>
+                </foreignObject>
+                <rect width="207" height="31" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(492.512 205.007)">
+                <path fill="transparent" stroke="transparent" stroke-width="0"
+                    d="M5 0h144s5 0 5 5v17s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="124" height="17" x="0" y="0" data-height="17" data-offsetx="0"
+                    data-width="124"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>扫描算法（SCAN）</p>
+                    </div>
+                </foreignObject>
+                <rect width="158" height="31" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(492.512 236.007)">
+                <path fill="transparent" stroke="transparent" stroke-width="0"
+                    d="M5 0h188s5 0 5 5v17s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="168" height="17" x="0" y="0" data-height="17" data-offsetx="0"
+                    data-width="168"
+                    style="line-height:1.2;font-family:寒蝉全圆体,Microsoft YaHei;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>循环扫描算法（C-SCAN）</p>
+                    </div>
+                </foreignObject>
+                <rect width="202" height="31" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
+    </g>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
+</svg>

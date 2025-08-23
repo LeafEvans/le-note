@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="411" height="133">
+  <title>思维导图</title>
+  <g class="smm-container" transform="matrix(1,0,0,1,-683.0000000000003,-316.5000000000001)">
+    <g class="smm-line-container">
+      <path d="M 843.5,383L 905.9,383L 905.9,351Q 905.9,346 910.9,346L 947.5,346"
+        stroke-dasharray="none" stroke-width="3" stroke="#333333" fill="none"></path>
+      <path d="M 843.5,383L 905.9,383L 905.9,415Q 905.9,420 910.9,420L 947.5,420"
+        stroke-dasharray="none" stroke-width="3" stroke="#333333" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,697.5,366.5)">
+        <path
+          d="
+      M5,0
+      L138,0
+      C138,0 143,0 143,5
+      L143,25
+      C143,25 143,30 138,30
+      L5,30
+      C5,30 0,30 0,25
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1.5,1.5)" fill="#37a5ff"
+          stroke-dasharray="none" stroke-width="3" stroke="#333333"></path>
+        <g transform="matrix(1,0,0,1,16.5,6.5)">
+          <g data-width="113" data-height="20" data-offsetx="0" opacity="1">
+            <foreignObject width="113" height="20"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 16px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>同步、互斥问题</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="150" height="37" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,947.5,331)">
+        <path
+          d="
+      M5,0
+      L124,0
+      C124,0 129,0 129,5
+      L129,22
+      C129,22 129,27 124,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1.5,1.5)" fill="#ffa024"
+          stroke-dasharray="none" stroke-width="3" stroke="#333333"></path>
+        <g transform="matrix(1,0,0,1,16.5,6.5)">
+          <g data-width="99" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="99" height="17"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(34, 34, 34); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>什么是进程同步</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="136" height="34" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,947.5,405)">
+        <path
+          d="
+      M5,0
+      L124,0
+      C124,0 129,0 129,5
+      L129,22
+      C129,22 129,27 124,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1.5,1.5)" fill="#ffa024"
+          stroke-dasharray="none" stroke-width="3" stroke="#333333"></path>
+        <g transform="matrix(1,0,0,1,16.5,6.5)">
+          <g data-width="99" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="99" height="17"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(34, 34, 34); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>什么是进程互斥</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="136" height="34" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>
