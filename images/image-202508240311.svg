@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="486.01666259765625" height="128.01666259765625"><title>思维导图</title><g class="smm-container" transform="matrix(1,0,0,1,-687.4857163202203,-321.99286324637313)"><g class="smm-line-container"><path d="M 920.5,386L 982.9,386L 982.9,353Q 982.9,348 987.9,348L 1024.5,348" stroke-dasharray="none" stroke-width="2" stroke="#114417" fill="none"></path><path d="M 920.5,386L 982.9,386L 982.9,419Q 982.9,424 987.9,424L 1024.5,424" stroke-dasharray="none" stroke-width="2" stroke="#114417" fill="none"></path></g><g class="smm-outer-frame-container"></g><g class="smm-node-container"><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,697.5,366.5)"><path d="
+      M10,0
+      L213,0
+      C213,0 223,0 223,10
+      L223,29
+      C223,29 223,39 213,39
+      L10,39
+      C10,39 0,39 0,29
+      L0,10
+      C0,10 0,0 10,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#1cb22b" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="193" data-height="29" data-offsetx="0" opacity="1"><foreignObject width="193" height="29" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 24px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>两种资源共享方式</p></div><style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style></foreignObject></g></g><rect width="227" height="43" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1024.5,332)"><path d="
+      M10,0
+      L129,0
+      C129,0 139,0 139,10
+      L139,22
+      C139,22 139,32 129,32
+      L10,32
+      C10,32 0,32 0,22
+      L0,10
+      C0,10 0,0 10,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#37383a" stroke-dasharray="none" stroke-width="0" stroke="#549688"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="109" data-height="22" data-offsetx="0" opacity="1"><foreignObject width="109" height="22" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(147, 148, 149); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(255, 255, 255);">互斥共享方式</span></p></div></foreignObject></g></g><rect width="143" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1024.5,408)"><path d="
+      M10,0
+      L129,0
+      C129,0 139,0 139,10
+      L139,22
+      C139,22 139,32 129,32
+      L10,32
+      C10,32 0,32 0,22
+      L0,10
+      C0,10 0,0 10,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#37383a" stroke-dasharray="none" stroke-width="0" stroke="#549688"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="109" data-height="22" data-offsetx="0" opacity="1"><foreignObject width="109" height="22" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(147, 148, 149); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(255, 255, 255);">同时共享方式</span></p></div></foreignObject></g></g><rect width="143" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g></g><g class="smm-associative-line-container"></g><g class="smm-other-container"></g></g><style>
+  /* 鼠标hover和激活时渲染的矩形 */
+  .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+  }
+
+  .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+  }
+
+  .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+  }
+
+  .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+  }
+
+      .smm-richtext-node-wrap {
+        word-break: break-all;
+        user-select: none;
+      }
+
+      .ql-editor .ql-align-left, 
+      .smm-richtext-node-wrap .ql-align-left {
+        text-align: left;
+      }
+
+      .smm-richtext-node-wrap .ql-align-right {
+        text-align: right;
+      }
+
+      .smm-richtext-node-wrap .ql-align-center {
+        text-align: center;
+      }
+      </style></svg>

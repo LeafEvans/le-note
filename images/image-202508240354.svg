@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="644.5" height="262">
+  <title>思维导图</title>
+  <g class="smm-container" transform="matrix(1,0,0,1,-684.5,-256)">
+    <g class="smm-line-container">
+      <path d="M 850.5,387L 912.9,387L 912.9,291Q 912.9,286 917.9,286L 954.5,286"
+        stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path>
+      <path d="M 850.5,387L 912.9,387L 912.9,387L 954.5,387" stroke-dasharray="none"
+        stroke-width="2" stroke="#1e3556" fill="none"></path>
+      <path d="M 850.5,387L 912.9,387L 912.9,483Q 912.9,488 917.9,488L 954.5,488"
+        stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path>
+      <path d="M 1077.5,387L 1109.9,387L 1109.9,366Q 1109.9,361 1114.9,361L 1131.5,361"
+        stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path>
+      <path d="M 1077.5,387L 1109.9,387L 1109.9,408Q 1109.9,413 1114.9,413L 1131.5,413"
+        stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,697.5,366.5)">
+        <path
+          d="
+      M10,0
+      L141,0
+      C141,0 151,0 151,10
+      L151,29
+      C151,29 151,39 141,39
+      L10,39
+      C10,39 0,39 0,29
+      L0,10
+      C0,10 0,0 10,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#1e3556"
+          stroke-dasharray="none" stroke-width="2" stroke="#bdc5c9"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="121" data-height="29" data-offsetx="0" opacity="1">
+            <foreignObject width="121" height="29"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>中断和异常</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="157" height="45" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,954.5,269)">
+        <path
+          d="
+      M10,0
+      L111,0
+      C111,0 121,0 121,10
+      L121,22
+      C121,22 121,32 111,32
+      L10,32
+      C10,32 0,32 0,22
+      L0,10
+      C0,10 0,0 10,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#a9dada"
+          stroke-dasharray="none" stroke-width="2" stroke="#1e3556"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="91" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="91" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>中断的作用</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="127" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,954.5,370)">
+        <path
+          d="
+      M10,0
+      L111,0
+      C111,0 121,0 121,10
+      L121,22
+      C121,22 121,32 111,32
+      L10,32
+      C10,32 0,32 0,22
+      L0,10
+      C0,10 0,0 10,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#a9dada"
+          stroke-dasharray="none" stroke-width="2" stroke="#1e3556"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="91" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="91" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>中断的类型</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="127" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+        <rect fill="transparent" width="20" height="34" x="123" y="0"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,954.5,471)">
+        <path
+          d="
+      M10,0
+      L183,0
+      C183,0 193,0 193,10
+      L193,22
+      C193,22 193,32 183,32
+      L10,32
+      C10,32 0,32 0,22
+      L0,10
+      C0,10 0,0 10,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#a9dada"
+          stroke-dasharray="none" stroke-width="2" stroke="#1e3556"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="163" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="163" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>中断机制的基本原理</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="199" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1131.5,347)">
+        <path
+          d="
+      M5,0
+      L180,0
+      C180,0 185,0 185,5
+      L185,22
+      C185,22 185,27 180,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0.5,0.5)" fill="transparent"
+          stroke-dasharray="none" stroke-width="1" stroke="#1e3556"></path>
+        <g transform="matrix(1,0,0,1,15.5,5.5)">
+          <g data-width="155" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="155" height="17"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(30, 53, 86); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>内中断（也称“异常”）</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="190" height="32" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1131.5,399)">
+        <path
+          d="
+      M5,0
+      L68,0
+      C68,0 73,0 73,5
+      L73,22
+      C73,22 73,27 68,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0.5,0.5)" fill="transparent"
+          stroke-dasharray="none" stroke-width="1" stroke="#1e3556"></path>
+        <g transform="matrix(1,0,0,1,15.5,5.5)">
+          <g data-width="43" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="43" height="17"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(30, 53, 86); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>外中断</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="78" height="32" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>
