@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="644" height="172"><title>思维导图</title><g class="smm-container" transform="matrix(0.9999999999999999,0,0,0.9999999999999999,-687.5000122070311,-295.5)"><g class="smm-line-container"><path d="M 840.5,381.5L 902.9,381.5L 902.9,337.5Q 902.9,332.5 907.9,332.5L 944.5,332.5" stroke-dasharray="none" stroke-width="1" stroke="#7b73bf" fill="none"></path><path d="M 840.5,381.5L 902.9,381.5L 902.9,425.5Q 902.9,430.5 907.9,430.5L 944.5,430.5" stroke-dasharray="none" stroke-width="1" stroke="#7b73bf" fill="none"></path><path d="M 1032.5,332.5L 1064.9,332.5L 1064.9,323Q 1064.9,318 1069.9,318L 1086.5,318" stroke-dasharray="none" stroke-width="1" stroke="#7b73bf" fill="none"></path><path d="M 1032.5,332.5L 1064.9,332.5L 1064.9,342Q 1064.9,347 1069.9,347L 1086.5,347" stroke-dasharray="none" stroke-width="1" stroke="#7b73bf" fill="none"></path><path d="M 1032.5,430.5L 1064.9,430.5L 1064.9,421Q 1064.9,416 1069.9,416L 1086.5,416" stroke-dasharray="none" stroke-width="1" stroke="#7b73bf" fill="none"></path><path d="M 1032.5,430.5L 1064.9,430.5L 1064.9,440Q 1064.9,445 1069.9,445L 1086.5,445" stroke-dasharray="none" stroke-width="1" stroke="#7b73bf" fill="none"></path></g><g class="smm-outer-frame-container"></g><g class="smm-node-container"><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,697.5,366.5)"><path d="
+      M5,0
+      L138,0
+      C138,0 143,0 143,5
+      L143,25
+      C143,25 143,30 138,30
+      L5,30
+      C5,30 0,30 0,25
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#7b73bf" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="113" data-height="20" data-offsetx="0" opacity="1"><foreignObject width="113" height="20" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 16px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>进程的组织方式</p></div><style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style></foreignObject></g></g><rect width="147" height="34" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,944.5,318.5)"><path d="
+      M5,0
+      L82,0
+      C82,0 87,0 87,5
+      L87,22
+      C87,22 87,27 82,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0.5,0.5)" fill="#efeef6" stroke-dasharray="none" stroke-width="1" stroke="#7b73bf"></path><g transform="matrix(1,0,0,1,15.5,5.5)"><g data-width="57" data-height="17" data-offsetx="0" opacity="1"><foreignObject width="57" height="17" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(51, 51, 51); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>链接方式</p></div></foreignObject></g></g><rect width="92" height="32" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="28" x="88" y="0"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,944.5,416.5)"><path d="
+      M5,0
+      L82,0
+      C82,0 87,0 87,5
+      L87,22
+      C87,22 87,27 82,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0.5,0.5)" fill="#efeef6" stroke-dasharray="none" stroke-width="1" stroke="#7b73bf"></path><g transform="matrix(1,0,0,1,15.5,5.5)"><g data-width="57" data-height="17" data-offsetx="0" opacity="1"><foreignObject width="57" height="17" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(51, 51, 51); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>索引方式</p></div></foreignObject></g></g><rect width="92" height="32" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="28" x="88" y="0"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1086.5,305.5)"><path d="
+      M5,0
+      L212,0
+      C212,0 217,0 217,5
+      L217,20
+      C217,20 217,25 212,25
+      L5,25
+      C5,25 0,25 0,20
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="187" data-height="15" data-offsetx="0" opacity="1"><foreignObject width="187" height="15" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(51, 51, 51); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>按照进程状态将 PCB 分为多个队列</p></div></foreignObject></g></g><rect width="221" height="29" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1086.5,334.5)"><path d="
+      M5,0
+      L206,0
+      C206,0 211,0 211,5
+      L211,20
+      C211,20 211,25 206,25
+      L5,25
+      C5,25 0,25 0,20
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="181" data-height="15" data-offsetx="0" opacity="1"><foreignObject width="181" height="15" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(51, 51, 51); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>操作系统持有指向各个队列的指针</p></div></foreignObject></g></g><rect width="215" height="29" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1086.5,403.5)"><path d="
+      M5,0
+      L230,0
+      C230,0 235,0 235,5
+      L235,20
+      C235,20 235,25 230,25
+      L5,25
+      C5,25 0,25 0,20
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="205" data-height="15" data-offsetx="0" opacity="1"><foreignObject width="205" height="15" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(51, 51, 51); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>根据进程状态的不同，建立几张索引表</p></div></foreignObject></g></g><rect width="239" height="29" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,1086.5,432.5)"><path d="
+      M5,0
+      L218,0
+      C218,0 223,0 223,5
+      L223,20
+      C223,20 223,25 218,25
+      L5,25
+      C5,25 0,25 0,20
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent" stroke-dasharray="none" stroke-width="0" stroke="transparent"></path><g transform="matrix(1,0,0,1,15,5)"><g data-width="193" data-height="15" data-offsetx="0" opacity="1"><foreignObject width="193" height="15" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(51, 51, 51); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>操作系统持有指向各个索引表的指针</p></div></foreignObject></g></g><rect width="227" height="29" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g></g><g class="smm-associative-line-container"></g><g class="smm-other-container"></g></g><style>
+  /* 鼠标hover和激活时渲染的矩形 */
+  .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+  }
+
+  .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+  }
+
+  .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+  }
+
+  .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+  }
+
+      .smm-richtext-node-wrap {
+        word-break: break-all;
+        user-select: none;
+      }
+
+      .ql-editor .ql-align-left, 
+      .smm-richtext-node-wrap .ql-align-left {
+        text-align: left;
+      }
+
+      .smm-richtext-node-wrap .ql-align-right {
+        text-align: right;
+      }
+
+      .smm-richtext-node-wrap .ql-align-center {
+        text-align: center;
+      }
+      </style></svg>

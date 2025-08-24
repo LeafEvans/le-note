@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="570.0166625976562" height="128.01666259765625">
+  <title>思维导图</title>
+  <g class="smm-container" transform="matrix(1,0,0,1,-687.497218153212,-321.9833251953131)">
+    <g class="smm-line-container">
+      <path d="M 824.5,386L 886.9,386L 886.9,353Q 886.9,348 891.9,348L 928.5,348"
+        stroke-dasharray="none" stroke-width="2" stroke="#edb951" fill="none"></path>
+      <path d="M 824.5,386L 886.9,386L 886.9,419Q 886.9,424 891.9,424L 928.5,424"
+        stroke-dasharray="none" stroke-width="2" stroke="#edb951" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,697.5,366.5)">
+        <path
+          d="
+      M5,0
+      L122,0
+      C122,0 127,0 127,5
+      L127,34
+      C127,34 127,39 122,39
+      L5,39
+      C5,39 0,39 0,34
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#e25a40"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="97" data-height="29" data-offsetx="0" opacity="1">
+            <foreignObject width="97" height="29"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>文件共享</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="131" height="43" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,928.5,332)">
+        <path
+          d="
+      M5,0
+      L314,0
+      C314,0 319,0 319,5
+      L319,27
+      C319,27 319,32 314,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#2b76ef"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="289" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="289" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>基于索引结点的共享方式（硬链接）</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="323" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,928.5,408)">
+        <path
+          d="
+      M5,0
+      L296,0
+      C296,0 301,0 301,5
+      L301,27
+      C301,27 301,32 296,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#2b76ef"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="271" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="271" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>基于符号链的共享方式（软链接）</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="305" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>

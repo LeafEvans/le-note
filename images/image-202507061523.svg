@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="989.0166625976562" height="138.01666259765625">
+  <title>思维导图</title>
+  <g class="smm-container" transform="matrix(1,0,0,1,-336.9833282470703,-316.9833312988283)">
+    <g class="smm-line-container">
+      <path d="M 762,386L 824.4,386L 824.4,352Q 824.4,347 829.4,347L 866,347"
+        stroke-dasharray="none" stroke-width="2" stroke="#35b398" fill="none"></path>
+      <path d="M 762,386L 824.4,386L 824.4,420Q 824.4,425 829.4,425L 866,425"
+        stroke-dasharray="none" stroke-width="2" stroke="#35b398" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,347,366.5)">
+        <path
+          d="
+      M5,0
+      L410,0
+      C410,0 415,0 415,5
+      L415,34
+      C415,34 415,39 410,39
+      L5,39
+      C5,39 0,39 0,34
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#21c384"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="385" data-height="29" data-offsetx="0" opacity="1">
+            <foreignObject width="385" height="29"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>操作系统需要对磁盘块进行哪些管理</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="419" height="43" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,866,330)">
+        <path
+          d="
+      M5,0
+      L440,0
+      C440,0 445,0 445,5
+      L445,27
+      C445,27 445,32 440,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#f5ffe6"
+          stroke-dasharray="none" stroke-width="2" stroke="#35b398"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="415" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="415" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(56, 100, 55); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>对非空闲磁盘块的管理（存放了文件数据的磁盘块）</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="451" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,866,408)">
+        <path
+          d="
+      M5,0
+      L188,0
+      C188,0 193,0 193,5
+      L193,27
+      C193,27 193,32 188,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#f5ffe6"
+          stroke-dasharray="none" stroke-width="2" stroke="#35b398"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="163" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="163" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(56, 100, 55); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>对空闲磁盘块的管理</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="199" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>

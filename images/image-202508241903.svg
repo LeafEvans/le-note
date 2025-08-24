@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="769.5" height="245">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#333" stroke-width="3"
+                d="M408.5 122.5h62.4V37q0-5 5-5h36.6M408.5 122.5h104M408.5 122.5h62.4V208q0 5 5 5h36.6M618.5 122.5h32.4V112q0-5 5-5h16.6M618.5 122.5h32.4V133q0 5 5 5h16.6" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(14.5 101.5)">
+                <path fill="#27dee8" stroke="#1a1a1a" stroke-width="3"
+                    d="M21 1.5h352a19.5 19.5 0 0 1 0 39H21a19.5 19.5 0 0 1 0-39"
+                    class="smm-node-shape" />
+                <foreignObject width="361" height="29" x="0" y="0" data-height="29" data-offsetx="0"
+                    data-width="361"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:24px;font-weight:700;font-style:normal;text-decoration:none;color:#1a1a1a;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>文件的物理结构（文件分配方式）</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="398" height="46" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(512.5 14.5)">
+                <path fill="#ebffbb" stroke="#333" stroke-width="3"
+                    d="M17.5 1.5h71a16 16 0 0 1 0 32h-71a16 16 0 0 1 0-32" class="smm-node-shape" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>连续分配</p>
+                    </div>
+                </foreignObject>
+                <rect width="110" height="39" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(512.5 105)">
+                <path fill="#ebffbb" stroke="#333" stroke-width="3"
+                    d="M17.5 1.5h71a16 16 0 0 1 0 32h-71a16 16 0 0 1 0-32" class="smm-node-shape" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>链接分配</p>
+                    </div>
+                </foreignObject>
+                <rect width="110" height="39" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+                <path fill="transparent" d="M106 0h20v35h-20z" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(512.5 195.5)">
+                <path fill="#ebffbb" stroke="#333" stroke-width="3"
+                    d="M17.5 1.5h71a16 16 0 0 1 0 32h-71a16 16 0 0 1 0-32" class="smm-node-shape" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(16.5 6.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>索引分配</p>
+                    </div>
+                </foreignObject>
+                <rect width="110" height="39" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(672.5 93.5)">
+                <path fill="transparent" stroke="transparent" stroke-width="0"
+                    d="M5 0h77s5 0 5 5v17s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="57" height="17" x="0" y="0" data-height="17" data-offsetx="0"
+                    data-width="57"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>隐式链接</p>
+                    </div>
+                </foreignObject>
+                <rect width="91" height="31" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(672.5 124.5)">
+                <path fill="transparent" stroke="transparent" stroke-width="0"
+                    d="M5 0h77s5 0 5 5v17s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="57" height="17" x="0" y="0" data-height="17" data-offsetx="0"
+                    data-width="57"
+                    style="line-height:1.2;font-family:鸿蒙黑体,Microsoft YaHei;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;color:#000;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>显式链接</p>
+                    </div>
+                </foreignObject>
+                <rect width="91" height="31" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
+    </g>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
+</svg>
