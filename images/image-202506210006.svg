@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="521.0333251953125" height="219.03334045410156"
+  style="background-color: rgb(255, 255, 255);">
+  <title>image-202506202359</title>
+  <g class="smm-container" transform="matrix(1,0,0,1,-336.97857753208723,-356.48331298828134)">
+    <g class="smm-line-container">
+      <path d="M 546,466L 608.4,466L 608.4,393Q 608.4,388 613.4,388L 650,388"
+        stroke-dasharray="none" stroke-width="2" stroke="#976a43" fill="none"></path>
+      <path d="M 546,466L 608.4,466L 608.4,466L 650,466" stroke-dasharray="none" stroke-width="2"
+        stroke="#976a43" fill="none"></path>
+      <path d="M 546,466L 608.4,466L 608.4,539Q 608.4,544 613.4,544L 650,544"
+        stroke-dasharray="none" stroke-width="2" stroke="#976a43" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,347,366.5)">
+        <path
+          d="
+      M99.5,0
+      A99.5,99.5 0 0,1 99.5,199 
+      M99.5,199 
+      A99.5,99.5 0 0,1 99.5,0 
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#19807e"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,85)">
+          <g data-width="169" data-height="29" data-offsetx="0" opacity="1">
+            <foreignObject width="169" height="29"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(243, 240, 184); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>虚拟内存的实现</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="203" height="203" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+          fill="none" stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,650,371)">
+        <path
+          d="
+      M16,0
+      L159,0
+      A16,16 0 0,1 159,32 
+      L16,32
+      A16,16 0 0,1 16,0
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#eacdb3"
+          stroke-dasharray="none" stroke-width="2" stroke="#764014"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="145" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="145" height="22"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(127, 77, 31); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>请求分页存储管理</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="181" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,650,449)">
+        <path
+          d="
+      M16,0
+      L159,0
+      A16,16 0 0,1 159,32 
+      L16,32
+      A16,16 0 0,1 16,0
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#eacdb3"
+          stroke-dasharray="none" stroke-width="2" stroke="#764014"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="145" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="145" height="22"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(127, 77, 31); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>请求分段存储管理</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="181" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,650,527)">
+        <path
+          d="
+      M16,0
+      L177,0
+      A16,16 0 0,1 177,32 
+      L16,32
+      A16,16 0 0,1 16,0
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#eacdb3"
+          stroke-dasharray="none" stroke-width="2" stroke="#764014"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="163" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="163" height="22"
+              style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(127, 77, 31); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>请求段页式存储管理</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="199" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>

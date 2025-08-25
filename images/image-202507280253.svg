@@ -1,0 +1,422 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="945.0166625976562" height="364.01666259765625">
+  <g class="smm-container" transform="matrix(1,0,0,1,-334.0000061035157,-204.9976200648718)">
+    <g class="smm-line-container">
+      <path d="M 476,387L 538.4,387L 538.4,266Q 538.4,261 543.4,261L 580,261"
+        stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path>
+      <path d="M 685,261L 717.4,261L 717.4,242Q 717.4,237 722.4,237L 739,237"
+        stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path>
+      <path d="M 685,261L 717.4,261L 717.4,280Q 717.4,285 722.4,285L 739,285"
+        stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path>
+      <path d="M 476,387L 538.4,387L 538.4,387Q 538.4,388.5 543.4,388.5L 580,388.5"
+        stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path>
+      <path d="M 685,388.5L 717.4,388.5L 717.4,378Q 717.4,373 722.4,373L 739,373"
+        stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path>
+      <path d="M 685,388.5L 717.4,388.5L 717.4,407.5Q 717.4,412.5 722.4,412.5L 739,412.5"
+        stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path>
+      <path d="M 476,387L 538.4,387L 538.4,509.5Q 538.4,514.5 543.4,514.5L 580,514.5"
+        stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path>
+      <path d="M 685,514.5L 717.4,514.5L 717.4,488.5Q 717.4,483.5 722.4,483.5L 739,483.5"
+        stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path>
+      <path d="M 685,514.5L 717.4,514.5L 717.4,514.5L 739,514.5" stroke-dasharray="none"
+        stroke-width="2" stroke="#000000" fill="none"></path>
+      <path d="M 685,514.5L 717.4,514.5L 717.4,540.5Q 717.4,545.5 722.4,545.5L 739,545.5"
+        stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,347,366.5)">
+        <path
+          d="
+      M5,0
+      L122,0
+      C122,0 127,0 127,5
+      L127,34
+      C127,34 127,39 122,39
+      L5,39
+      C5,39 0,39 0,34
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#edb648"
+          stroke-dasharray="none" stroke-width="2" stroke="#000000"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="97" data-height="29" data-offsetx="0" opacity="1">
+            <foreignObject width="97" height="29"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>文件保护</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="133" height="45" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,580,244)">
+        <path
+          d="
+      M5,0
+      L98,0
+      C98,0 103,0 103,5
+      L103,27
+      C103,27 103,32 98,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#729e1c"
+          stroke-dasharray="none" stroke-width="2" stroke="#000000"></path>
+        <rect fill="transparent" width="20" height="34" x="105" y="0"></rect>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="73" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="73" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>口令保护</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="109" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,739,215)">
+        <path
+          d="
+      M5,0
+      L525,0
+      C525,0 530,0 530,5
+      L530,39
+      C530,39 530,44 525,44
+      L5,44
+      C5,44 0,44 0,39
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="500" data-height="34" data-offsetx="0" opacity="1">
+            <foreignObject width="500" height="34"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(10, 2, 2); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>为文件设置一个<strong>口令</strong>，用户想要访问文件时需要提供口令，由系统验证口令是否正确</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="534" height="48" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,739,263)">
+        <path
+          d="
+      M5,0
+      L525,0
+      C525,0 530,0 530,5
+      L530,39
+      C530,39 530,44 525,44
+      L5,44
+      C5,44 0,44 0,39
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="500" data-height="34" data-offsetx="0" opacity="1">
+            <foreignObject width="500" height="34"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(10, 2, 2); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>实现开销小，但<strong>口令</strong>一般存放在 FCB 或索引结点中（也就是存放在系统中），因此不太安全</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="534" height="48" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,580,371.5)">
+        <path
+          d="
+      M5,0
+      L98,0
+      C98,0 103,0 103,5
+      L103,27
+      C103,27 103,32 98,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#729e1c"
+          stroke-dasharray="none" stroke-width="2" stroke="#000000"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="73" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="73" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>加密保护</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="109" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+        <rect fill="transparent" width="20" height="34" x="105" y="0"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,739,351)">
+        <path
+          d="
+      M5,0
+      L525,0
+      C525,0 530,0 530,5
+      L530,39
+      C530,39 530,44 525,44
+      L5,44
+      C5,44 0,44 0,39
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="500" data-height="34" data-offsetx="0" opacity="1">
+            <foreignObject width="500" height="34"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(10, 2, 2); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>用一个<strong>密码</strong>对文件加密，用户想要访问文件时，需要提供相同的<strong>密码</strong>才能正确的解密</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="534" height="48" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,739,399)">
+        <path
+          d="
+      M5,0
+      L424,0
+      C424,0 429,0 429,5
+      L429,22
+      C429,22 429,27 424,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="399" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="399" height="17"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(10, 2, 2); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>安全性高，但加密/解密需要耗费一定的时间（例如，异或加密）</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="433" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,580,497.5)">
+        <path
+          d="
+      M5,0
+      L98,0
+      C98,0 103,0 103,5
+      L103,27
+      C103,27 103,32 98,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#729e1c"
+          stroke-dasharray="none" stroke-width="2" stroke="#000000"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="73" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="73" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>访问控制</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="109" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+        <rect fill="transparent" width="20" height="34" x="105" y="0"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,739,470)">
+        <path
+          d="
+      M5,0
+      L487,0
+      C487,0 492,0 492,5
+      L492,22
+      C492,22 492,27 487,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="462" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="462" height="17"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(10, 2, 2); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>用一个访问控制表（ACL）记录各个用户（或各组用户）对文件的访问权限</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="496" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,739,501)">
+        <path
+          d="
+      M5,0
+      L348,0
+      C348,0 353,0 353,5
+      L353,22
+      C353,22 353,27 348,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="323" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="323" height="17"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(10, 2, 2); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>对文件的访问类型可以分为：读、写、执行、删除等</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="357" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,739,532)">
+        <path
+          d="
+      M5,0
+      L250,0
+      C250,0 255,0 255,5
+      L255,22
+      C255,22 255,27 250,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="transparent"
+          stroke-dasharray="none" stroke-width="0" stroke="transparent"></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="225" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="225" height="17"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(10, 2, 2); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>实现灵活，可以实现复杂的文件功能</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="259" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>

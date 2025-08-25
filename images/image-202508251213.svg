@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="609" height="372"><title>思维导图</title><g class="smm-container" transform="matrix(1,0,0,1,-684.5,-201)"><g class="smm-line-container"><path d="M 874.5,387L 936.9,387L 936.9,236Q 936.9,231 941.9,231L 978.5,231" stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path><path d="M 874.5,387L 936.9,387L 936.9,314Q 936.9,309 941.9,309L 978.5,309" stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path><path d="M 874.5,387L 936.9,387L 936.9,387L 978.5,387" stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path><path d="M 874.5,387L 936.9,387L 936.9,460Q 936.9,465 941.9,465L 978.5,465" stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path><path d="M 874.5,387L 936.9,387L 936.9,538Q 936.9,543 941.9,543L 978.5,543" stroke-dasharray="none" stroke-width="2" stroke="#000000" fill="none"></path></g><g class="smm-outer-frame-container"></g><g class="smm-node-container"><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,697.5,366.5)"><path d="
+      M5,0
+      L170,0
+      C170,0 175,0 175,5
+      L175,34
+      C175,34 175,39 170,39
+      L5,39
+      C5,39 0,39 0,34
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#edb648" stroke-dasharray="none" stroke-width="2" stroke="#000000"></path><g transform="matrix(1,0,0,1,16,6)"><g data-width="145" data-height="29" data-offsetx="0" opacity="1"><foreignObject width="145" height="29" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>页面置换算法</p></div><style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style></foreignObject></g></g><rect width="181" height="45" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,978.5,214)"><path d="
+      M5,0
+      L206,0
+      C206,0 211,0 211,5
+      L211,27
+      C211,27 211,32 206,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#729e1c" stroke-dasharray="none" stroke-width="2" stroke="#000000"></path><g transform="matrix(1,0,0,1,16,6)"><g data-width="181" data-height="22" data-offsetx="0" opacity="1"><foreignObject width="181" height="22" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>最佳置换算法（OPT）</p></div></foreignObject></g></g><rect width="217" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,978.5,292)"><path d="
+      M5,0
+      L245,0
+      C245,0 250,0 250,5
+      L250,27
+      C250,27 250,32 245,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#729e1c" stroke-dasharray="none" stroke-width="2" stroke="#000000"></path><g transform="matrix(1,0,0,1,16,6)"><g data-width="220" data-height="22" data-offsetx="0" opacity="1"><foreignObject width="220" height="22" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>先进先出置换算法（FIFO）</p></div></foreignObject></g></g><rect width="256" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,978.5,370)"><path d="
+      M5,0
+      L295,0
+      C295,0 300,0 300,5
+      L300,27
+      C300,27 300,32 295,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#729e1c" stroke-dasharray="none" stroke-width="2" stroke="#000000"></path><g transform="matrix(1,0,0,1,16,6)"><g data-width="270" data-height="22" data-offsetx="0" opacity="1"><foreignObject width="270" height="22" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>最近最久未使用置换算法（LRU）</p></div></foreignObject></g></g><rect width="306" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,978.5,448)"><path d="
+      M5,0
+      L229,0
+      C229,0 234,0 234,5
+      L234,27
+      C234,27 234,32 229,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#729e1c" stroke-dasharray="none" stroke-width="2" stroke="#000000"></path><g transform="matrix(1,0,0,1,16,6)"><g data-width="204" data-height="22" data-offsetx="0" opacity="1"><foreignObject width="204" height="22" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>时钟置换算法（CLOCK）</p></div></foreignObject></g></g><rect width="240" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" style="cursor: default;" transform="matrix(1,0,0,1,978.5,526)"><path d="
+      M5,0
+      L206,0
+      C206,0 211,0 211,5
+      L211,27
+      C211,27 211,32 206,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#729e1c" stroke-dasharray="none" stroke-width="2" stroke="#000000"></path><g transform="matrix(1,0,0,1,16,6)"><g data-width="181" data-height="22" data-offsetx="0" opacity="1"><foreignObject width="181" height="22" style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p>改进型的时钟置换算法</p></div></foreignObject></g></g><rect width="217" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g></g><g class="smm-associative-line-container"></g><g class="smm-other-container"></g></g><style>
+  /* 鼠标hover和激活时渲染的矩形 */
+  .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+  }
+
+  .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+  }
+
+  .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+  }
+
+  .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+  }
+
+      .smm-richtext-node-wrap {
+        word-break: break-all;
+        user-select: none;
+      }
+
+      .ql-editor .ql-align-left, 
+      .smm-richtext-node-wrap .ql-align-left {
+        text-align: left;
+      }
+
+      .smm-richtext-node-wrap .ql-align-right {
+        text-align: right;
+      }
+
+      .smm-richtext-node-wrap .ql-align-center {
+        text-align: center;
+      }
+      </style></svg>
