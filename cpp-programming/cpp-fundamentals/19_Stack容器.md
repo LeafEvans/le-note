@@ -4,7 +4,7 @@
 
 `stack` 是一种先进后出（First In Last Out, FILO）的数据结构，它只有一个出口，形式如图所示。`stack` 容器允许新增元素，移除元素，取得栈顶元素，但是除了最顶端外，没有任何其他方法可以存取 `stack` 的其他元素。换言之，`stack` **不允许有遍历行为**。有元素推入栈的操作称为 `push`，将元素推出 `stack` 的操作称为 `pop`。
 
-<img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20250123005208912.png" alt="image-20250123005208912" style="zoom: 50%;" />
+<img src="../../images/image-202501230052.webp" style="zoom:50%;" />
 
 `stack` 所有元素的进出都必须符合“先进后出“的条件，只有 `stack` 顶端的元素，才有机会被外界取用。`stack` 不提供遍历功能，也不提供迭代器。
 

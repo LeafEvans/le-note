@@ -4,9 +4,9 @@
 
 `set` 的特性是所有元素都会根据元素的键值**自动排序**，`set` 的元素**既是键值又是实值**。
 
-<img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/image-20250123021109835.png" alt="image-20250123021109835" style="zoom:67%;" />
+<img src="../../images/image-202501230136.webp" style="zoom:50%;" />
 
-> 注意：`set` 不允许两个元素有相同的键值。
+> **注意**：`set` 不允许两个元素有相同的键值。
 
 `multiset` 特性及用法与 `set` 完全一致，唯一的区别在于它**允许键值重复**。
 
