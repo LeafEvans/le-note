@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    style="background: transparent; background-color: transparent; color-scheme: light;"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="787px" height="545px"
+    viewBox="-0.5 -0.5 787 545"
+    content="&lt;mxfile host=&quot;Electron&quot; agent=&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36&quot; version=&quot;28.0.6&quot; scale=&quot;1&quot; border=&quot;0&quot;&gt;&#10;  &lt;diagram name=&quot;第 1 页&quot; id=&quot;KXr6B11fkAS0C37iN9wH&quot;&gt;&#10;    &lt;mxGraphModel dx=&quot;969&quot; dy=&quot;617&quot; grid=&quot;1&quot; gridSize=&quot;10&quot; guides=&quot;1&quot; tooltips=&quot;1&quot; connect=&quot;1&quot; arrows=&quot;1&quot; fold=&quot;1&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;827&quot; pageHeight=&quot;1169&quot; math=&quot;0&quot; shadow=&quot;0&quot;&gt;&#10;      &lt;root&gt;&#10;        &lt;mxCell id=&quot;0&quot; /&gt;&#10;        &lt;mxCell id=&quot;1&quot; parent=&quot;0&quot; /&gt;&#10;        &lt;mxCell id=&quot;genkjhjl-YV7t5i9XW-r-1&quot; value=&quot;&quot; style=&quot;shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxOCIgd2lkdGg9Ijc2Ni40OTk5Mzg5NjQ4NDM4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjkuMDAwMDMwNTE3NTc4MTI1IDkuMDA5NTE1NzYyMzI5MTAyIDc2Ni40OTk5Mzg5NjQ4NDM4IDUxOCI+JiN4YTsgIDx0aXRsZT7mgJ3nu7Tlr7zlm748L3RpdGxlPiYjeGE7ICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLC02ODcuNSwtMTE3Ljk5MDQ3OTI0MjIzNDE5KSIgY2xhc3M9InNtbS1jb250YWluZXIiPiYjeGE7ICAgIDxnIGNsYXNzPSJzbW0tbGluZS1jb250YWluZXIiPiYjeGE7ICAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGQ9Ik0gOTEzLjUsMzg2TCA5NzUuOSwzODZMIDk3NS45LDE0OVEgOTc1LjksMTQ0IDk4MC45LDE0NEwgMTAxNy41LDE0NCIvPiYjeGE7ICAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGQ9Ik0gOTEzLjUsMzg2TCA5NzUuOSwzODZMIDk3NS45LDIzOVEgOTc1LjksMjM0IDk4MC45LDIzNEwgMTAxNy41LDIzNCIvPiYjeGE7ICAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGQ9Ik0gOTEzLjUsMzg2TCA5NzUuOSwzODZMIDk3NS45LDMyOVEgOTc1LjksMzI0IDk4MC45LDMyNEwgMTAxNy41LDMyNCIvPiYjeGE7ICAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGQ9Ik0gOTEzLjUsMzg2TCA5NzUuOSwzODZMIDk3NS45LDM5NVEgOTc1LjksNDAwIDk4MC45LDQwMEwgMTAxNy41LDQwMCIvPiYjeGE7ICAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGQ9Ik0gOTEzLjUsMzg2TCA5NzUuOSwzODZMIDk3NS45LDQ3MVEgOTc1LjksNDc2IDk4MC45LDQ3NkwgMTAxNy41LDQ3NiIvPiYjeGE7ICAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGQ9Ik0gOTEzLjUsMzg2TCA5NzUuOSwzODZMIDk3NS45LDU0N1EgOTc1LjksNTUyIDk4MC45LDU1MkwgMTAxNy41LDU1MiIvPiYjeGE7ICAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGQ9Ik0gOTEzLjUsMzg2TCA5NzUuOSwzODZMIDk3NS45LDYyM1EgOTc1LjksNjI4IDk4MC45LDYyOEwgMTAxNy41LDYyOCIvPiYjeGE7ICAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyMjIyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGQ9Ik0gMTEzOC41LDIzNEwgMTE3MC45LDIzNEwgMTE3MC45LDIyM1EgMTE3MC45LDIxOCAxMTc1LjksMjE4TCAxMTkyLjUsMjE4Ii8+JiN4YTsgICAgICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMyMjIyMjIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0ibm9uZSIgZD0iTSAxMTM4LjUsMjM0TCAxMTcwLjksMjM0TCAxMTcwLjksMjQ1USAxMTcwLjksMjUwIDExNzUuOSwyNTBMIDExOTIuNSwyNTAiLz4mI3hhOyAgICA8L2c+JiN4YTsgICAgPGcgY2xhc3M9InNtbS1vdXRlci1mcmFtZS1jb250YWluZXIiLz4mI3hhOyAgICA8ZyBjbGFzcz0ic21tLW5vZGUtY29udGFpbmVyIj4mI3hhOyAgICAgIDxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsNjk3LjUsMzY2LjUpIiBzdHlsZT0iY3Vyc29yOiBkZWZhdWx0OyIgY2xhc3M9InNtbS1ub2RlIj4mI3hhOyAgICAgICAgPHBhdGggc3Ryb2tlPSIjMzgyYzc0IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGZpbGw9IiMzODJjNzQiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwwKSIgY2xhc3M9InNtbS1ub2RlLXNoYXBlIiBkPSJNNSwwJiMxMDsgICAgICBMMjExLDAmIzEwOyAgICAgIEMyMTEsMCAyMTYsMCAyMTYsNSYjMTA7ICAgICAgTDIxNiwzNCYjMTA7ICAgICAgQzIxNiwzNCAyMTYsMzkgMjExLDM5JiMxMDsgICAgICBMNSwzOSYjMTA7ICAgICAgQzUsMzkgMCwzOSAwLDM0JiMxMDsgICAgICBMMCw1JiMxMDsgICAgICBDMCw1IDAsMCA1LDAmIzEwOyAgICAgIFoiLz4mI3hhOyAgICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxNSw1KSI+JiN4YTsgICAgICAgICAgPGcgb3BhY2l0eT0iMSIgZGF0YS1vZmZzZXR4PSIwIiBkYXRhLWhlaWdodD0iMjkiIGRhdGEtd2lkdGg9IjE4NiI+JiN4YTsgICAgICAgICAgICA8Zm9yZWlnbk9iamVjdCB5PSIwIiB4PSIwIiBzdHlsZT0ibGluZS1oZWlnaHQ6IDEuMjsgZm9udC1mYW1pbHk6IOWvkuidieWFqOWchuS9kywgTWljcm9zb2Z0IFlhSGVpOyBmb250LXNpemU6IDI0cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmb250LXN0eWxlOiBub3JtYWw7IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgdGV4dC1hbGlnbjogbGVmdDsiIGhlaWdodD0iMjkiIHdpZHRoPSIxODYiPiYjeGE7ICAgICAgICAgICAgICA8ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0ibWF4LXdpZHRoOiA1MDBweDsiIGNsYXNzPSJzbW0tcmljaHRleHQtbm9kZS13cmFwIj4mI3hhOyAgICAgICAgICAgICAgICA8cD5PUyDnmoTlj5HlsZXkuI7liIbnsbs8L3A+JiN4YTsgICAgICAgICAgICAgIDwvZGl2PiYjeGE7ICAgICAgICAgICAgICA8c3R5bGUgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPiYjeGE7ICAgICAgICAgICAgICAgICogeyYjeGE7ICAgICAgICAgICAgICAgIG1hcmdpbjogMDsmI3hhOyAgICAgICAgICAgICAgICBwYWRkaW5nOiAwOyYjeGE7ICAgICAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7JiN4YTsgICAgICAgICAgICAgICAgfSYjeGE7ICAgICAgICAgICAgICA8L3N0eWxlPiYjeGE7ICAgICAgICAgICAgPC9mb3JlaWduT2JqZWN0PiYjeGE7ICAgICAgICAgIDwvZz4mI3hhOyAgICAgICAgPC9nPiYjeGE7ICAgICAgICA8cmVjdCBzdHJva2U9IiM1ZWM4ZjgiIGZpbGw9Im5vbmUiIHJ5PSI1IiByeD0iNSIgY2xhc3M9InNtbS1ob3Zlci1ub2RlIiB5PSItMiIgeD0iLTIiIGhlaWdodD0iNDMiIHdpZHRoPSIyMjAiLz4mI3hhOyAgICAgIDwvZz4mI3hhOyAgICAgIDxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMTAxNy41LDEyOCkiIHN0eWxlPSJjdXJzb3I6IGRlZmF1bHQ7IiBjbGFzcz0ic21tLW5vZGUiPiYjeGE7ICAgICAgICA8cGF0aCBzdHJva2U9IiIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2UtZGFzaGFycmF5PSJub25lIiBmaWxsPSIjYTFkNWJjIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAsMCkiIGNsYXNzPSJzbW0tbm9kZS1zaGFwZSIgZD0iTTUsMCYjMTA7ICAgICAgTDEzNCwwJiMxMDsgICAgICBDMTM0LDAgMTM5LDAgMTM5LDUmIzEwOyAgICAgIEwxMzksMjcmIzEwOyAgICAgIEMxMzksMjcgMTM5LDMyIDEzNCwzMiYjMTA7ICAgICAgTDUsMzImIzEwOyAgICAgIEM1LDMyIDAsMzIgMCwyNyYjMTA7ICAgICAgTDAsNSYjMTA7ICAgICAgQzAsNSAwLDAgNSwwJiMxMDsgICAgICBaIi8+JiN4YTsgICAgICAgIDxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMTUsNSkiPiYjeGE7ICAgICAgICAgIDxnIG9wYWNpdHk9IjEiIGRhdGEtb2Zmc2V0eD0iMCIgZGF0YS1oZWlnaHQ9IjIyIiBkYXRhLXdpZHRoPSIxMDkiPiYjeGE7ICAgICAgICAgICAgPGZvcmVpZ25PYmplY3QgeT0iMCIgeD0iMCIgc3R5bGU9ImxpbmUtaGVpZ2h0OiAxLjI7IGZvbnQtZmFtaWx5OiDlr5LonYnlhajlnIbkvZMsIE1pY3Jvc29mdCBZYUhlaTsgZm9udC1zaXplOiAxOHB4OyBmb250LXdlaWdodDogbm9ybWFsOyBmb250LXN0eWxlOiBub3JtYWw7IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgY29sb3I6IHJnYigwLCAwLCAwKTsgdGV4dC1hbGlnbjogbGVmdDsiIGhlaWdodD0iMjIiIHdpZHRoPSIxMDkiPiYjeGE7ICAgICAgICAgICAgICA8ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0ibWF4LXdpZHRoOiA1MDBweDsiIGNsYXNzPSJzbW0tcmljaHRleHQtbm9kZS13cmFwIj4mI3hhOyAgICAgICAgICAgICAgICA8cD7miYvlt6Xmk43kvZzpmLbmrrU8L3A+JiN4YTsgICAgICAgICAgICAgIDwvZGl2PiYjeGE7ICAgICAgICAgICAgPC9mb3JlaWduT2JqZWN0PiYjeGE7ICAgICAgICAgIDwvZz4mI3hhOyAgICAgICAgPC9nPiYjeGE7ICAgICAgICA8cmVjdCBzdHJva2U9IiM1ZWM4ZjgiIGZpbGw9Im5vbmUiIHJ5PSI1IiByeD0iNSIgY2xhc3M9InNtbS1ob3Zlci1ub2RlIiB5PSItMiIgeD0iLTIiIGhlaWdodD0iMzYiIHdpZHRoPSIxNDMiLz4mI3hhOyAgICAgIDwvZz4mI3hhOyAgICAgIDxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMTAxNy41LDIxOCkiIHN0eWxlPSJjdXJzb3I6IGRlZmF1bHQ7IiBjbGFzcz0ic21tLW5vZGUiPiYjeGE7ICAgICAgICA8cGF0aCBzdHJva2U9IiIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2UtZGFzaGFycmF5PSJub25lIiBmaWxsPSIjYTFkNWJjIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAsMCkiIGNsYXNzPSJzbW0tbm9kZS1zaGFwZSIgZD0iTTUsMCYjMTA7ICAgICAgTDExNiwwJiMxMDsgICAgICBDMTE2LDAgMTIxLDAgMTIxLDUmIzEwOyAgICAgIEwxMjEsMjcmIzEwOyAgICAgIEMxMjEsMjcgMTIxLDMyIDExNiwzMiYjMTA7ICAgICAgTDUsMzImIzEwOyAgICAgIEM1LDMyIDAsMzIgMCwyNyYjMTA7ICAgICAgTDAsNSYjMTA7ICAgICAgQzAsNSAwLDAgNSwwJiMxMDsgICAgICBaIi8+JiN4YTsgICAgICAgIDxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMTUsNSkiPiYjeGE7ICAgICAgICAgIDxnIG9wYWNpdHk9IjEiIGRhdGEtb2Zmc2V0eD0iMCIgZGF0YS1oZWlnaHQ9IjIyIiBkYXRhLXdpZHRoPSI5MSI+JiN4YTsgICAgICAgICAgICA8Zm9yZWlnbk9iamVjdCB5PSIwIiB4PSIwIiBzdHlsZT0ibGluZS1oZWlnaHQ6IDEuMjsgZm9udC1mYW1pbHk6IOWvkuidieWFqOWchuS9kywgTWljcm9zb2Z0IFlhSGVpOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGZvbnQtc3R5bGU6IG5vcm1hbDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LWFsaWduOiBsZWZ0OyIgaGVpZ2h0PSIyMiIgd2lkdGg9IjkxIj4mI3hhOyAgICAgICAgICAgICAgPGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9Im1heC13aWR0aDogNTAwcHg7IiBjbGFzcz0ic21tLXJpY2h0ZXh0LW5vZGUtd3JhcCI+JiN4YTsgICAgICAgICAgICAgICAgPHA+5om55aSE55CG6Zi25q61PC9wPiYjeGE7ICAgICAgICAgICAgICA8L2Rpdj4mI3hhOyAgICAgICAgICAgIDwvZm9yZWlnbk9iamVjdD4mI3hhOyAgICAgICAgICA8L2c+JiN4YTsgICAgICAgIDwvZz4mI3hhOyAgICAgICAgPHJlY3Qgc3Ryb2tlPSIjNWVjOGY4IiBmaWxsPSJub25lIiByeT0iNSIgcng9IjUiIGNsYXNzPSJzbW0taG92ZXItbm9kZSIgeT0iLTIiIHg9Ii0yIiBoZWlnaHQ9IjM2IiB3aWR0aD0iMTI1Ii8+JiN4YTsgICAgICAgIDxyZWN0IHk9IjAiIHg9IjEyMSIgaGVpZ2h0PSIzMiIgd2lkdGg9IjIwIiBmaWxsPSJ0cmFuc3BhcmVudCIvPiYjeGE7ICAgICAgPC9nPiYjeGE7ICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxMDE3LjUsMzA4KSIgc3R5bGU9ImN1cnNvcjogZGVmYXVsdDsiIGNsYXNzPSJzbW0tbm9kZSI+JiN4YTsgICAgICAgIDxwYXRoIHN0cm9rZT0iIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGZpbGw9IiNhMWQ1YmMiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwwKSIgY2xhc3M9InNtbS1ub2RlLXNoYXBlIiBkPSJNNSwwJiMxMDsgICAgICBMMTM0LDAmIzEwOyAgICAgIEMxMzQsMCAxMzksMCAxMzksNSYjMTA7ICAgICAgTDEzOSwyNyYjMTA7ICAgICAgQzEzOSwyNyAxMzksMzIgMTM0LDMyJiMxMDsgICAgICBMNSwzMiYjMTA7ICAgICAgQzUsMzIgMCwzMiAwLDI3JiMxMDsgICAgICBMMCw1JiMxMDsgICAgICBDMCw1IDAsMCA1LDAmIzEwOyAgICAgIFoiLz4mI3hhOyAgICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxNSw1KSI+JiN4YTsgICAgICAgICAgPGcgb3BhY2l0eT0iMSIgZGF0YS1vZmZzZXR4PSIwIiBkYXRhLWhlaWdodD0iMjIiIGRhdGEtd2lkdGg9IjEwOSI+JiN4YTsgICAgICAgICAgICA8Zm9yZWlnbk9iamVjdCB5PSIwIiB4PSIwIiBzdHlsZT0ibGluZS1oZWlnaHQ6IDEuMjsgZm9udC1mYW1pbHk6IOWvkuidieWFqOWchuS9kywgTWljcm9zb2Z0IFlhSGVpOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGZvbnQtc3R5bGU6IG5vcm1hbDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LWFsaWduOiBsZWZ0OyIgaGVpZ2h0PSIyMiIgd2lkdGg9IjEwOSI+JiN4YTsgICAgICAgICAgICAgIDxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJtYXgtd2lkdGg6IDUwMHB4OyIgY2xhc3M9InNtbS1yaWNodGV4dC1ub2RlLXdyYXAiPiYjeGE7ICAgICAgICAgICAgICAgIDxwPuWIhuaXtuaTjeS9nOezu+e7nzwvcD4mI3hhOyAgICAgICAgICAgICAgPC9kaXY+JiN4YTsgICAgICAgICAgICA8L2ZvcmVpZ25PYmplY3Q+JiN4YTsgICAgICAgICAgPC9nPiYjeGE7ICAgICAgICA8L2c+JiN4YTsgICAgICAgIDxyZWN0IHN0cm9rZT0iIzVlYzhmOCIgZmlsbD0ibm9uZSIgcnk9IjUiIHJ4PSI1IiBjbGFzcz0ic21tLWhvdmVyLW5vZGUiIHk9Ii0yIiB4PSItMiIgaGVpZ2h0PSIzNiIgd2lkdGg9IjE0MyIvPiYjeGE7ICAgICAgPC9nPiYjeGE7ICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxMDE3LjUsMzg0KSIgc3R5bGU9ImN1cnNvcjogZGVmYXVsdDsiIGNsYXNzPSJzbW0tbm9kZSI+JiN4YTsgICAgICAgIDxwYXRoIHN0cm9rZT0iIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGZpbGw9IiNhMWQ1YmMiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwwKSIgY2xhc3M9InNtbS1ub2RlLXNoYXBlIiBkPSJNNSwwJiMxMDsgICAgICBMMTM0LDAmIzEwOyAgICAgIEMxMzQsMCAxMzksMCAxMzksNSYjMTA7ICAgICAgTDEzOSwyNyYjMTA7ICAgICAgQzEzOSwyNyAxMzksMzIgMTM0LDMyJiMxMDsgICAgICBMNSwzMiYjMTA7ICAgICAgQzUsMzIgMCwzMiAwLDI3JiMxMDsgICAgICBMMCw1JiMxMDsgICAgICBDMCw1IDAsMCA1LDAmIzEwOyAgICAgIFoiLz4mI3hhOyAgICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxNSw1KSI+JiN4YTsgICAgICAgICAgPGcgb3BhY2l0eT0iMSIgZGF0YS1vZmZzZXR4PSIwIiBkYXRhLWhlaWdodD0iMjIiIGRhdGEtd2lkdGg9IjEwOSI+JiN4YTsgICAgICAgICAgICA8Zm9yZWlnbk9iamVjdCB5PSIwIiB4PSIwIiBzdHlsZT0ibGluZS1oZWlnaHQ6IDEuMjsgZm9udC1mYW1pbHk6IOWvkuidieWFqOWchuS9kywgTWljcm9zb2Z0IFlhSGVpOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGZvbnQtc3R5bGU6IG5vcm1hbDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LWFsaWduOiBsZWZ0OyIgaGVpZ2h0PSIyMiIgd2lkdGg9IjEwOSI+JiN4YTsgICAgICAgICAgICAgIDxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJtYXgtd2lkdGg6IDUwMHB4OyIgY2xhc3M9InNtbS1yaWNodGV4dC1ub2RlLXdyYXAiPiYjeGE7ICAgICAgICAgICAgICAgIDxwPuWunuaXtuaTjeS9nOezu+e7nzwvcD4mI3hhOyAgICAgICAgICAgICAgPC9kaXY+JiN4YTsgICAgICAgICAgICA8L2ZvcmVpZ25PYmplY3Q+JiN4YTsgICAgICAgICAgPC9nPiYjeGE7ICAgICAgICA8L2c+JiN4YTsgICAgICAgIDxyZWN0IHN0cm9rZT0iIzVlYzhmOCIgZmlsbD0ibm9uZSIgcnk9IjUiIHJ4PSI1IiBjbGFzcz0ic21tLWhvdmVyLW5vZGUiIHk9Ii0yIiB4PSItMiIgaGVpZ2h0PSIzNiIgd2lkdGg9IjE0MyIvPiYjeGE7ICAgICAgPC9nPiYjeGE7ICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxMDE3LjUsNDYwKSIgc3R5bGU9ImN1cnNvcjogZGVmYXVsdDsiIGNsYXNzPSJzbW0tbm9kZSI+JiN4YTsgICAgICAgIDxwYXRoIHN0cm9rZT0iIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGZpbGw9IiNhMWQ1YmMiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwwKSIgY2xhc3M9InNtbS1ub2RlLXNoYXBlIiBkPSJNNSwwJiMxMDsgICAgICBMMTM0LDAmIzEwOyAgICAgIEMxMzQsMCAxMzksMCAxMzksNSYjMTA7ICAgICAgTDEzOSwyNyYjMTA7ICAgICAgQzEzOSwyNyAxMzksMzIgMTM0LDMyJiMxMDsgICAgICBMNSwzMiYjMTA7ICAgICAgQzUsMzIgMCwzMiAwLDI3JiMxMDsgICAgICBMMCw1JiMxMDsgICAgICBDMCw1IDAsMCA1LDAmIzEwOyAgICAgIFoiLz4mI3hhOyAgICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxNSw1KSI+JiN4YTsgICAgICAgICAgPGcgb3BhY2l0eT0iMSIgZGF0YS1vZmZzZXR4PSIwIiBkYXRhLWhlaWdodD0iMjIiIGRhdGEtd2lkdGg9IjEwOSI+JiN4YTsgICAgICAgICAgICA8Zm9yZWlnbk9iamVjdCB5PSIwIiB4PSIwIiBzdHlsZT0ibGluZS1oZWlnaHQ6IDEuMjsgZm9udC1mYW1pbHk6IOWvkuidieWFqOWchuS9kywgTWljcm9zb2Z0IFlhSGVpOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGZvbnQtc3R5bGU6IG5vcm1hbDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LWFsaWduOiBsZWZ0OyIgaGVpZ2h0PSIyMiIgd2lkdGg9IjEwOSI+JiN4YTsgICAgICAgICAgICAgIDxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJtYXgtd2lkdGg6IDUwMHB4OyIgY2xhc3M9InNtbS1yaWNodGV4dC1ub2RlLXdyYXAiPiYjeGE7ICAgICAgICAgICAgICAgIDxwPue9kee7nOaTjeS9nOezu+e7nzwvcD4mI3hhOyAgICAgICAgICAgICAgPC9kaXY+JiN4YTsgICAgICAgICAgICA8L2ZvcmVpZ25PYmplY3Q+JiN4YTsgICAgICAgICAgPC9nPiYjeGE7ICAgICAgICA8L2c+JiN4YTsgICAgICAgIDxyZWN0IHN0cm9rZT0iIzVlYzhmOCIgZmlsbD0ibm9uZSIgcnk9IjUiIHJ4PSI1IiBjbGFzcz0ic21tLWhvdmVyLW5vZGUiIHk9Ii0yIiB4PSItMiIgaGVpZ2h0PSIzNiIgd2lkdGg9IjE0MyIvPiYjeGE7ICAgICAgPC9nPiYjeGE7ICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxMDE3LjUsNTM2KSIgc3R5bGU9ImN1cnNvcjogZGVmYXVsdDsiIGNsYXNzPSJzbW0tbm9kZSI+JiN4YTsgICAgICAgIDxwYXRoIHN0cm9rZT0iIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGZpbGw9IiNhMWQ1YmMiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwwKSIgY2xhc3M9InNtbS1ub2RlLXNoYXBlIiBkPSJNNSwwJiMxMDsgICAgICBMMTUyLDAmIzEwOyAgICAgIEMxNTIsMCAxNTcsMCAxNTcsNSYjMTA7ICAgICAgTDE1NywyNyYjMTA7ICAgICAgQzE1NywyNyAxNTcsMzIgMTUyLDMyJiMxMDsgICAgICBMNSwzMiYjMTA7ICAgICAgQzUsMzIgMCwzMiAwLDI3JiMxMDsgICAgICBMMCw1JiMxMDsgICAgICBDMCw1IDAsMCA1LDAmIzEwOyAgICAgIFoiLz4mI3hhOyAgICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxNSw1KSI+JiN4YTsgICAgICAgICAgPGcgb3BhY2l0eT0iMSIgZGF0YS1vZmZzZXR4PSIwIiBkYXRhLWhlaWdodD0iMjIiIGRhdGEtd2lkdGg9IjEyNyI+JiN4YTsgICAgICAgICAgICA8Zm9yZWlnbk9iamVjdCB5PSIwIiB4PSIwIiBzdHlsZT0ibGluZS1oZWlnaHQ6IDEuMjsgZm9udC1mYW1pbHk6IOWvkuidieWFqOWchuS9kywgTWljcm9zb2Z0IFlhSGVpOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGZvbnQtc3R5bGU6IG5vcm1hbDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LWFsaWduOiBsZWZ0OyIgaGVpZ2h0PSIyMiIgd2lkdGg9IjEyNyI+JiN4YTsgICAgICAgICAgICAgIDxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJtYXgtd2lkdGg6IDUwMHB4OyIgY2xhc3M9InNtbS1yaWNodGV4dC1ub2RlLXdyYXAiPiYjeGE7ICAgICAgICAgICAgICAgIDxwPuWIhuW4g+W8j+aTjeS9nOezu+e7nzwvcD4mI3hhOyAgICAgICAgICAgICAgPC9kaXY+JiN4YTsgICAgICAgICAgICA8L2ZvcmVpZ25PYmplY3Q+JiN4YTsgICAgICAgICAgPC9nPiYjeGE7ICAgICAgICA8L2c+JiN4YTsgICAgICAgIDxyZWN0IHN0cm9rZT0iIzVlYzhmOCIgZmlsbD0ibm9uZSIgcnk9IjUiIHJ4PSI1IiBjbGFzcz0ic21tLWhvdmVyLW5vZGUiIHk9Ii0yIiB4PSItMiIgaGVpZ2h0PSIzNiIgd2lkdGg9IjE2MSIvPiYjeGE7ICAgICAgPC9nPiYjeGE7ICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxMDE3LjUsNjEyKSIgc3R5bGU9ImN1cnNvcjogZGVmYXVsdDsiIGNsYXNzPSJzbW0tbm9kZSI+JiN4YTsgICAgICAgIDxwYXRoIHN0cm9rZT0iIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGZpbGw9IiNhMWQ1YmMiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwwKSIgY2xhc3M9InNtbS1ub2RlLXNoYXBlIiBkPSJNNSwwJiMxMDsgICAgICBMMTg4LDAmIzEwOyAgICAgIEMxODgsMCAxOTMsMCAxOTMsNSYjMTA7ICAgICAgTDE5MywyNyYjMTA7ICAgICAgQzE5MywyNyAxOTMsMzIgMTg4LDMyJiMxMDsgICAgICBMNSwzMiYjMTA7ICAgICAgQzUsMzIgMCwzMiAwLDI3JiMxMDsgICAgICBMMCw1JiMxMDsgICAgICBDMCw1IDAsMCA1LDAmIzEwOyAgICAgIFoiLz4mI3hhOyAgICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxNSw1KSI+JiN4YTsgICAgICAgICAgPGcgb3BhY2l0eT0iMSIgZGF0YS1vZmZzZXR4PSIwIiBkYXRhLWhlaWdodD0iMjIiIGRhdGEtd2lkdGg9IjE2MyI+JiN4YTsgICAgICAgICAgICA8Zm9yZWlnbk9iamVjdCB5PSIwIiB4PSIwIiBzdHlsZT0ibGluZS1oZWlnaHQ6IDEuMjsgZm9udC1mYW1pbHk6IOWvkuidieWFqOWchuS9kywgTWljcm9zb2Z0IFlhSGVpOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGZvbnQtc3R5bGU6IG5vcm1hbDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LWFsaWduOiBsZWZ0OyIgaGVpZ2h0PSIyMiIgd2lkdGg9IjE2MyI+JiN4YTsgICAgICAgICAgICAgIDxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJtYXgtd2lkdGg6IDUwMHB4OyIgY2xhc3M9InNtbS1yaWNodGV4dC1ub2RlLXdyYXAiPiYjeGE7ICAgICAgICAgICAgICAgIDxwPuS4quS6uuiuoeeul+acuuaTjeS9nOezu+e7nzwvcD4mI3hhOyAgICAgICAgICAgICAgPC9kaXY+JiN4YTsgICAgICAgICAgICA8L2ZvcmVpZ25PYmplY3Q+JiN4YTsgICAgICAgICAgPC9nPiYjeGE7ICAgICAgICA8L2c+JiN4YTsgICAgICAgIDxyZWN0IHN0cm9rZT0iIzVlYzhmOCIgZmlsbD0ibm9uZSIgcnk9IjUiIHJ4PSI1IiBjbGFzcz0ic21tLWhvdmVyLW5vZGUiIHk9Ii0yIiB4PSItMiIgaGVpZ2h0PSIzNiIgd2lkdGg9IjE5NyIvPiYjeGE7ICAgICAgPC9nPiYjeGE7ICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxMTkyLjUsMjA0KSIgc3R5bGU9ImN1cnNvcjogZGVmYXVsdDsiIGNsYXNzPSJzbW0tbm9kZSI+JiN4YTsgICAgICAgIDxwYXRoIHN0cm9rZT0iIzE2YTVhNSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSJub25lIiBmaWxsPSJ0cmFuc3BhcmVudCIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLjUsMC41KSIgY2xhc3M9InNtbS1ub2RlLXNoYXBlIiBkPSJNNSwwJiMxMDsgICAgICBMMTI0LDAmIzEwOyAgICAgIEMxMjQsMCAxMjksMCAxMjksNSYjMTA7ICAgICAgTDEyOSwyMiYjMTA7ICAgICAgQzEyOSwyMiAxMjksMjcgMTI0LDI3JiMxMDsgICAgICBMNSwyNyYjMTA7ICAgICAgQzUsMjcgMCwyNyAwLDIyJiMxMDsgICAgICBMMCw1JiMxMDsgICAgICBDMCw1IDAsMCA1LDAmIzEwOyAgICAgIFoiLz4mI3hhOyAgICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxNS41LDUuNSkiPiYjeGE7ICAgICAgICAgIDxnIG9wYWNpdHk9IjEiIGRhdGEtb2Zmc2V0eD0iMCIgZGF0YS1oZWlnaHQ9IjE3IiBkYXRhLXdpZHRoPSI5OSI+JiN4YTsgICAgICAgICAgICA8Zm9yZWlnbk9iamVjdCB5PSIwIiB4PSIwIiBzdHlsZT0ibGluZS1oZWlnaHQ6IDEuMjsgZm9udC1mYW1pbHk6IOWvkuidieWFqOWchuS9kywgTWljcm9zb2Z0IFlhSGVpOyBmb250LXNpemU6IDE0cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGZvbnQtc3R5bGU6IG5vcm1hbDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LWFsaWduOiBsZWZ0OyIgaGVpZ2h0PSIxNyIgd2lkdGg9Ijk5Ij4mI3hhOyAgICAgICAgICAgICAgPGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9Im1heC13aWR0aDogNTAwcHg7IiBjbGFzcz0ic21tLXJpY2h0ZXh0LW5vZGUtd3JhcCI+JiN4YTsgICAgICAgICAgICAgICAgPHA+5Y2V6YGT5om55aSE55CG57O757ufPC9wPiYjeGE7ICAgICAgICAgICAgICA8L2Rpdj4mI3hhOyAgICAgICAgICAgIDwvZm9yZWlnbk9iamVjdD4mI3hhOyAgICAgICAgICA8L2c+JiN4YTsgICAgICAgIDwvZz4mI3hhOyAgICAgICAgPHJlY3Qgc3Ryb2tlPSIjNWVjOGY4IiBmaWxsPSJub25lIiByeT0iNSIgcng9IjUiIGNsYXNzPSJzbW0taG92ZXItbm9kZSIgeT0iLTIiIHg9Ii0yIiBoZWlnaHQ9IjMyIiB3aWR0aD0iMTM0Ii8+JiN4YTsgICAgICA8L2c+JiN4YTsgICAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDExOTIuNSwyMzYpIiBzdHlsZT0iY3Vyc29yOiBkZWZhdWx0OyIgY2xhc3M9InNtbS1ub2RlIj4mI3hhOyAgICAgICAgPHBhdGggc3Ryb2tlPSIjMTZhNWE1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9Im5vbmUiIGZpbGw9InRyYW5zcGFyZW50IiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAuNSwwLjUpIiBjbGFzcz0ic21tLW5vZGUtc2hhcGUiIGQ9Ik01LDAmIzEwOyAgICAgIEwyNjQsMCYjMTA7ICAgICAgQzI2NCwwIDI2OSwwIDI2OSw1JiMxMDsgICAgICBMMjY5LDIyJiMxMDsgICAgICBDMjY5LDIyIDI2OSwyNyAyNjQsMjcmIzEwOyAgICAgIEw1LDI3JiMxMDsgICAgICBDNSwyNyAwLDI3IDAsMjImIzEwOyAgICAgIEwwLDUmIzEwOyAgICAgIEMwLDUgMCwwIDUsMCYjMTA7ICAgICAgWiIvPiYjeGE7ICAgICAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDE1LjUsNS41KSI+JiN4YTsgICAgICAgICAgPGcgb3BhY2l0eT0iMSIgZGF0YS1vZmZzZXR4PSIwIiBkYXRhLWhlaWdodD0iMTciIGRhdGEtd2lkdGg9IjIzOSI+JiN4YTsgICAgICAgICAgICA8Zm9yZWlnbk9iamVjdCB5PSIwIiB4PSIwIiBzdHlsZT0ibGluZS1oZWlnaHQ6IDEuMjsgZm9udC1mYW1pbHk6IOWvkuidieWFqOWchuS9kywgTWljcm9zb2Z0IFlhSGVpOyBmb250LXNpemU6IDE0cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGZvbnQtc3R5bGU6IG5vcm1hbDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LWFsaWduOiBsZWZ0OyIgaGVpZ2h0PSIxNyIgd2lkdGg9IjIzOSI+JiN4YTsgICAgICAgICAgICAgIDxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJtYXgtd2lkdGg6IDUwMHB4OyIgY2xhc3M9InNtbS1yaWNodGV4dC1ub2RlLXdyYXAiPiYjeGE7ICAgICAgICAgICAgICAgIDxwPuWkmumBk+aJueWkhOeQhuezu+e7n++8iOaTjeS9nOezu+e7n+W8gOWni+WHuueOsO+8iTwvcD4mI3hhOyAgICAgICAgICAgICAgPC9kaXY+JiN4YTsgICAgICAgICAgICA8L2ZvcmVpZ25PYmplY3Q+JiN4YTsgICAgICAgICAgPC9nPiYjeGE7ICAgICAgICA8L2c+JiN4YTsgICAgICAgIDxyZWN0IHN0cm9rZT0iIzVlYzhmOCIgZmlsbD0ibm9uZSIgcnk9IjUiIHJ4PSI1IiBjbGFzcz0ic21tLWhvdmVyLW5vZGUiIHk9Ii0yIiB4PSItMiIgaGVpZ2h0PSIzMiIgd2lkdGg9IjI3NCIvPiYjeGE7ICAgICAgPC9nPiYjeGE7ICAgIDwvZz4mI3hhOyAgICA8ZyBjbGFzcz0ic21tLWFzc29jaWF0aXZlLWxpbmUtY29udGFpbmVyIi8+JiN4YTsgICAgPGcgY2xhc3M9InNtbS1vdGhlci1jb250YWluZXIiLz4mI3hhOyAgPC9nPiYjeGE7ICA8c3R5bGU+JiN4YTsgICAgLyog6byg5qCHaG92ZXLlkozmv4DmtLvml7bmuLLmn5PnmoTnn6nlvaIgKi8mI3hhOyAgICAuc21tLWhvdmVyLW5vZGV7JiN4YTsgICAgZGlzcGxheTogbm9uZTsmI3hhOyAgICBvcGFjaXR5OiAwLjY7JiN4YTsgICAgc3Ryb2tlLXdpZHRoOiAxOyYjeGE7ICAgIH0mI3hhOyYjeGE7ICAgIC5zbW0tbm9kZTpub3QoLnNtbS1ub2RlLWRyYWdnaW5nKTpob3ZlciAuc21tLWhvdmVyLW5vZGV7JiN4YTsgICAgZGlzcGxheTogYmxvY2s7JiN4YTsgICAgfSYjeGE7JiN4YTsgICAgLnNtbS1ub2RlLmFjdGl2ZSAuc21tLWhvdmVyLW5vZGUsIC5zbW0tbm9kZS1oaWdobGlnaHQgLnNtbS1ob3Zlci1ub2RleyYjeGE7ICAgIGRpc3BsYXk6IGJsb2NrOyYjeGE7ICAgIG9wYWNpdHk6IDE7JiN4YTsgICAgc3Ryb2tlLXdpZHRoOiAyOyYjeGE7ICAgIH0mI3hhOyYjeGE7ICAgIC5zbW0tdGV4dC1ub2RlLXdyYXAsIC5zbW0tZXhwYW5kLWJ0bi10ZXh0IHsmI3hhOyAgICB1c2VyLXNlbGVjdDogbm9uZTsmI3hhOyAgICB9JiN4YTsmI3hhOyAgICAuc21tLXJpY2h0ZXh0LW5vZGUtd3JhcCB7JiN4YTsgICAgd29yZC1icmVhazogYnJlYWstYWxsOyYjeGE7ICAgIHVzZXItc2VsZWN0OiBub25lOyYjeGE7ICAgIH0mI3hhOyYjeGE7ICAgIC5xbC1lZGl0b3IgLnFsLWFsaWduLWxlZnQsJiN4YTsgICAgLnNtbS1yaWNodGV4dC1ub2RlLXdyYXAgLnFsLWFsaWduLWxlZnQgeyYjeGE7ICAgIHRleHQtYWxpZ246IGxlZnQ7JiN4YTsgICAgfSYjeGE7JiN4YTsgICAgLnNtbS1yaWNodGV4dC1ub2RlLXdyYXAgLnFsLWFsaWduLXJpZ2h0IHsmI3hhOyAgICB0ZXh0LWFsaWduOiByaWdodDsmI3hhOyAgICB9JiN4YTsmI3hhOyAgICAuc21tLXJpY2h0ZXh0LW5vZGUtd3JhcCAucWwtYWxpZ24tY2VudGVyIHsmI3hhOyAgICB0ZXh0LWFsaWduOiBjZW50ZXI7JiN4YTsgICAgfSYjeGE7ICA8L3N0eWxlPiYjeGE7PC9zdmc+;aspect=fixed;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10;          &lt;mxGeometry x=&quot;200&quot; y=&quot;40&quot; width=&quot;760&quot; height=&quot;520&quot; as=&quot;geometry&quot; /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id=&quot;genkjhjl-YV7t5i9XW-r-2&quot; value=&quot;&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;opacity=35;fillColor=#d5e8d4;strokeColor=#82b366;glass=1;shadow=1;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10;          &lt;mxGeometry x=&quot;460&quot; y=&quot;20&quot; width=&quot;520&quot; height=&quot;330&quot; as=&quot;geometry&quot; /&gt;&#10;        &lt;/mxCell&gt;&#10;      &lt;/root&gt;&#10;    &lt;/mxGraphModel&gt;&#10;  &lt;/diagram&gt;&#10;&lt;/mxfile&gt;&#10;">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%"
+            id="drawio-svg-ijYpN8OSBIJGqwArdxnu-gradient-_ffffff-0.9-_ffffff-0.1-s-0">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"
+                style="stop-color: rgb(255, 255, 255); stop-opacity: 0.9;" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1"
+                style="stop-color: rgb(255, 255, 255); stop-opacity: 0.1;" />
+        </linearGradient>
+    </defs>
+    <g>
+        <g data-cell-id="0">
+            <g data-cell-id="1">
+                <g data-cell-id="genkjhjl-YV7t5i9XW-r-1">
+                    <g>
+                        <g>
+                            <svg viewBox="9.000030517578125 9.009515762329102 766.4999389648438 518"
+                                version="1.1" width="760" height="520"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                id="svg-image-mGIT9vpE5AD2KglRFHQ3" x="0" y="24"
+                                style="font-family: initial;">&#xa; <title>思维导图</title>&#xa; <g
+                                    class="smm-container"
+                                    transform="matrix(1,0,0,1,-687.5,-117.99047924223419)">&#xa; <g
+                                        class="smm-line-container">&#xa; <path
+                                            d="M 913.5,386L 975.9,386L 975.9,149Q 975.9,144 980.9,144L 1017.5,144"
+                                            stroke-dasharray="none" stroke-width="2"
+                                            stroke="#222222" fill="none" />&#xa; <path
+                                            d="M 913.5,386L 975.9,386L 975.9,239Q 975.9,234 980.9,234L 1017.5,234"
+                                            stroke-dasharray="none" stroke-width="2"
+                                            stroke="#222222" fill="none" />&#xa; <path
+                                            d="M 913.5,386L 975.9,386L 975.9,329Q 975.9,324 980.9,324L 1017.5,324"
+                                            stroke-dasharray="none" stroke-width="2"
+                                            stroke="#222222" fill="none" />&#xa; <path
+                                            d="M 913.5,386L 975.9,386L 975.9,395Q 975.9,400 980.9,400L 1017.5,400"
+                                            stroke-dasharray="none" stroke-width="2"
+                                            stroke="#222222" fill="none" />&#xa; <path
+                                            d="M 913.5,386L 975.9,386L 975.9,471Q 975.9,476 980.9,476L 1017.5,476"
+                                            stroke-dasharray="none" stroke-width="2"
+                                            stroke="#222222" fill="none" />&#xa; <path
+                                            d="M 913.5,386L 975.9,386L 975.9,547Q 975.9,552 980.9,552L 1017.5,552"
+                                            stroke-dasharray="none" stroke-width="2"
+                                            stroke="#222222" fill="none" />&#xa; <path
+                                            d="M 913.5,386L 975.9,386L 975.9,623Q 975.9,628 980.9,628L 1017.5,628"
+                                            stroke-dasharray="none" stroke-width="2"
+                                            stroke="#222222" fill="none" />&#xa; <path
+                                            d="M 1138.5,234L 1170.9,234L 1170.9,223Q 1170.9,218 1175.9,218L 1192.5,218"
+                                            stroke-dasharray="none" stroke-width="2"
+                                            stroke="#222222" fill="none" />&#xa; <path
+                                            d="M 1138.5,234L 1170.9,234L 1170.9,245Q 1170.9,250 1175.9,250L 1192.5,250"
+                                            stroke-dasharray="none" stroke-width="2"
+                                            stroke="#222222" fill="none" />&#xa; </g>&#xa; <g
+                                        class="smm-outer-frame-container" />&#xa; <g
+                                        class="smm-node-container">&#xa; <g class="smm-node"
+                                            style="cursor: default;"
+                                            transform="matrix(1,0,0,1,697.5,366.5)">&#xa; <path
+                                                d="M5,0&#10;      L211,0&#10;      C211,0 216,0 216,5&#10;      L216,34&#10;      C216,34 216,39 211,39&#10;      L5,39&#10;      C5,39 0,39 0,34&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0,0)" fill="#382c74"
+                                                stroke-dasharray="none" stroke-width="0"
+                                                stroke="#382c74" />&#xa; <g
+                                                transform="matrix(1,0,0,1,15,5)">&#xa; <g
+                                                    data-width="186" data-height="29"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="186" height="29"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>OS 的发展与分类</p>&#xa; </div>&#xa; <style
+                                                            xmlns="http://www.w3.org/1999/xhtml">#svg-image-mGIT9vpE5AD2KglRFHQ3
+                                * { margin: 0px; padding: 0px; box-sizing: border-box; }&#xa;</style>
+                                &#xa;            </foreignObject>&#xa; </g>&#xa; </g>&#xa; <rect
+                                                width="220" height="43" x="-2" y="-2"
+                                                class="smm-hover-node" rx="5" ry="5" fill="none"
+                                                stroke="#5ec8f8" />&#xa; </g>&#xa; <g
+                                            class="smm-node" style="cursor: default;"
+                                            transform="matrix(1,0,0,1,1017.5,128)">&#xa; <path
+                                                d="M5,0&#10;      L134,0&#10;      C134,0 139,0 139,5&#10;      L139,27&#10;      C139,27 139,32 134,32&#10;      L5,32&#10;      C5,32 0,32 0,27&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0,0)" fill="#a1d5bc"
+                                                stroke-dasharray="none" stroke-width="0" stroke="" />
+                                &#xa;        <g transform="matrix(1,0,0,1,15,5)">&#xa; <g
+                                                    data-width="109" data-height="22"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="109" height="22"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>手工操作阶段</p>&#xa; </div>&#xa; </foreignObject>
+                                &#xa;          </g>&#xa; </g>&#xa; <rect width="143" height="36"
+                                                x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+                                                fill="none" stroke="#5ec8f8" />&#xa; </g>&#xa; <g
+                                            class="smm-node" style="cursor: default;"
+                                            transform="matrix(1,0,0,1,1017.5,218)">&#xa; <path
+                                                d="M5,0&#10;      L116,0&#10;      C116,0 121,0 121,5&#10;      L121,27&#10;      C121,27 121,32 116,32&#10;      L5,32&#10;      C5,32 0,32 0,27&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0,0)" fill="#a1d5bc"
+                                                stroke-dasharray="none" stroke-width="0" stroke="" />
+                                &#xa;        <g transform="matrix(1,0,0,1,15,5)">&#xa; <g
+                                                    data-width="91" data-height="22"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="91" height="22"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>批处理阶段</p>&#xa; </div>&#xa; </foreignObject>
+                                &#xa;          </g>&#xa; </g>&#xa; <rect width="125" height="36"
+                                                x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+                                                fill="none" stroke="#5ec8f8" />&#xa; <rect
+                                                fill="transparent" width="20" height="32" x="121"
+                                                y="0" />&#xa; </g>&#xa; <g class="smm-node"
+                                            style="cursor: default;"
+                                            transform="matrix(1,0,0,1,1017.5,308)">&#xa; <path
+                                                d="M5,0&#10;      L134,0&#10;      C134,0 139,0 139,5&#10;      L139,27&#10;      C139,27 139,32 134,32&#10;      L5,32&#10;      C5,32 0,32 0,27&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0,0)" fill="#a1d5bc"
+                                                stroke-dasharray="none" stroke-width="0" stroke="" />
+                                &#xa;        <g transform="matrix(1,0,0,1,15,5)">&#xa; <g
+                                                    data-width="109" data-height="22"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="109" height="22"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>分时操作系统</p>&#xa; </div>&#xa; </foreignObject>
+                                &#xa;          </g>&#xa; </g>&#xa; <rect width="143" height="36"
+                                                x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+                                                fill="none" stroke="#5ec8f8" />&#xa; </g>&#xa; <g
+                                            class="smm-node" style="cursor: default;"
+                                            transform="matrix(1,0,0,1,1017.5,384)">&#xa; <path
+                                                d="M5,0&#10;      L134,0&#10;      C134,0 139,0 139,5&#10;      L139,27&#10;      C139,27 139,32 134,32&#10;      L5,32&#10;      C5,32 0,32 0,27&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0,0)" fill="#a1d5bc"
+                                                stroke-dasharray="none" stroke-width="0" stroke="" />
+                                &#xa;        <g transform="matrix(1,0,0,1,15,5)">&#xa; <g
+                                                    data-width="109" data-height="22"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="109" height="22"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>实时操作系统</p>&#xa; </div>&#xa; </foreignObject>
+                                &#xa;          </g>&#xa; </g>&#xa; <rect width="143" height="36"
+                                                x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+                                                fill="none" stroke="#5ec8f8" />&#xa; </g>&#xa; <g
+                                            class="smm-node" style="cursor: default;"
+                                            transform="matrix(1,0,0,1,1017.5,460)">&#xa; <path
+                                                d="M5,0&#10;      L134,0&#10;      C134,0 139,0 139,5&#10;      L139,27&#10;      C139,27 139,32 134,32&#10;      L5,32&#10;      C5,32 0,32 0,27&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0,0)" fill="#a1d5bc"
+                                                stroke-dasharray="none" stroke-width="0" stroke="" />
+                                &#xa;        <g transform="matrix(1,0,0,1,15,5)">&#xa; <g
+                                                    data-width="109" data-height="22"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="109" height="22"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>网络操作系统</p>&#xa; </div>&#xa; </foreignObject>
+                                &#xa;          </g>&#xa; </g>&#xa; <rect width="143" height="36"
+                                                x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+                                                fill="none" stroke="#5ec8f8" />&#xa; </g>&#xa; <g
+                                            class="smm-node" style="cursor: default;"
+                                            transform="matrix(1,0,0,1,1017.5,536)">&#xa; <path
+                                                d="M5,0&#10;      L152,0&#10;      C152,0 157,0 157,5&#10;      L157,27&#10;      C157,27 157,32 152,32&#10;      L5,32&#10;      C5,32 0,32 0,27&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0,0)" fill="#a1d5bc"
+                                                stroke-dasharray="none" stroke-width="0" stroke="" />
+                                &#xa;        <g transform="matrix(1,0,0,1,15,5)">&#xa; <g
+                                                    data-width="127" data-height="22"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="127" height="22"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>分布式操作系统</p>&#xa; </div>&#xa; </foreignObject>
+                                &#xa;          </g>&#xa; </g>&#xa; <rect width="161" height="36"
+                                                x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+                                                fill="none" stroke="#5ec8f8" />&#xa; </g>&#xa; <g
+                                            class="smm-node" style="cursor: default;"
+                                            transform="matrix(1,0,0,1,1017.5,612)">&#xa; <path
+                                                d="M5,0&#10;      L188,0&#10;      C188,0 193,0 193,5&#10;      L193,27&#10;      C193,27 193,32 188,32&#10;      L5,32&#10;      C5,32 0,32 0,27&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0,0)" fill="#a1d5bc"
+                                                stroke-dasharray="none" stroke-width="0" stroke="" />
+                                &#xa;        <g transform="matrix(1,0,0,1,15,5)">&#xa; <g
+                                                    data-width="163" data-height="22"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="163" height="22"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>个人计算机操作系统</p>&#xa; </div>&#xa; </foreignObject>
+                                &#xa;          </g>&#xa; </g>&#xa; <rect width="197" height="36"
+                                                x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+                                                fill="none" stroke="#5ec8f8" />&#xa; </g>&#xa; <g
+                                            class="smm-node" style="cursor: default;"
+                                            transform="matrix(1,0,0,1,1192.5,204)">&#xa; <path
+                                                d="M5,0&#10;      L124,0&#10;      C124,0 129,0 129,5&#10;      L129,22&#10;      C129,22 129,27 124,27&#10;      L5,27&#10;      C5,27 0,27 0,22&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0.5,0.5)"
+                                                fill="transparent" stroke-dasharray="none"
+                                                stroke-width="1" stroke="#16a5a5" />&#xa; <g
+                                                transform="matrix(1,0,0,1,15.5,5.5)">&#xa; <g
+                                                    data-width="99" data-height="17"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="99" height="17"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>单道批处理系统</p>&#xa; </div>&#xa; </foreignObject>
+                                &#xa;          </g>&#xa; </g>&#xa; <rect width="134" height="32"
+                                                x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+                                                fill="none" stroke="#5ec8f8" />&#xa; </g>&#xa; <g
+                                            class="smm-node" style="cursor: default;"
+                                            transform="matrix(1,0,0,1,1192.5,236)">&#xa; <path
+                                                d="M5,0&#10;      L264,0&#10;      C264,0 269,0 269,5&#10;      L269,22&#10;      C269,22 269,27 264,27&#10;      L5,27&#10;      C5,27 0,27 0,22&#10;      L0,5&#10;      C0,5 0,0 5,0&#10;      Z"
+                                                class="smm-node-shape"
+                                                transform="matrix(1,0,0,1,0.5,0.5)"
+                                                fill="transparent" stroke-dasharray="none"
+                                                stroke-width="1" stroke="#16a5a5" />&#xa; <g
+                                                transform="matrix(1,0,0,1,15.5,5.5)">&#xa; <g
+                                                    data-width="239" data-height="17"
+                                                    data-offsetx="0" opacity="1">&#xa; <foreignObject
+                                                        width="239" height="17"
+                                                        style="line-height: 1.2; font-family: 寒蝉全圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+                                                        x="0" y="0">&#xa; <div
+                                                            class="smm-richtext-node-wrap"
+                                                            style="max-width: 500px;"
+                                                            xmlns="http://www.w3.org/1999/xhtml">
+                                &#xa;                <p>多道批处理系统（操作系统开始出现）</p>&#xa; </div>&#xa; </foreignObject>
+                                &#xa;          </g>&#xa; </g>&#xa; <rect width="274" height="32"
+                                                x="-2" y="-2" class="smm-hover-node" rx="5" ry="5"
+                                                fill="none" stroke="#5ec8f8" />&#xa; </g>&#xa; </g>
+                                &#xa;    <g class="smm-associative-line-container" />&#xa; <g
+                                        class="smm-other-container" />&#xa; </g>&#xa; <style>#svg-image-mGIT9vpE5AD2KglRFHQ3
+                                .smm-hover-node { display: none; opacity: 0.6; stroke-width: 1;
+                                }&#xa;#svg-image-mGIT9vpE5AD2KglRFHQ3
+                                .smm-node:not(.smm-node-dragging):hover .smm-hover-node { display:
+                                block; }&#xa;#svg-image-mGIT9vpE5AD2KglRFHQ3 .smm-node.active
+                                .smm-hover-node, #svg-image-mGIT9vpE5AD2KglRFHQ3 .smm-node-highlight
+                                .smm-hover-node { display: block; opacity: 1; stroke-width: 2;
+                                }&#xa;#svg-image-mGIT9vpE5AD2KglRFHQ3 .smm-text-node-wrap,
+                                #svg-image-mGIT9vpE5AD2KglRFHQ3 .smm-expand-btn-text { user-select:
+                                none; }&#xa;#svg-image-mGIT9vpE5AD2KglRFHQ3 .smm-richtext-node-wrap
+                                { word-break: break-all; user-select: none;
+                                }&#xa;#svg-image-mGIT9vpE5AD2KglRFHQ3 .ql-editor .ql-align-left,
+                                #svg-image-mGIT9vpE5AD2KglRFHQ3 .smm-richtext-node-wrap
+                                .ql-align-left { text-align: left;
+                                }&#xa;#svg-image-mGIT9vpE5AD2KglRFHQ3 .smm-richtext-node-wrap
+                                .ql-align-right { text-align: right;
+                                }&#xa;#svg-image-mGIT9vpE5AD2KglRFHQ3 .smm-richtext-node-wrap
+                                .ql-align-center { text-align: center; }&#xa;</style>&#xa;</svg>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="genkjhjl-YV7t5i9XW-r-2">
+                    <g style="filter: drop-shadow(rgba(0, 0, 0, 0.25) 2px 3px 2px);">
+                        <rect x="260" y="4" width="520" height="330" rx="49.5" ry="49.5"
+                            fill-opacity="0.35" fill="#d5e8d4" stroke="#82b366"
+                            stroke-opacity="0.35" pointer-events="all"
+                            style="fill: rgb(213, 232, 212); stroke: rgb(130, 179, 102);" />
+                        <path
+                            d="M 310.65 3 Q 259 3 259 54.65 L 259 136 Q 520 235 781 136 L 781 54.65 Q 781 3 729.35 3 Z"
+                            fill-opacity="0.35"
+                            fill="url(#drawio-svg-ijYpN8OSBIJGqwArdxnu-gradient-_ffffff-0.9-_ffffff-0.1-s-0)"
+                            stroke="none" pointer-events="all"
+                            style="fill: url(&quot;#drawio-svg-ijYpN8OSBIJGqwArdxnu-gradient-_ffffff-0.9-_ffffff-0.1-s-0&quot;);" />
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
