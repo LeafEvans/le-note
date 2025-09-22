@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="652.533" height="210.033">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#edb951" stroke-width="2"
+                d="M186.017 105.017h62.4v-72q0-5 5-5h36.6M186.017 105.017h104M186.017 105.017h62.4v72q0 5 5 5h36.6" />
+            <path fill="none" stroke="#009ce0" stroke-width="2" d="M393.017 28.017h54" />
+            <path fill="none" stroke="#edb951" stroke-width="2"
+                d="M393.017 105.017h54M393.017 182.017h54" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(10.017 85.517)">
+                <path fill="#e25a40" stroke-width="0"
+                    d="M5 0h166s5 0 5 5v29s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="146" height="29" x="0" y="0" data-height="29" data-offsetx="0"
+                    data-width="146"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:24px;font-weight:700;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>三种交换技术</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="180" height="43" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(290.017 12.017)">
+                <path fill="#2b76ef" stroke-width="0"
+                    d="M5 0h93s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <path fill="transparent" d="M103 0h20v32h-20z" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>电路交换</p>
+                    </div>
+                </foreignObject>
+                <rect width="107" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(447.017 11.517)">
+                <path fill="transparent" stroke="#009ce0"
+                    d="M5.5.5h129s5 0 5 5v22s0 5-5 5H5.5s-5 0-5-5v-22s0-5 5-5Z"
+                    class="smm-node-shape" />
+                <foreignObject width="109" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="109"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#2b76ef;text-align:left"
+                    transform="translate(15.5 5.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>用于电话网络</p>
+                    </div>
+                </foreignObject>
+                <rect width="144" height="37" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(290.017 89.017)">
+                <path fill="#2b76ef" stroke-width="0"
+                    d="M5 0h93s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <path fill="transparent" d="M103 0h20v32h-20z" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>报文交换</p>
+                    </div>
+                </foreignObject>
+                <rect width="107" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(447.017 88.517)">
+                <path fill="transparent" stroke="#009ce0"
+                    d="M5.5.5h129s5 0 5 5v22s0 5-5 5H5.5s-5 0-5-5v-22s0-5 5-5Z"
+                    class="smm-node-shape" />
+                <foreignObject width="109" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="109"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#2b76ef;text-align:left"
+                    transform="translate(15.5 5.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>用于电报网络</p>
+                    </div>
+                </foreignObject>
+                <rect width="144" height="37" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(290.017 166.017)">
+                <path fill="#2b76ef" stroke-width="0"
+                    d="M5 0h93s5 0 5 5v22s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <path fill="transparent" d="M103 0h20v32h-20z" />
+                <foreignObject width="73" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="73"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>分组交换</p>
+                    </div>
+                </foreignObject>
+                <rect width="107" height="36" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(447.017 165.517)">
+                <path fill="transparent" stroke="#009ce0"
+                    d="M5.5.5h183s5 0 5 5v22s0 5-5 5H5.5s-5 0-5-5v-22s0-5 5-5Z"
+                    class="smm-node-shape" />
+                <foreignObject width="163" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="163"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#2b76ef;text-align:left"
+                    transform="translate(15.5 5.5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>用于现代计算机网络</p>
+                    </div>
+                </foreignObject>
+                <rect width="198" height="37" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
+    </g>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
+</svg>
