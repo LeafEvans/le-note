@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="643.017" height="216.017">
+    <g class="smm-container">
+        <g class="smm-line-container">
+            <path fill="none" stroke="#333" stroke-width="2"
+                d="M258 108h62.4V35q0-5 5-5H362M258 108h104M258 108h62.4v73q0 5 5 5H362" />
+        </g>
+        <g class="smm-node-container">
+            <g class="smm-node" style="cursor:default" transform="translate(10 88.5)">
+                <path fill="#2176ef" stroke-width="0"
+                    d="M5 0h238s5 0 5 5v29s0 5-5 5H5s-5 0-5-5V5s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="218" height="29" x="0" y="0" data-height="29" data-offsetx="0"
+                    data-width="218"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:24px;font-weight:700;font-style:normal;text-decoration:none;color:#fff;text-align:left"
+                    transform="translate(15 5)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>计算机网络性能指标</p>
+                    </div>
+                    <style>*{margin:0;padding:0;box-sizing:border-box}</style>
+                </foreignObject>
+                <rect width="252" height="43" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(362 13)">
+                <path fill="#fff9e4" stroke="#343433" stroke-width="2"
+                    d="M6 1h183s5 0 5 5v22s0 5-5 5H6s-5 0-5-5V6s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="163" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="163"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#4c4b46;text-align:left"
+                    transform="translate(16 6)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>速率、带宽、吞吐量</p>
+                    </div>
+                </foreignObject>
+                <rect width="199" height="38" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(362 91)">
+                <path fill="#fff9e4" stroke="#343433" stroke-width="2"
+                    d="M6 1h256s5 0 5 5v22s0 5-5 5H6s-5 0-5-5V6s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="236" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="236"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#4c4b46;text-align:left"
+                    transform="translate(16 6)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>时延、时延带宽积、往返时延</p>
+                    </div>
+                </foreignObject>
+                <rect width="272" height="38" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+            <g class="smm-node" style="cursor:default" transform="translate(362 169)">
+                <path fill="#fff9e4" stroke="#343433" stroke-width="2"
+                    d="M6 1h111s5 0 5 5v22s0 5-5 5H6s-5 0-5-5V6s0-5 5-5Z" class="smm-node-shape" />
+                <foreignObject width="91" height="22" x="0" y="0" data-height="22" data-offsetx="0"
+                    data-width="91"
+                    style="line-height:1.2;font-family:微软雅黑,Microsoft YaHei;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;color:#4c4b46;text-align:left"
+                    transform="translate(16 6)">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="smm-richtext-node-wrap"
+                        style="max-width:500px">
+                        <p>信道利用率</p>
+                    </div>
+                </foreignObject>
+                <rect width="127" height="38" x="-2" y="-2" fill="none" stroke="#5ec8f8"
+                    class="smm-hover-node" rx="5" ry="5" />
+            </g>
+        </g>
+    </g>
+    <style>.smm-hover-node{display:none;opacity:.6;stroke-width:1}.smm-node:not(.smm-node-dragging):hover
+        .smm-hover-node{display:block}.smm-richtext-node-wrap{word-break:break-all;user-select:none}</style>
+</svg>
