@@ -64,6 +64,10 @@ USE 数据库名;
 
 <img src="../../../images/image-202509231245.png" style="zoom:80%;" />
 
+> [!tip]
+>
+> `USE` 是 MySQL 特有的专用指令。
+
 ### 表操作
 
 #### 查询
@@ -462,4 +466,557 @@ WHERE
    ```mysql
    DELETE FROM 表名 [WHERE 条件];
    ```
+
+## DQL
+
+DQL 英语全称是 Data Query Language（<span style="color:#E94560">数据查询语言</span>），用来查询数据库中表的记录。
+
+**查询关键字**：`SELECT`。
+
+```mysql
+SELECT
+	字段列表
+FROM 
+	表名列表
+WHERE	
+	条件列表
+GROUP BY
+	分组字段列表
+HAVING
+	分组后条件列表
+ORDER BY
+	排序字段列表
+LIMIT
+	分页参数
+```
+
+- **基本查询**
+- **条件查询（`WHERE`）**
+- **聚合函数（`count`、`max`、`min`、`avg`、`sum`）**
+- **分组查询（`GROUP BY`）**
+- **排序查询（`ORDER BY`）**
+- **分页查询（`LIMIT`）**
+
+### 基本查询
+
+#### 查询多个字段
+
+```mysql
+SELECT 字段1, 字段2, 字段3... FROM 表名;
+SELECT * FROM 表名;
+```
+
+```mysql
+SELECT idcard,
+    name,
+    age
+FROM emp;
+```
+
+<img src="../../../images/image-202509251921.webp" style="zoom: 67%;" />
+
+#### 设置别名
+
+```mysql
+SELECT 字段1 [AS 别名1], 字段2 [AS 别名2]... FROM 表名;
+```
+
+```mysql
+SELECT workaddress AS '工作地址'
+FROM emp;
+```
+
+<img src="../../../images/image-202509251923.webp" style="zoom:67%;" />
+
+> [!tip]
+>
+> 上述代码中的 `AS` 字段可以省略。
+
+#### 去除重复记录
+
+```mysql
+SELECT DISTINCT 字段列表 FROM 表名;
+```
+
+```mysql
+SELECT DISTINCT age 
+FROM emp;
+```
+
+<img src="../../../images/image-202509251924.webp" style="zoom:67%;" />
+
+### 条件查询（`WHERE`）
+
+#### 语法
+
+```mysql
+SELECT 字段列表 FROM 表名 WHERE 条件列表;
+```
+
+#### 条件
+
+| 比较运算符         | 功能                                             |
+| ------------------ | ------------------------------------------------ |
+| `>`                | 大于                                             |
+| `>=`               | 大于等于                                         |
+| `<`                | 小于                                             |
+| `<=`               | 小于等于                                         |
+| `=`                | 等于                                             |
+| `<>` 或 `!=`       | 不等于                                           |
+| `BETWEEN...AND...` | 在某个范围之内（含最小、最大值）                 |
+| `IN(...)`          | 在 `IN` 之后的列表中的值，多选一                 |
+| `LIKE` 占位符      | 模糊匹配（`_` 匹配单个字符，`%` 匹配任意个字符） |
+| `IS NULL`          | 是 `NULL`                                        |
+
+| 逻辑运算符    | 功能                         |
+| ------------- | ---------------------------- |
+| `AND` 或 `&&` | 并且（多个条件同时成立）     |
+| `OR` 或 `||`  | 或者（多个条件任意一个成立） |
+| `NOT` 或 ` !` | 非，不是                     |
+
+---
+
+1. 查询年龄等于 16 的员工。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   WHERE age = 16;
+   ```
+
+   <img src="../../../images/image-202509251944.webp" style="zoom:67%;" />
+
+2. 查询年龄大于 25 的员工。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   WHERE age > 25;
+   ```
+
+   <img src="../../../images/image-202509251946.webp" style="zoom:67%;" />
+
+3. 查询年龄大于等于 25 的员工。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   WHERE age >= 25;
+   ```
+
+   <img src="../../../images/image-202509251948.webp" style="zoom:67%;" />
+
+4. 查询没有身份证号的员工信息。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   WHERE idcard IS NULL;
+   ```
+
+   <img src="../../../images/image-202509251950.webp" style="zoom:67%;" />
+
+5. 查询有身份证号的员工信息。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   WHERE idcard IS NOT NULL;
+   ```
+
+   <img src="../../../images/image-202509251953.webp" style="zoom:67%;" />
+
+6. 查询年龄不等于 16 的员工信息。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   WHERE age != 16;
+   
+   SELECT id,
+       name
+   FROM emp
+   WHERE age <> 16;
+   ```
+
+   <img src="../../../images/image-202509251957.webp" style="zoom:67%;" />
+
+7. 查询年龄在 15 岁（包含）到 20 岁（包含）之间的员工信息。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   WHERE age <= 20
+       AND age >= 15;
+   
+   SELECT id,
+       name
+   FROM emp
+   WHERE age BETWEEN 15 AND 20;
+   ```
+
+   <img src="../../../images/image-202509252004.webp" style="zoom:67%;" />
+
+8. 查询性别为男且年龄小于 25 岁的员工信息。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM
+   WHERE gender = '男'
+       AND age <= 25
+   ```
+
+   <img src="../../../images/image-202509252010.webp" style="zoom:67%;" />
+
+9. 查询年龄等于 18 或 20 或 40 的员工信息。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   WHERE age = 18
+       OR age = 25
+       OR age = 30;
+   
+   SELECT id,
+       name
+   FROM emp
+   WHERE age IN(18, 20, 40)
+   ```
+
+   <img src="../../../images/image-202509252014.webp" style="zoom: 67%;" />
+
+10. 查询姓名为三个字的员工信息。
+
+    ```mysql
+    SELECT id,
+        name
+    FROM emp
+    WHERE name LIKE '___';
+    ```
+
+    <img src="../../../images/image-202509252018.webp" style="zoom:67%;" />
+
+11. 查询身份证号最后一位是 1 的员工信息。
+
+    ```mysql
+    SELECT id,
+        name
+    FROM emp
+    WHERE idcard LIKE '%1';
+    ```
+
+    <img src="../../../images/image-202509252020.webp" style="zoom:67%;" />
+
+### 聚合函数（`count`、`max`、`min`、`avg`、`sum`）
+
+#### 介绍
+
+将一列数据作为一个整体，进行纵向计算。
+
+#### 常见聚合函数
+
+|  函数   |   功能   |
+| :-----: | :------: |
+| `count` | 统计数量 |
+|  `max`  |  最大值  |
+|  `min`  |  最小值  |
+|  `avg`  |  平均值  |
+|  `sum`  |   求和   |
+
+#### 语法
+
+```mysql
+SELECT 聚合函数(字段列表) FROM 表名;
+```
+
+---
+
+1. 统计该企业员工的数量。
+
+   ```mysql
+   SELECT COUNT(id)
+   FROM emp;
+   ```
+
+   <img src="../../../images/image-202509252020.webp" style="zoom:67%;" />
+
+2. 统计该企业员工的平均年龄。
+
+   ```mysql
+   SELECT AVG(age)
+   FROM emp;
+   ```
+
+   <img src="../../../images/image-202509252038.webp" style="zoom:67%;" />
+
+3. 统计该企业员工的最大年龄。
+
+   ```mysql
+   SELECT MAX(age)
+   FROM emp;
+   ```
+
+   <img src="../../../images/image-202509252044.webp" style="zoom:67%;" />
+
+4. 统计该企业员工的最小年龄。
+
+   ```mysql
+   SELECT MIN(age)
+   FROM emp;
+   ```
+
+   <img src="../../../images/image-202509252045.webp" style="zoom:67%;" />
+
+5. 统计樱丘高中员工的年龄之和。
+
+   ```mysql
+   SELECT SUM(age)
+   FROM emp
+   WHERE workaddress = '樱丘高中';
+   ```
+
+   <img src="../../../images/image-202509252047.webp" style="zoom:67%;" />
+
+> [!tip]
+>
+> `NULL` 值不参与所有聚合函数运算。
+
+### 分组查询（`GROUP BY`）
+
+#### 语法
+
+```mysql
+SELECT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 分组后过滤条件];
+```
+
+#### `WHERE` vs. `HAVING`
+
+- **执行时机不同**：`WHERE` 是<span style="color:#9112BC; font-weight:bold">分组之前</span>进行过滤，<u>不满足 `WHERE` 条件，不参与分组</u>；而 `HAVING` 是<span style="color:#9112BC; font-weight:bold">分组之后</span>对结果进行过滤。
+- **判断条件不同**：`WHERE` <u>不能</u>对聚合函数进行判断，而 `HAVING` 可以。
+
+---
+
+1. 根据性别分组，统计男性员工和女性员工的数量。
+
+   ```mysql
+   SELECT gender,
+       COUNT(id)
+   FROM emp
+   GROUP BY gender;
+   ```
+
+   <img src="../../../images/image-202509252101.webp" style="zoom:67%;" />
+
+2. 根据性别分组，统计男性员工和女性员工的平均年龄。
+
+   ```mysql
+   SELECT gender,
+       AVG(age)
+   FROM emp
+   GROUP BY gender;
+   ```
+
+   <img src="../../../images/image-202509252103.webp" style="zoom:67%;" />
+
+   可以发现此时 `COUNT` 计算的就是各分组的数量而非整体数量。
+
+3. 查询年龄小于 25 的员工，并根据工作地址分组，获取员工数量大于等于 3 的工作地址。
+
+   ```mysql
+   SELECT workaddress,
+       COUNT(id) AS '员工数量'
+   FROM emp
+   WHERE age < 25
+   GROUP BY workaddress
+   HAVING COUNT(id) >= 3;
+   ```
+
+   <img src="../../../images/image-202509252108.webp" style="zoom:67%;" />
+
+> [!tip]
+>
+> - **执行顺序**：`WHERE` → 聚合函数 → `HAVING`。
+> - 分组之后，查询的字段一般为<span style="color:#006A67; font-weight:bold">聚合函数</span>和<span style="color:#006A67; font-weight:bold">分组字段</span>，查询其他字段无任何意义。
+
+### 排序查询（`ORDER BY`）
+
+#### 语法
+
+```mysql
+SELECT 字段列表 FROM 表名 ORDER BY 字段1 排序方式1, 字段2 排序方式2;
+```
+
+#### 排序方式
+
+- **`ASC`（Ascending）**：升序（默认值）
+- **`DESC`（Descending）**：降序
+
+> [!tip]
+>
+> 如果是多字段排序，当第一个字段值<span style="color:#E45A92; font-weight:bold">相同</span>时，才会根据第二个字段进行排序。
+
+---
+
+1. 根据年龄对公司的员工进行升序排序。
+
+   ```mysql
+   SELECT id,
+       name,
+       age
+   FROM emp
+   ORDER BY age ASC
+   ```
+
+   <img src="../../../images/image-202509252155.webp" style="zoom:67%;" />
+
+2. 根据入职时间，对员工进行降序排序。
+
+   ```mysql
+   SELECT id,
+       name,
+       entrydate
+   FROM emp
+   ORDER BY entrydate DESC;
+   ```
+
+   <img src="../../../images/image-202509252157.webp" style="zoom:67%;" />
+
+3. 根据年龄对公司的员工进行升序排序，年龄相同再按照入职时间进行降序排序。
+
+   ```mysql
+   SELECT id,
+       name,
+       age,
+       entrydate
+   FROM emp
+   ORDER BY age ASC,
+       entrydate DESC;
+   ```
+
+   <img src="../../../images/image-202509252159.webp" style="zoom:67%;" />
+
+### 分页查询（`LIMIT`）
+
+#### 语法
+
+```mysql
+SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
+```
+
+> [!tip]
+>
+> - 起始索引从 0 开始，`起始索引 = (查询页码 - 1) * 每页显示记录数`。
+> - <span style="color:#67C090; font-weight:bold">分页查询</span>是数据库的方言，不同的数据库有不同的实现，MySQL 中是 `LIMIT`。
+> - 如果查询的是第一页数据，<u>起始索引可以省略</u>，直接简写为 `LIMIT 10`。
+
+---
+
+1. 查询第 1 页员工数据，每页展示 10 条记录。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   LIMIT 0, 10;
+   ```
+
+   <img src="../../../images/image-202509252209.webp" style="zoom:67%;" />
+
+2. 查询第 2 页员工数据，每页展示 10 条记录。
+
+   ```mysql
+   SELECT id,
+       name
+   FROM emp
+   LIMIT 10, 10;
+   ```
+
+   <img src="../../../images/image-202509252210.webp" style="zoom:67%;" />
+
+> [!tip]
+>
+> 本质上，`LIMIT` 的作用其实就是<u>*从某个起始位置开始*</u>，<u>*返回指定数量的记录*</u>。
+
+### 案例
+
+1. 查询年龄为 15、16、17 岁的女性员工信息。
+
+   ```mysql
+   SELECT id,
+       name,
+       age,
+       gender
+   FROM emp
+   WHERE age IN (15, 16, 17)
+       AND gender = '女';
+   ```
+
+   <img src="../../../images/image-202509252223.webp" style="zoom:67%;" />
+
+2. 查询性别为男，并且年龄在 20~40 岁（含）以内的姓名为三个字的员工。
+
+   ```mysql
+   SELECT id,
+       name,
+       age,
+       gender
+   FROM emp
+   WHERE gender = '男'
+       AND age BETWEEN 20 AND 40
+       AND name LIKE '___';
+   ```
+
+   <img src="../../../images/image-202509252225.webp" style="zoom:67%;" />
+
+3. 统计员工表中，年龄小于 30 岁的，男性员工和女性员工的人数。
+
+   ```mysql
+   SELECT gender,
+       COUNT(id)
+   FROM emp
+   WHERE age < 30
+   GROUP BY gender;
+   ```
+
+   <img src="../../../images/image-202509252229.webp" style="zoom:67%;" />
+
+4. 查询所有年龄小于等于 30 岁员工的姓名和年龄，并对查询结果按年龄升序排序，如果年龄相同按入职时间降序排序。
+
+   ```mysql
+   SELECT name,
+       age
+   FROM emp
+   WHERE age < 30
+   ORDER BY age ASC,
+       entrydate DESC;
+   ```
+
+   <img src="../../../images/image-202509252233.webp" style="zoom:67%;" />
+
+5. 查询性别为男，且年龄在 20~40 岁（含）以内的前 5 个员工信息，对查询的结果按年龄升序排序，年龄相同按入职时间升序排序。
+
+   ```mysql
+   SELECT id,
+       name,
+       age,
+       entrydate
+   FROM emp
+   WHERE age BETWEEN 20 AND 40
+   ORDER BY age,
+       entrydate
+   LIMIT 5
+   ```
+
+   <img src="../../../images/image-202509252237.webp" style="zoom:67%;" />
+
+### 执行顺序
 
