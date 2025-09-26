@@ -1020,3 +1020,10 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
 
 ### 执行顺序
 
+<img src="../../../images/image-202509252242.webp" style="zoom:67%;" />
+
+---
+
+**知识总览**：
+
+<img src="../../../images/image-202509252256.webp" style="zoom:67%;" />
