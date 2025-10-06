@@ -816,6 +816,8 @@ SELECT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 
 
    <img src="../../../images/image-202509252101.webp" style="zoom:67%;" />
 
+   可以发现此时 `COUNT` 计算的就是各分组的数量而非整体数量。
+
 2. 根据性别分组，统计男性员工和女性员工的平均年龄。
 
    ```mysql
@@ -826,8 +828,6 @@ SELECT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 
    ```
 
    <img src="../../../images/image-202509252103.webp" style="zoom:67%;" />
-
-   可以发现此时 `COUNT` 计算的就是各分组的数量而非整体数量。
 
 3. 查询年龄小于 25 的员工，并根据工作地址分组，获取员工数量大于等于 3 的工作地址。
 
