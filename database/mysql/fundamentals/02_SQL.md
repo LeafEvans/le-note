@@ -170,12 +170,12 @@ MySQL 中的**数据类型**有很多，主要分为三类：<span style="color:
 设计一张员工信息表，要求如下：
 
 1. 编号（纯数字）
-2. 员工工号（字符串类型，长度不超过 10 位。）
-3. 员工姓名（字符串类型，长度不超过 10 位。）
-4. 性别（男/女，存储一个汉字。）
-5. 年龄（正常人年龄，不可能存储负数。）
-6. 身份证号（二代身份证号均为 18 位，身份证中有 X 这样的字符。）
-7. 入职时间（取值年月日即可。）
+2. 员工工号（字符串类型，长度不超过 10 位）
+3. 员工姓名（字符串类型，长度不超过 10 位）
+4. 性别（男/女，存储一个汉字）
+5. 年龄（正常人年龄，不可能存储负数）
+6. 身份证号（二代身份证号均为 18 位，身份证中有 X 这样的字符）
+7. 入职时间（取值年月日即可）
 
 ```mysql
 create table emp(
@@ -1027,3 +1027,169 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
 **知识总览**：
 
 <img src="../../../images/image-202509252256.webp" style="zoom:67%;" />
+
+## DCL
+
+DCL 英文全称 Data Control Language（数据控制语言），用来管理数据库用户、控制数据库的访问权限。
+
+<img src="../../../images/image-202510081553.webp" style="zoom: 67%;" />
+
+### 管理用户
+
+#### 查询用户
+
+```mysql
+USE mysql;
+
+SELECT * FROM user;
+```
+
+<img src="../../../images/image-202510081558.webp" style="zoom:80%;" />
+
+#### 创建用户
+
+```mysql
+CREATE USER '用户名' @'主机名' IDENTIFIED BY '密码';
+```
+
+创建用户 `itcast`，只能够在当前主机 `localhost` 访问，密码为 123456：
+
+```mysql
+CREATE USER 'itcast' @'localhost' IDENTIFIED by '123456';
+```
+
+<img src="../../../images/image-202510081607.webp" style="zoom: 80%;" />
+
+创建用户 `hachimi`，可以在任意主机访问该数据库，密码为 123456：
+
+```mysql
+CREATE USER 'hachimi' @'%' IDENTIFIED BY '123456';
+```
+
+<img src="../../../images/image-202510081622.webp" style="zoom:80%;" />
+
+#### 修改用户密码
+
+```mysql
+ALTER USER '用户名' IDENTIFIED WITH mysql_netive_password BY '新密码';
+```
+
+将之前的 `hachimi` 用户的密码替换为 1234：
+
+```mysql
+ALTER USER 'hachimi' @'%' IDENTIFIED WITH mysql_native_password by '123456';
+```
+
+> [!tip]
+>
+> `mysql_native_password` 是 MySQL 早期版本使用的认证插件。从 MySQL 8.0 起，默认采用更安全的 `caching_sha2_password` 插件。
+>
+> 因此，上述代码应更新为：
+>
+> ```mysql
+> ALTER USER 'hachimi' @'%' IDENTIFIED WITH caching_sha2_password by '123456';
+> ```
+
+#### 删除用户
+
+```mysql
+DROP USER '用户名' @'主机名'
+```
+
+删除 `itcast` 用户，有：
+
+```mysql
+DROP USER 'itcast' @'localhost';
+```
+
+<img src="../../../images/image-202510081658.webp" style="zoom:80%;" />
+
+> [!tip]
+>
+> - 主机名可以使用 `%` 通配。
+> - 此类 SQL 开发人员操作较少，主要是 DBA（Database Administrator，数据库管理员）使用。
+
+### 权限控制
+
+MySQL 中定义了很多种权限，常用的如下：
+
+| 权限                    | 说明               |
+| ----------------------- | ------------------ |
+| `ALL`, `ALL PRIVILEGES` | 所有权限           |
+| `SELECT`                | 查询数据           |
+| `INSERT`                | 插入数据           |
+| `UPDATE`                | 修改数据           |
+| `DELETE`                | 删除数据           |
+| `ALTER`                 | 修改表             |
+| `DROP`                  | 删除数据库/表/视图 |
+| `CREATE`                | 创建数据库/表      |
+
+#### 查询权限
+
+```mysql
+SHOW GRANTS FOR '用户名' @'主机名';
+```
+
+查询 `hachimi` 用户的权限：
+
+```mysql
+SHOW GRANTS FOR 'hachimi' @'%';
+```
+
+<img src="../../../images/image-202510081712.webp" style="zoom:80%;" />
+
+#### 授予权限
+
+```mysql
+GRANT 权限列表 ON 数据库名.表名 TO '用户名' @'主机名';
+```
+
+给 `hachimi` 授予一些权限：
+
+```mysql
+GRANT ALL ON itcast.* TO 'hachimi' @'%';
+```
+
+<img src="../../../images/image-202510081717.webp" style="zoom:80%;" />
+
+<img src="../../../images/image-202510081721.webp" style="zoom:80%;" />
+
+#### 撤销权限
+
+```mysql
+REVOKE 权限列表 ON 数据库名.表名 FROM '用户名' @'主机名';
+```
+
+撤销 `hachimi` 的所有权限：
+
+```mysql
+REVOKE ALL ON itcast.*
+FROM 'hachimi' @'%';
+```
+
+<img src="../../../images/image-202510081712.webp" style="zoom:80%;" />
+
+> [!tip]
+>
+> - 多个权限之间，使用逗号分隔。
+> - 授权时，数据库名和表名可以使用 `*` 进行通配，代表所有。
+
+---
+
+**知识回顾**：
+
+1. **用户管理**：
+
+   ```mysql
+   CREATE USER '用户名' @'主机名' IDENTIFIED BY '密码';
+   ALTER USER '用户名' @'主机名' IDENTIFIED WITH caching_sha2_password BY '密码';
+   DROP USER '用户名' @'主机名';
+   ```
+
+2. **权限控制**：
+
+   ```mysql
+   GRANT 权限列表 ON 数据库名.表名 TO '用户名' @'主机名';
+   REVOKE 权限列表 ON 数据库名.表名 FROM '用户名' @'主机名';
+   ```
+
