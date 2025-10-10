@@ -180,8 +180,8 @@ MySQL 中的**数据类型**有很多，主要分为三类：<span style="color:
 ```mysql
 create table emp(
 	id int comment '编号', 
-  workno varchar(10) comment '姓名',
-  name varchar(10) comment '工号',
+  workno varchar(10) comment '工号',
+  name varchar(10) comment '姓名',
   gender char(1) comment '性别',
   age tinyint unsigned comment '年龄',
   idcard char(18) comment '身份证号',
@@ -422,7 +422,7 @@ WHERE
 >
 > 若修改语句中**没有指定条件**，则会修改整张表的**所有数据**。
 
-#### 删除数据
+### 删除数据
 
 ```mysql
 DELETE FROM 表名 [WHERE 条件]
