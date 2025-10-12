@@ -394,8 +394,8 @@ VALUES
 
 > [!tip]
 >
-> - 插入数据时，<span style="color:#F9499E">指定的字段顺序</span>需要<span style="color:#A56CC1">与值的顺序是一一对应的</span>。
-> - 字符串和日期型数据应该<span style="color:#EB5E0B">包含在引号中</span>。
+> - 插入数据时，<span style="color:#F9499E"><span style="font-weight:bold">指定的</span>字段顺序</span>需要<span style="color:#A56CC1">与值的顺序是<span style="font-weight:bold">一一对应</span>的</span>。
+> - 字符串和日期型数据应该<span style="color:#EB5E0B; font-weight:bold">包含在引号中</span>。
 > - 插入的数据大小，应该在<span style="color:#E2703A">字段的规定范围内</span>。
 
 ### 修改数据
@@ -522,8 +522,7 @@ SELECT 字段1 [AS 别名1], 字段2 [AS 别名2]... FROM 表名;
 ```
 
 ```mysql
-SELECT workaddress AS '工作地址'
-FROM emp;
+SELECT workaddress AS `工作地址` FROM emp;
 ```
 
 <img src="../../../images/image-202509251923.webp" style="zoom:67%;" />
@@ -743,21 +742,19 @@ SELECT 聚合函数(字段列表) FROM 表名;
 1. 统计该企业员工的数量。
 
    ```mysql
-   SELECT COUNT(id)
-   FROM emp;
+   SELECT COUNT(id) FROM emp;
    ```
-
+   
    <img src="../../../images/image-202509252020.webp" style="zoom:67%;" />
-
+   
 2. 统计该企业员工的平均年龄。
 
    ```mysql
-   SELECT AVG(age)
-   FROM emp;
+   SELECT AVG(age) FROM emp;
    ```
-
+   
    <img src="../../../images/image-202509252038.webp" style="zoom:67%;" />
-
+   
 3. 统计该企业员工的最大年龄。
 
    ```mysql
@@ -832,14 +829,16 @@ SELECT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 
 3. 查询年龄小于 25 的员工，并根据工作地址分组，获取员工数量大于等于 3 的工作地址。
 
    ```mysql
-   SELECT workaddress,
-       COUNT(id) AS '员工数量'
+   SELECT workaddress, COUNT(id) AS `员工数量`
    FROM emp
-   WHERE age < 25
-   GROUP BY workaddress
-   HAVING COUNT(id) >= 3;
+   WHERE
+       age < 25
+   GROUP BY
+       workaddress
+   HAVING
+       COUNT(id) >= 3;
    ```
-
+   
    <img src="../../../images/image-202509252108.webp" style="zoom:67%;" />
 
 > [!tip]
@@ -923,14 +922,11 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
 1. 查询第 1 页员工数据，每页展示 10 条记录。
 
    ```mysql
-   SELECT id,
-       name
-   FROM emp
-   LIMIT 0, 10;
+   SELECT id, name FROM emp LIMIT 10;
    ```
-
+   
    <img src="../../../images/image-202509252209.webp" style="zoom:67%;" />
-
+   
 2. 查询第 2 页员工数据，每页展示 10 条记录。
 
    ```mysql
@@ -1005,17 +1001,15 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
 5. 查询性别为男，且年龄在 20~40 岁（含）以内的前 5 个员工信息，对查询的结果按年龄升序排序，年龄相同按入职时间升序排序。
 
    ```mysql
-   SELECT id,
-       name,
-       age,
-       entrydate
+   SELECT id, name, age, entrydate
    FROM emp
-   WHERE age BETWEEN 20 AND 40
-   ORDER BY age,
-       entrydate
-   LIMIT 5
+   WHERE
+       age BETWEEN 20 AND 40
+       AND gender = '男'
+   ORDER BY age ASC, entrydate DESC
+   LIMIT 5;
    ```
-
+   
    <img src="../../../images/image-202509252237.webp" style="zoom:67%;" />
 
 ### 执行顺序
