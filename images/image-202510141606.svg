@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="660.0333251953125" height="204.01666259765625">
+  <title>思维导图</title>
+  <g class="smm-container"
+    transform="matrix(1,0,0,0.9999999999999999,-352.2333404541016,-300.44001464843745)">
+    <g class="smm-line-container">
+      <path
+        d="M 530.25,402.45001220703125L 592.65,402.45001220703125L 592.65,331.45001220703125Q 592.65,326.45001220703125 597.65,326.45001220703125L 634.25,326.45001220703125"
+        stroke-dasharray="none" stroke-width="2" stroke="#edb951" fill="none"></path>
+      <path
+        d="M 530.25,402.45001220703125L 592.65,402.45001220703125L 592.65,402.45001220703125L 634.25,402.45001220703125"
+        stroke-dasharray="none" stroke-width="2" stroke="#edb951" fill="none"></path>
+      <path
+        d="M 530.25,402.45001220703125L 592.65,402.45001220703125L 592.65,473.45001220703125Q 592.65,478.45001220703125 597.65,478.45001220703125L 634.25,478.45001220703125"
+        stroke-dasharray="none" stroke-width="2" stroke="#edb951" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,362.25,382.95001220703125)">
+        <path
+          d="
+      M5,0
+      L163,0
+      C163,0 168,0 168,5
+      L168,34
+      C168,34 168,39 163,39
+      L5,39
+      C5,39 0,39 0,34
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#e25a40"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="138" data-height="29" data-offsetx="0" opacity="1">
+            <foreignObject width="138" height="29"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>TCP/IP 模型</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="172" height="43" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,634.25,310.45001220703125)">
+        <path
+          d="
+      M5,0
+      L224,0
+      C224,0 229,0 229,5
+      L229,27
+      C229,27 229,32 224,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#2b76ef"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="199" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="199" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>记住：各层的名称和顺序</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="233" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,634.25,386.45001220703125)">
+        <path
+          d="
+      M5,0
+      L363,0
+      C363,0 368,0 368,5
+      L368,27
+      C368,27 368,32 363,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#2b76ef"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="338" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="338" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>了解：TCP/IP 模型和 OSI 参考模型的区别</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="372" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,634.25,462.45001220703125)">
+        <path
+          d="
+      M5,0
+      L268,0
+      C268,0 273,0 273,5
+      L273,27
+      C273,27 273,32 268,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#2b76ef"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="243" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="243" height="22"
+              style="line-height: 1.2; font-family: 微软雅黑, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>了解：TCP/IP 模型各层的功能</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="277" height="36" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>
