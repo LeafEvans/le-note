@@ -179,7 +179,7 @@ MySQL 中的**数据类型**有很多，主要分为三类：<span style="color:
 
 ```mysql
 create table emp(
-	id int comment '编号', 
+	id int comment '编号',
   workno varchar(10) comment '工号',
   name varchar(10) comment '姓名',
   gender char(1) comment '性别',
@@ -286,11 +286,13 @@ TRUNCATE TABLE 表名;
 1. 数据库操作：
 
    ```mysql
-   SHOW DATABASE 
+   SHOW DATABASE
    CREATE DATABASE 数据库名;
    USE 数据库名;
    SELECT DATABASE();
    DROP DATABASE 数据库名;
+
+   ```
 
 2. 表操作：
 
@@ -476,9 +478,9 @@ DQL 英语全称是 Data Query Language（<span style="color:#E94560">数据查�
 ```mysql
 SELECT
 	字段列表
-FROM 
+FROM
 	表名列表
-WHERE	
+WHERE
 	条件列表
 GROUP BY
 	分组字段列表
@@ -538,7 +540,7 @@ SELECT DISTINCT 字段列表 FROM 表名;
 ```
 
 ```mysql
-SELECT DISTINCT age 
+SELECT DISTINCT age
 FROM emp;
 ```
 
@@ -567,11 +569,11 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
 | `LIKE` 占位符      | 模糊匹配（`_` 匹配单个字符，`%` 匹配任意个字符） |
 | `IS NULL`          | 是 `NULL`                                        |
 
-| 逻辑运算符    | 功能                         |
-| ------------- | ---------------------------- |
-| `AND` 或 `&&` | 并且（多个条件同时成立）     |
-| `OR` 或 `||`  | 或者（多个条件任意一个成立） |
-| `NOT` 或 ` !` | 非，不是                     |
+| 逻辑运算符    | 功能                     |
+| ------------- | ------------------------ | --- | ---------------------------- |
+| `AND` 或 `&&` | 并且（多个条件同时成立） |
+| `OR` 或 `     |                          | `   | 或者（多个条件任意一个成立） |
+| `NOT` 或 ` !` | 非，不是                 |
 
 ---
 
@@ -637,7 +639,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
        name
    FROM emp
    WHERE age != 16;
-   
+
    SELECT id,
        name
    FROM emp
@@ -654,7 +656,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    FROM emp
    WHERE age <= 20
        AND age >= 15;
-   
+
    SELECT id,
        name
    FROM emp
@@ -684,7 +686,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    WHERE age = 18
        OR age = 25
        OR age = 30;
-   
+
    SELECT id,
        name
    FROM emp
@@ -744,17 +746,17 @@ SELECT 聚合函数(字段列表) FROM 表名;
    ```mysql
    SELECT COUNT(id) FROM emp;
    ```
-   
+
    <img src="../../../images/image-202509252020.webp" style="zoom:67%;" />
-   
+
 2. 统计该企业员工的平均年龄。
 
    ```mysql
    SELECT AVG(age) FROM emp;
    ```
-   
+
    <img src="../../../images/image-202509252038.webp" style="zoom:67%;" />
-   
+
 3. 统计该企业员工的最大年龄。
 
    ```mysql
@@ -838,7 +840,7 @@ SELECT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 
    HAVING
        COUNT(id) >= 3;
    ```
-   
+
    <img src="../../../images/image-202509252108.webp" style="zoom:67%;" />
 
 > [!tip]
@@ -924,9 +926,9 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
    ```mysql
    SELECT id, name FROM emp LIMIT 10;
    ```
-   
+
    <img src="../../../images/image-202509252209.webp" style="zoom:67%;" />
-   
+
 2. 查询第 2 页员工数据，每页展示 10 条记录。
 
    ```mysql
@@ -940,7 +942,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
 
 > [!tip]
 >
-> 本质上，`LIMIT` 的作用其实就是<u>*从某个起始位置开始*</u>，<u>*返回指定数量的记录*</u>。
+> 本质上，`LIMIT` 的作用其实就是<u>_从某个起始位置开始_</u>，<u>_返回指定数量的记录_</u>。
 
 ### 案例
 
@@ -1009,7 +1011,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
    ORDER BY age ASC, entrydate DESC
    LIMIT 5;
    ```
-   
+
    <img src="../../../images/image-202509252237.webp" style="zoom:67%;" />
 
 ### 执行顺序
@@ -1186,4 +1188,3 @@ FROM 'hachimi' @'%';
    GRANT 权限列表 ON 数据库名.表名 TO '用户名' @'主机名';
    REVOKE 权限列表 ON 数据库名.表名 FROM '用户名' @'主机名';
    ```
-
