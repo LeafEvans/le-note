@@ -1235,9 +1235,9 @@ func main() {
 
 ### 路由文件分组
 
-新建 `routes` 文件夹，其下新建 `adminRouters.go`、`apiRouters.go`、`defaultRouters.go`。
+新建 `routes` 文件夹，其下新建 `admin_routers.go`、`api_routers.go`、`web_routers.go`。
 
-`adminRouters.go`：
+`admin_routers.go`：
 
 ```go
 package routers
@@ -1264,7 +1264,7 @@ func AdminRoutersInit(r *gin.Engine) {
 }
 ```
 
-`apiRouters.go`：
+`api_routers.go`：
 
 ```go
 package routers
@@ -1291,7 +1291,7 @@ func APIRoutersInit(r *gin.Engine) {
 }
 ```
 
-`defaultRouters.go`：
+`web_routers.go`：
 
 ```go
 package routers
@@ -1302,13 +1302,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func DefaultRoutersInit(r *gin.Engine) {
-	defaultRouters := r.Group("/")
+func WebRoutersInit(r *gin.Engine) {
+	webRouters := r.Group("/")
 	{
-		defaultRouters.GET("/", func(c *gin.Context) {
+		webRouters.GET("/", func(c *gin.Context) {
 			c.String(http.StatusOK, "首页")
 		})
-		defaultRouters.GET("/news", func(c *gin.Context) {
+		webRouters.GET("/news", func(c *gin.Context) {
 			c.String(http.StatusOK, "新闻")
 		})
 	}
@@ -1329,7 +1329,7 @@ import (
 func main() {
 	r := gin.Default()
 
-	routers.DefaultRoutersInit(r)
+	routers.WebRoutersInit(r)
 	routers.APIRoutersInit(r)
 	routers.AdminRoutersInit(r)
 
@@ -1338,3 +1338,331 @@ func main() {
 ```
 
 <img src="../../images/image-202510181842.webp" style="zoom:67%;" />
+
+## 自定义控制器
+
+### 控制器分组
+
+新建 `controller/admin/index_controller.go`：
+
+```go
+package admin
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+type IndexController struct{}
+
+func (ic IndexController) Index(c *gin.Context) {
+	c.String(http.StatusOK, "后台首页")
+}
+```
+
+新建 `controller/admin/user_controller.go`：
+
+```go
+package admin
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+type UserController struct{}
+
+func (uc UserController) Index(c *gin.Context) {
+	c.String(http.StatusOK, "用户列表")
+}
+
+func (uc UserController) Add(c *gin.Context) {
+	c.String(http.StatusOK, "用户列表-add")
+}
+
+func (uc UserController) Edit(c *gin.Context) {
+	c.String(http.StatusOK, "用户列表-edit")
+}
+```
+
+新建 `controllers/admin/article_controller.go`：
+
+```go
+package admin
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+type ArticleController struct{}
+
+func (ac ArticleController) Index(c *gin.Context) {
+	c.String(http.StatusOK, "新闻列表")
+}
+
+func (ac ArticleController) Add(c *gin.Context) {
+	c.String(http.StatusOK, "新闻列表-add")
+}
+
+func (ac ArticleController) Edit(c *gin.Context) {
+	c.String(http.StatusOK, "新闻列表-edit")
+}
+
+```
+
+配置对应的路由 `routers/admin_routers.go`：
+
+```go
+package routers
+
+import (
+	"test_2025_10_18/controllers/admin"
+
+	"github.com/gin-gonic/gin"
+)
+
+func AdminRoutersInit(r *gin.Engine) {
+	adminRouters := r.Group("/admin")
+	{
+		adminRouters.GET("/", admin.IndexController{}.Index)
+
+		adminRouters.GET("/user", admin.UserController{}.Index)
+		adminRouters.GET("/user/add", admin.UserController{}.Add)
+		adminRouters.GET("/user/edit", admin.UserController{}.Edit)
+
+		adminRouters.GET("/article", admin.ArticleController{}.Index)
+		adminRouters.GET("/article/add", admin.ArticleController{}.Add)
+		adminRouters.GET("/article/edit", admin.ArticleController{}.Edit)
+	}
+}
+```
+
+其他路由配置的方法类似。
+
+### 控制器继承
+
+新建 `controllers/admin/base_controller.go`：
+
+```go
+package admin
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+type BaseController struct{}
+
+func (bc *BaseController) Success(c *gin.Context) {
+	c.String(http.StatusOK, "成功")
+}
+
+func (bc *BaseController) Fail(c *gin.Context) {
+	c.String(http.StatusOK, "失败")
+}
+```
+
+`UserController` 继承 `BaseController`：
+
+```go
+package admin
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+type UserController struct {
+	BaseController
+}
+
+func (uc UserController) Index(c *gin.Context) {
+	c.String(http.StatusOK, "用户列表")
+	uc.Success(c)
+}
+
+func (uc UserController) Add(c *gin.Context) {
+	c.String(http.StatusOK, "用户列表-add")
+}
+
+func (uc UserController) Edit(c *gin.Context) {
+	c.String(http.StatusOK, "用户列表-edit")
+}
+```
+
+<img src="../../images/image-202510201545.webp" style="zoom:67%;" />
+
+## 中间件
+
+Gin 框架支持在请求处理流程中插入自定义的钩子函数，这类函数被称为中间件（Middleware）。中间件非常适合用于实现通用的业务逻辑，例如用户认证、权限校验、数据分页、日志记录、请求耗时统计等。
+
+通俗地说，中间件是在路由匹配之前或之后执行的一系列操作，用于对请求或响应统一处理。
+
+### 路由中间件
+
+#### 初始中间件
+
+Gin 中的中间件必须为 `gin.HandleFunc` 类型，配置路由时可以传递多个 `func` 回调函数，最后一个 `func` 回调函数前面触发的方法均可称为中间件。
+
+> [!tip]
+>
+> `gin.HandleFunc` 本质上就是 `func(*Context)`。
+
+```go
+package main
+
+import (
+	"fmt"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+func initMiddleware(c *gin.Context) {
+	fmt.Println("我是中间件")
+}
+
+func main() {
+	r := gin.Default()
+
+	r.GET("/", initMiddleware, func(c *gin.Context) {
+		c.String(http.StatusOK, "首页——中间件演示")
+	})
+
+	r.GET("/news", initMiddleware, func(c *gin.Context) {
+		c.String(http.StatusOK, "新闻页面——中间件演示")
+	})
+
+	r.Run()
+}
+```
+
+<img src="../../images/image-202510211204.jpg" style="zoom:67%;" />
+
+#### `c.Next` 继续执行后续流程
+
+在 Gin 中间件中调用 `c.Next()`，会将控制权交给下一个中间件或最终的路由处理函数。
+
+调用之后的代码将在**路由处理完成、响应尚未返回前**执行，常用于日志记录、耗时统计、错误处理等后置操作。
+
+```go
+package main
+
+import (
+	"fmt"
+	"net/http"
+	"time"
+
+	"github.com/gin-gonic/gin"
+)
+
+func initMiddleware(c *gin.Context) {
+	start := time.Now().UnixNano()
+	fmt.Println("1-执行中，中间件")
+	c.Next()
+	end := time.Now().UnixNano()
+	fmt.Printf("3-程序执行完成，计算时间：%d\n", end-start)
+}
+
+func main() {
+	r := gin.Default()
+
+	r.GET("/", initMiddleware, func(c *gin.Context) {
+		fmt.Println("2-执行首页返回数据")
+		c.String(http.StatusOK, "首页——中间件演示")
+	})
+
+	r.GET("/news", initMiddleware, func(c *gin.Context) {
+		c.String(http.StatusOK, "新闻页面——中间件演示")
+	})
+
+	r.Run()
+}
+```
+
+<img src="../../images/image-202510212320.jpg" style="zoom: 67%;" />
+
+#### 一个路由配置多个中间件的执行顺序
+
+```go
+package main
+
+import (
+	"fmt"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+func initMiddlewareOne(c *gin.Context) {
+	fmt.Println("1-执行中，中间件-One")
+	c.Next()
+	fmt.Println("3-执行中，中间件-One")
+}
+
+func initMiddlewareTwo(c *gin.Context) {
+	fmt.Println("1-执行中，中间件-Two")
+	c.Next()
+	fmt.Println("3-执行中，中间件-Two")
+}
+
+func main() {
+	r := gin.Default()
+
+	r.GET("/", initMiddlewareOne, initMiddlewareTwo, func(c *gin.Context) {
+		fmt.Println("2-执行路由中的程序")
+		c.String(http.StatusOK, "首页——中间件演示")
+	})
+
+	r.Run()
+}
+```
+
+<img src="../../images/image-202510212326.jpg" style="zoom:67%;" />
+
+#### `c.Abort`
+
+调用 `c.Abort()` 会立即停止执行后续的中间件和路由处理函数，但**不会中断当前中间件中已开始的逻辑**。通常用于权限校验失败、请求非法等场景，配合 `c.JSON()` 等方法直接返回响应。
+
+```go
+package main
+
+import (
+	"fmt"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+func initMiddlewareOne(c *gin.Context) {
+	fmt.Println("1-执行中，中间件-One")
+	// 调用该请求剩余处理程序
+	c.Next()
+	fmt.Println("3-执行中，中间件-One")
+}
+
+func initMiddlewareTwo(c *gin.Context) {
+	fmt.Println("1-执行中，中间件-Two")
+	// 终止该请求剩余处理程序
+	c.Abort()
+	fmt.Println("3-执行中，中间件-Two")
+}
+
+func main() {
+	r := gin.Default()
+
+	r.GET("/", initMiddlewareOne, initMiddlewareTwo, func(c *gin.Context) {
+		fmt.Println("2-执行路由中的程序")
+		c.String(http.StatusOK, "首页——中间件演示")
+	})
+
+	r.Run()
+}
+```
+
