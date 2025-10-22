@@ -1666,3 +1666,132 @@ func main() {
 }
 ```
 
+<img src="../../images/image-202510212331.webp" style="zoom:67%;" />
+
+### 全局中间件
+
+全局中间件使用 `r.Use` 配置。
+
+```go
+package main
+
+import (
+	"fmt"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+func initMiddleware(c *gin.Context) {
+	fmt.Println("全局中间件，通过 r.Use 配置")
+}
+
+func main() {
+	r := gin.Default()
+
+	r.Use(initMiddleware)
+
+	r.GET("/", func(c *gin.Context) {
+		c.String(http.StatusOK, "首页——中间件演示")
+	})
+
+	r.GET("/news", func(c *gin.Context) {
+		c.String(http.StatusOK, "新闻页面——中间件演示")
+	})
+
+	r.Run()
+}
+```
+
+<img src="../../images/image-202510212343.webp" style="zoom:67%;" />
+
+### 在路由分组中配置中间件
+
+在路由组注册中间件有两种方式。
+
+**写法 1**：
+
+```go
+shopGroup := r.Group("/shop", StatCost())
+{
+  shopGroup.GET("/index", func(c *gin.Context) {...})
+  ...
+}
+```
+
+**写法 2**：
+
+```go
+shopGroup := r.Group("/shop")
+shopGroup.Use(StatCost())
+{
+  shopGroup.GET("/index", func(c *gin.Context) {...})
+  ...
+}
+```
+
+以 `admin_routers.go` 举例，为其配置中间件。
+
+新建 `middlewares/init.go`：
+
+```go
+package middlewares
+
+import (
+	"fmt"
+
+	"github.com/gin-gonic/gin"
+)
+
+func InitMiddleware(c *gin.Context) {
+	fmt.Println("路由分组中间件")
+	c.Next()
+}
+```
+
+而后修改 `admin_routers.go`：
+
+```go
+package routers
+
+import (
+	"test_2025_10_18/controllers/admin"
+	"test_2025_10_18/middlewares"
+
+	"github.com/gin-gonic/gin"
+)
+
+func AdminRoutersInit(r *gin.Engine) {
+	adminRouters := r.Group("/admin", middlewares.InitMiddleware)
+	{
+		adminRouters.GET("/", admin.IndexController{}.Index)
+
+		adminRouters.GET("/user", admin.UserController{}.Index)
+		adminRouters.GET("/user/add", admin.UserController{}.Add)
+		adminRouters.GET("/user/edit", admin.UserController{}.Edit)
+
+		adminRouters.GET("/article", admin.ArticleController{}.Index)
+		adminRouters.GET("/article/add", admin.ArticleController{}.Add)
+		adminRouters.GET("/article/edit", admin.ArticleController{}.Edit)
+	}
+}
+```
+
+### 中间件和对应控制器间共享数据
+
+**设置值**：
+
+```go
+c.Set("username", "哈基米")
+```
+
+**获取值**：
+
+```go
+username, _ := c.Get("username")
+```
+
+**中间件设置值**：
+
+
+
