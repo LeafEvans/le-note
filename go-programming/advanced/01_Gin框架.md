@@ -1512,7 +1512,7 @@ Gin 中的中间件必须为 `gin.HandleFunc` 类型，配置路由时可以传�
 
 > [!tip]
 >
-> `gin.HandleFunc` 本质上就是 `func(*Context)`。
+> `gin.HandleFunc` 本质上就是 `func(c *gin.Context)`。
 
 ```go
 package main
@@ -1712,7 +1712,7 @@ func main() {
 **写法 1**：
 
 ```go
-shopGroup := r.Group("/shop", StatCost())
+shopGroup := r.Group("/shop", StatCost)
 {
   shopGroup.GET("/index", func(c *gin.Context) {...})
   ...
@@ -1723,7 +1723,7 @@ shopGroup := r.Group("/shop", StatCost())
 
 ```go
 shopGroup := r.Group("/shop")
-shopGroup.Use(StatCost())
+shopGroup.Use(StatCost)
 {
   shopGroup.GET("/index", func(c *gin.Context) {...})
   ...
@@ -1793,5 +1793,63 @@ username, _ := c.Get("username")
 
 **中间件设置值**：
 
+```go
+package middlewares
 
+import (
+	"fmt"
 
+	"github.com/gin-gonic/gin"
+)
+
+func InitMiddleware(c *gin.Context) {
+	fmt.Println("路由分组中间件")
+	c.Set("username", "哈基米")
+	c.Next()
+}
+```
+
+**控制器获取值**：
+
+```go
+package admin
+
+import (
+	"fmt"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+type IndexController struct{}
+
+func (ic IndexController) Index(c *gin.Context) {
+	c.String(http.StatusOK, "后台首页")
+	username, _ := c.Get("username")
+	fmt.Println(username)
+
+	v, ok := username.(string)
+	if ok {
+		c.String(http.StatusOK, "用户列表——"+v)
+	} else {
+		c.String(http.StatusOK, "用户列表——获取用户失败")
+	}
+}
+```
+
+<img src="../../images/image-202510222149.webp" style="zoom:67%;" />
+
+### 中间件注意事项
+
+**Gin 默认中间件**：
+
+`gin.Default` 默认使用了 `Logger` 和 `Recovery` 中间件，其中：
+
+- `Logger` 中间件将日志写入 `gin.DefaultWriter`，即使配置了 `GIN_MODE = release`。
+- `Recovery` 中间件会 `recover` 任何 `panic`；若有 `panic` 的话，会写入 500 响应码。
+
+若不想使用上述默认中间件，则可使用 `gin.New` 新建一个没有任何默认中间件的路由。
+
+**Gin 中间件中使用 goroutine**：
+
+当中间件或 `handler` 中启动新的 `goroutine` 时，**不可使用**原始的上下文（`c *gin.Context`），必须使用其只读副本（`c.Copy`）。
