@@ -1018,7 +1018,7 @@ func main() {
 
 其中 `c.Param("uid")` 用于从动态路由中提取 `uid` 参数的值。
 
-#### `POST` 请求传值及获取 `form` 表单数据
+#### `POST` 请求传值及获取 `<form>` 表单数据
 
 定义一个 `add_user.html` 页面：
 
@@ -1072,7 +1072,7 @@ func main() {
 
 它会根据请求的 `Content-Type` 自动识别数据类型（如 JSON、表单、查询字符串等），并利用反射机制将请求中的参数自动映射到指定的结构体字段中。 
 
-`c.ShouldBind` 方法正是实现这一功能的核心——它能智能解析请求体或 URL 查询参数（包括 JSON、form 表单和 QueryString 等格式），并将提取出的数据自动绑定到对应的结构体实例上。 
+`c.ShouldBind` 方法正是实现这一功能的核心——它能智能解析请求体或 URL 查询参数（包括 JSON、`<form>` 表单和 QueryString 等格式），并将提取出的数据自动绑定到对应的结构体实例上。 
 
 定义一个 `UserInfo` 结构体：
 
@@ -1853,3 +1853,385 @@ func (ic IndexController) Index(c *gin.Context) {
 **Gin 中间件中使用 goroutine**：
 
 当中间件或 `handler` 中启动新的 `goroutine` 时，**不可使用**原始的上下文（`c *gin.Context`），必须使用其只读副本（`c.Copy`）。
+
+## 自定义 Model
+
+### 关于 Model
+
+若应用简单的话，则可以直接在 Controller 中处理常见的业务逻辑。但是如果有功能需要在多个控制器或多个模板中复用的话，则将公共的功能单独抽取出来作为一个模块（Model）。
+
+Model 是逐步抽象的过程，一般会在 Model 中封转一些公共方法让不同的 Controller 使用，也可以在 Model 中实现与数据库的交互。
+
+### Model 中封装公共的方法
+
+新建 `models/tools.go`：
+
+```go
+package models
+
+import (
+	"crypto/md5"
+	"fmt"
+	"time"
+
+	"go.uber.org/zap"
+)
+
+func UnixToTime(timestamp int64) string {
+	return time.Unix(timestamp, 0).Format("20060102 15:04:05")
+}
+
+func DateToUnix(str string) int64 {
+	template := "2006-01-02 15:04:05"
+	t, err := time.ParseInLocation(template, str, time.Local)
+	if err != nil {
+		zap.L().Error("time parse error", zap.Error(err))
+		return 0
+	}
+	return t.Unix()
+}
+
+func GetUnix() int64 {
+	return time.Now().Unix()
+}
+
+func GetDate() string {
+	template := "2006-01-02 15:04:05"
+	return time.Now().Format(template)
+}
+
+func GetDay() string {
+	return time.Now().Format("20060102")
+}
+
+func Md5(str string) string {
+	data := []byte(str)
+	return fmt.Sprintf("%x\n", md5.Sum(data))
+}
+
+func Hello(in string) string {
+	return in + "world"
+}
+```
+
+### 控制器中调用 Model
+
+```go
+package controllers
+
+import "test_2025_10_18/models"
+
+day := models.GetDay()
+```
+
+### 调用 Model 注册全局模板函数
+
+修改 `controllers/web_controller.go`：
+
+```go
+package web
+
+import (
+	"net/http"
+	"time"
+
+	"github.com/gin-gonic/gin"
+)
+
+type WebController struct{}
+
+func (wc WebController) Index(c *gin.Context) {
+	c.HTML(http.StatusOK, "default/index.html", gin.H{
+		"msg":  "我是一个 msg",
+		"time": time.Now().Unix(),
+	})
+}
+
+func (wc WebController) News(c *gin.Context) {
+	c.String(http.StatusOK, "新闻")
+}
+```
+
+`main.go` 中进行全局注册：
+
+```go
+package main
+
+import (
+	"test_2025_10_18/models"
+	"test_2025_10_18/routers"
+	"text/template"
+
+	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
+)
+
+func main() {
+	logger, _ := zap.NewProduction()
+	defer logger.Sync()
+	zap.ReplaceGlobals(logger)
+
+	r := gin.Default()
+
+	r.SetFuncMap(template.FuncMap{
+		"UnixToTime": models.UnixToTime,
+	})
+
+	r.LoadHTMLGlob("templates/**/*")
+
+	routers.AdminRoutersInit(r)
+	routers.WebRoutersInit(r)
+
+	r.Run()
+}
+```
+
+然后在模板 `default/index.html` 中：
+
+```html
+{{define "default/index.html"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>我是一个首页——index</h2>
+    <br />
+    {{.msg}}
+    <br />
+    {{UnixToTime .time}}
+  </body>
+</html>
+{{end}}
+```
+
+<img src="../../images/image-202510271447.webp" style="zoom:67%;" />
+
+### Md5 加密
+
+Md5 是一种加密哈希函数（Message-Digest Algorithm 5），把任意长度输入映射为固定 128 位（16 字节）的摘要，常用十六进制表示为 32 字符串。
+
+**方法一**：
+
+```go
+data := []byte("123456")
+h := md5.Sum(data)
+md5Str := fmt.Sprintf("%x", h)
+fmt.Println(md5Str)
+```
+
+**方法二**：
+
+```go
+h := md5.New()
+io.WriteString(h, "123456")
+fmt.Printf("%x", h.Sum(nil))
+```
+
+## 文件上传
+
+> [!tip]
+>
+> 应在上传文件的 `<form>` 表单中添加 `enctype="multipart/form-data"` 属性。
+
+### 单文件上传
+
+官方示例如下：
+
+```go
+func main() {
+  router := gin.Default()
+  // 为 multipart forms 设置较低的内存限制（默认是 32 MiB）
+  router.MaxMultipartMemory = 8 << 20  // 8 MiB
+  router.POST("/upload", func(c *gin.Context) {
+    // 单文件
+    file, _ := c.FormFile("file")
+    log.Println(file.Filename)
+    
+    dst := "./file" + file.Filename
+    // 上传文件至指定的完整文件路径
+    c.SaveUploadedFile(file, dst)
+    
+    c.String(http.StatusOK, fmt.Sprintf("'%s' uploaded!", file.Filename))
+    router.Run(":8080")
+  })
+}
+```
+
+项目中实现文件上传：
+
+1. **定义模板**：需要在文件的 `<form>` 表单上面需要加入 `enctype="multipart/form-data"`。
+
+   ```html
+   {{define "admin/user/add.html"}}
+   <!DOCTYPE html>
+   <html lang="en">
+     <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Document</title>
+     </head>
+     <body>
+       <form
+         action="/admin/user/doAdd"
+         method="post"
+         enctype="multipart/form-data"
+       >
+         用户名：<input
+           type="text"
+           name="username"
+           placeholder="用户名"
+         /><br /><br />
+         头 像：<input type="file" name="avatar" /><br /><br />
+         <input type="submit" value="提交" />
+       </form>
+     </body>
+   </html>
+   {{end}}
+   ```
+
+2. **定义业务逻辑**：
+
+   ```go
+   func (uc UserController) DoAdd(c *gin.Context) {
+   	username := c.PostForm("username")
+   	file, err := c.FormFile("avatar")
+   	if err != nil {
+   		c.JSON(http.StatusInternalServerError, gin.H{"message": err.Error()})
+   		return
+   	}
+   	dst := path.Join("./static/upload", file.Filename)
+   	fmt.Println(dst)
+   	c.SaveUploadedFile(file, dst)
+   	c.JSON(http.StatusOK, gin.H{
+   		"message":  fmt.Sprintf("'%s' uploaded!", file.Filename),
+   		"username": username,
+   	})
+   }
+   ```
+
+<img src="../../images/image-202510281145.jpg" style="zoom:67%;" />
+
+### 多文件上传
+
+#### 不同名字的多个文件
+
+1. **定义模板**：需要在上传文件的 `<form>` 表单上需要添加 `enctype="multipart/form-data"`。
+
+   ```html
+   {{define "admin/user/add.html"}}
+   <!DOCTYPE html>
+   <html lang="en">
+     <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Document</title>
+     </head>
+     <body>
+       <form
+         action="/admin/user/doAdd"
+         method="post"
+         enctype="multipart/form-data"
+       >
+         用户名：<input
+           type="text"
+           name="username"
+           placeholder="用户名"
+         /><br /><br />
+         头 像1：<input type="file" name="avatar1" /><br /><br />
+         头 像2：<input type="file" name="avatar2" /><br /><br />
+         <input type="submit" value="提交" />
+       </form>
+     </body>
+   </html>
+   {{end}}
+   ```
+
+2. **定义业务逻辑**：
+
+   ```go
+   func (uc UserController) DoAdd(c *gin.Context) {
+   	username := c.PostForm("username")
+   	avatar1, err1 := c.FormFile("avatar1")
+   	avatar2, err2 := c.FormFile("avatar2")
+   	if err1 != nil {
+   		dst1 := path.Join("./static/upload", avatar1.Filename)
+   		c.SaveUploadedFile(avatar1, dst1)
+   	}
+   	if err2 != nil {
+   		dst2 := path.Join("./static/upload", avatar2.Filename)
+   		c.SaveUploadedFile(avatar2, dst2)
+   	}
+   	c.JSON(http.StatusOK, gin.H{
+   		"message":  "文件上传成功",
+   		"username": username,
+   	})
+   }
+   ```
+
+<img src="../../images/image-202510281157.jpg" style="zoom:67%;" />
+
+#### 相同名字的多个文件
+
+1. **定义模板**：
+
+   ```go
+   {{define "admin/user/add.html"}}
+   <!DOCTYPE html>
+   <html lang="en">
+     <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Document</title>
+     </head>
+     <body>
+       <form
+         action="/admin/user/doAdd"
+         method="post"
+         enctype="multipart/form-data"
+       >
+         用户名：<input
+           type="text"
+           name="username"
+           placeholder="用户名"
+         /><br /><br />
+         头 像1：<input type="file" name="avatar[]" /><br /><br />
+         头 像2：<input type="file" name="avatar[]" /><br /><br />
+         <input type="submit" value="提交" />
+       </form>
+     </body>
+   </html>
+   {{end}}
+   
+   ```
+
+   > [!tip]
+   >
+   > `[]` 表示该字段为数组形式，当有多个同名输入（如多个文件上传）时，后端（如 Gin）会将它们解析为切片（slice），方便处理多个值。
+   >
+   > 若不添加 `[]`，则只获取最后一个值（覆盖前面的），不适合多文件场景。
+
+2. **定义业务逻辑**：
+
+   ```go
+   func (uc UserController) DoAdd(c *gin.Context) {
+   	username := c.PostForm("username")
+   	form, _ := c.MultipartForm()
+   	files := form.File["avatar[]"]
+   
+   	for _, file := range files {
+   		dst := path.Join("./static/upload", file.Filename)
+   		c.SaveUploadedFile(file, dst)
+   	}
+   
+   	c.JSON(http.StatusOK, gin.H{
+   		"message":  "文件上传成功",
+   		"username": username,
+   	})
+   }
+   ```
+
+<img src="../../images/image-202510281309.jpg" style="zoom: 67%;" />
