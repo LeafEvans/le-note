@@ -2235,3 +2235,304 @@ func main() {
    ```
 
 <img src="../../images/image-202510281309.jpg" style="zoom: 67%;" />
+
+## Cookie
+
+### 定义
+
+HTTP 是无状态协议。简而言之，当你浏览一个页面，而后转到同一网站的另一页面，服务器无法认识到这是同一浏览器在访问同一网站。每一次访问，都是没有任何关系的。若要实现多页面之间共享数据，可以使用 Cookie 或者 Session 来实现。
+
+Cookie 是存储于访问者计算机的浏览器中的，可以让我们使用同一个浏览器访问同一个域名时，共享数据。
+
+### 功能
+
+- 保持用户登陆状态
+- 保存用户浏览的历史记录
+- 猜你喜欢、智能推荐
+- 电商网站的加入购物车
+
+### 设置和获取 Cookie
+
+#### 设置 Cookie
+
+```go
+func (c *Context) SetCookie(name, value string, maxAge int, path, domain string, secure, httpOnly bool)
+```
+
+- `name`：键
+- `value`：值
+- `maxAge`：过期时间；若仅想设置 Cookie 的保存路径而不像设置存活时间，可以在第三个参数中传递 `nil`
+- `path`：Cookie 的路径
+- `domain`：作用域，本地调试成 `localhost`，正式上线配置成域名
+- `secure`：当 `secure` 值为 `true` 时，`Cookie` 在 HTTP 中是无效的，在 HTTPS 中才有效
+- `httpOnly`：是微软对 Cookie 的拓展，若在 Cookie 中设置了 `httpOnly` 属性，则通过程序（JS 脚本、Applet 等）将无法获取 Cookie 信息，防止 XSS 攻击发送
+
+#### 获取 Cookie
+
+```go
+cookie, err := c.Cookie("name")
+```
+
+#### 示例
+
+```go
+package web
+
+import (
+	"net/http"
+	"time"
+
+	"github.com/gin-gonic/gin"
+)
+
+type WebController struct{}
+
+func (wc WebController) Index(c *gin.Context) {
+	c.SetCookie("username", "曼波", 3600, "/", "localhost", false, false)
+	c.HTML(http.StatusOK, "web/index.html", gin.H{
+		"msg":  "我是一个 msg",
+		"time": time.Now().Unix(),
+	})
+}
+
+func (wc WebController) News(c *gin.Context) {
+	username, _ := c.Cookie("username")
+	c.String(http.StatusOK, "Username = %v", username)
+}
+
+func (wc WebController) Shop(c *gin.Context) {
+	username, _ := c.Cookie("username")
+	c.String(http.StatusOK, "Cookie = %v", username)
+}
+```
+
+<img src="../../images/image-202511021616.jpg" style="zoom:80%;" />
+
+若要删除 Cookie，则可以将 `maxAge` 设置为 `-1` 等负数：
+
+```go
+func (wc WebController) DeleteCookie(c *gin.Context) {
+	c.SetCookie("username", "曼波", -1, "/", "localhost", false, false)
+	c.String(http.StatusOK, "删除成功")
+}
+```
+
+<img src="../../images/image-202511021620.png" style="zoom:80%;" />
+
+### 多个二级域名共享 Cookie
+
+1. 分别将 `a.leafevans.com` 和 `b.leafevans.com` 解析到服务器中。
+
+2. 用户在 `a.leafevans.com` 中设置 Cookie 信息后可以在 `b.leafevans.com` 中获取之前设置的 Cookie，也就是多个二级域名共享 Cookie，可以：
+
+   ```go
+   c.SetCookie("username", "曼波", 3600, "/", ".leafevans.com", false, true)
+   ```
+
+
+> [!tip]
+>
+> 以点开头（`.leafevans.com`）表示该 Cookie 对 `leafevans.com` 及其所有子域名（如 `www.leafevans.com`、`api.leafevans.com`）都有效。  
+
+## Session
+
+### 介绍
+
+Session 是另一种记录客户状态的机制，不同的是 Cookie 保存在客户端浏览器中，而 Session 保存在服务器上。
+
+### 工作流程
+
+当客户端首次访问服务器时，服务器会创建一个 Session 对象，并生成一个唯一的 Session ID（作为 key），连同对应的会话数据（作为 value）存储在服务器。随后，服务器将该 Session ID 通过 Cookie 发送给浏览器。浏览器在后续请求中自动附带该 Cookie，服务器据此 ID 检索对应的 Session 数据。
+
+### 使用 Session 
+
+Gin 官方并没有提供 Session 相关的文档，此时可以使用第三方的 Session 中间件来实现。
+
+https://github.com/gin-contrib/sessions
+
+该中间件支持的存储引擎有：
+
+- [cookie-based](https://github.com/gin-contrib/sessions?tab=readme-ov-file#cookie-based)
+- [Redis](https://github.com/gin-contrib/sessions?tab=readme-ov-file#redis)
+- [memcached](https://github.com/gin-contrib/sessions?tab=readme-ov-file#memcached)
+- [MongoDB](https://github.com/gin-contrib/sessions?tab=readme-ov-file#mongodb)
+- [GORM](https://github.com/gin-contrib/sessions?tab=readme-ov-file#gorm)
+- [memstore](https://github.com/gin-contrib/sessions?tab=readme-ov-file#memstore)
+- [PostgreSQL](https://github.com/gin-contrib/sessions?tab=readme-ov-file#postgresql)
+- [Filesystem](https://github.com/gin-contrib/sessions?tab=readme-ov-file#Filesystem)
+
+### 基于 Cookie 存储 Session 
+
+下载 `session` 包：
+
+```go
+go get github.com/gin-contrib/session
+```
+
+初始化会话存储：
+
+```go
+package main
+
+import (
+	"test_2025_10_18/models"
+	"test_2025_10_18/routers"
+	"text/template"
+
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-contrib/sessions/cookie"
+	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
+)
+
+func main() {
+	logger, _ := zap.NewProduction()
+	defer logger.Sync()
+	zap.ReplaceGlobals(logger)
+
+	r := gin.Default()
+
+	r.SetFuncMap(template.FuncMap{
+		"UnixToTime": models.UnixToTime,
+	})
+
+	store := cookie.NewStore([]byte("secret"))
+	r.Use(sessions.Sessions("mysession", store))
+
+	r.LoadHTMLFiles(
+		"templates/admin/user/add.html",
+		"templates/admin/index.html",
+		"templates/web/index.html",
+		"templates/web/user.html",
+		"templates/public/page_footer.html",
+		"templates/public/page_header.html")
+
+	routers.AdminRoutersInit(r)
+	routers.WebRoutersInit(r)
+
+	r.Run()
+}
+```
+
+- `"secret"` 是加密密钥，用于签名/加密 Cookie 会话数据，防止被篡改。
+- `"mysession"` 是会话名称，用于在请求中唯一标识这个会话（后续可通过它获取会话对象）。
+- `r.Use(...)` 是将 Gorilla Sessions 中间件注册到路由上，使所有请求自动支持会话管理。
+
+使用会话存取数据：
+
+```go
+package web
+
+import (
+	"net/http"
+	"time"
+
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-gonic/gin"
+)
+
+type WebController struct{}
+
+func (wc WebController) Index(c *gin.Context) {
+	session := sessions.Default(c)
+	session.Set("username", "曼波")
+	session.Save()
+	c.HTML(http.StatusOK, "web/index.html", gin.H{
+		"msg":  "我是一个 msg",
+		"time": time.Now().Unix(),
+	})
+}
+
+func (wc WebController) News(c *gin.Context) {
+	session := sessions.Default(c)
+	username := session.Get("username")
+	c.String(http.StatusOK, "Username = %v", username)
+}
+```
+
+<img src="../../images/image-202511021909.webp" style="zoom:67%;" />
+
+### 基于 Redis 存储 Session
+
+将存储引擎有 Cookie 改为 Session：
+
+```go
+package main
+
+import (
+	"test_2025_10_18/models"
+	"test_2025_10_18/routers"
+	"text/template"
+
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-contrib/sessions/redis"
+	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
+)
+
+func main() {
+	logger, _ := zap.NewProduction()
+	defer logger.Sync()
+	zap.ReplaceGlobals(logger)
+
+	r := gin.Default()
+
+	r.SetFuncMap(template.FuncMap{
+		"UnixToTime": models.UnixToTime,
+	})
+
+	store, err := redis.NewStore(10, "tcp", "localhost:6379", "", "", []byte("secret"))
+	if err != nil {
+		panic(err)
+	}
+	r.Use(sessions.Sessions("mysession", store))
+
+	r.LoadHTMLFiles(
+		"templates/admin/user/add.html",
+		"templates/admin/index.html",
+		"templates/web/index.html",
+		"templates/web/user.html",
+		"templates/public/page_footer.html",
+		"templates/public/page_header.html")
+
+	routers.AdminRoutersInit(r)
+	routers.WebRoutersInit(r)
+
+	r.Run()
+}
+```
+
+使用会话存取数据：
+
+```go
+package web
+
+import (
+	"net/http"
+	"time"
+
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-gonic/gin"
+)
+
+type WebController struct{}
+
+func (wc WebController) Index(c *gin.Context) {
+	session := sessions.Default(c)
+	session.Set("username", "曼波")
+	session.Options(sessions.Options{MaxAge: 3600 * 6})
+	session.Save()
+	c.HTML(http.StatusOK, "web/index.html", gin.H{
+		"msg":  "我是一个 msg",
+		"time": time.Now().Unix(),
+	})
+}
+
+func (wc WebController) News(c *gin.Context) {
+	session := sessions.Default(c)
+	username := session.Get("username")
+	c.String(http.StatusOK, "Username = %v", username)
+}
+```
+
+<img src="../../images/image-202511022223.jpg" style="zoom:80%;" />
