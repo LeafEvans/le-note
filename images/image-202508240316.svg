@@ -68,7 +68,7 @@
               x="0" y="0">
               <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
                 style="max-width: 500px;">
-                <p>空分复用技术（如虚拟存储器技术）</p>
+                <p>空分复用技术（如虚拟存储技术）</p>
               </div>
             </foreignObject>
           </g>
@@ -99,7 +99,7 @@
               x="0" y="0">
               <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
                 style="max-width: 500px;">
-                <p>时空复用技术（如虚拟存储器）</p>
+                <p>时空复用技术（如虚拟处理器技术）</p>
               </div>
             </foreignObject>
           </g>
@@ -112,7 +112,6 @@
     <g class="smm-other-container"></g>
   </g>
   <style>
-    /* 鼠标hover和激活时渲染的矩形 */
     .smm-hover-node{
     display: none;
     opacity: 0.6;
