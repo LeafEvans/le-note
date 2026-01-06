@@ -25,7 +25,7 @@ string(int n, char c);      // 使用 n 个字符串 c 初始化
 ### `string` 基本赋值操作
 
 ```cpp
-string& operator=(const char *s);      // char * 类型字符串赋值给当前的字符串 
+string& operator=(const char *s);      // char * 类型字符串赋值给当前的字符串
 string& operator=(const string &s);    // 把字符串 s 赋给当前的字符串
 string& operator=(char c);             // 字符赋值给当前的字符串
 string& assign(const char *s);         // 把字符串 s 赋给当前的字符串
@@ -47,12 +47,12 @@ char& at(int n);
 ### `string` 拼接操作
 
 ```cpp
-string& operator+=(const string& str);            
+string& operator+=(const string& str);
 string& operator+=(const char *str);
 string& operator+=(const char c);
 string& append(const char *s);         // 把字符串 s 连接到当前字符串结尾
 string& append(const char *s, int n);  // 把字符串 s 的前 n 个字符连接到当前字符串结尾
-string& append(const string &s);  
+string& append(const string &s);
 string& append(const string &s, int pos, int n);  // 把字符串 s 中从 pos 开始的 n 个字符连接到当前字符串结尾
 string& append(int n, char c);  // 在当前字符串结尾添加 n 个字符 c
 ```
@@ -74,7 +74,7 @@ string& replace(int pos, int n, const char* s);      // 替换从 pos 开始 n �
 
 ### `string` 比较操作
 
-```c++  
+```c++
 int compare(const string &s) const;  // 与字符串 s 比较
 int compare(const char *s) const;    // 与字符串 s 比较
 ```

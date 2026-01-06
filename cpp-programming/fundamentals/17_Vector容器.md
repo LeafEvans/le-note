@@ -47,7 +47,7 @@ swap(vec);  // 将 vec 与本身的元素互换
 size();                 // 返回容器中元素的个数
 empty();                // 判断容器是否为空
 resize(int num);        // 重新指定容器的长度为 num，若容器变长，则以默认值填充新位置，如果容器变短，则末尾超出容器长度的元素被删除
-resize(int num, elem);  // 重新指定容器的长度为 num，若容器变长，则以 elem 值填充新位置，如果容器变短，则末尾超出容器长度的元素被删除 
+resize(int num, elem);  // 重新指定容器的长度为 num，若容器变长，则以 elem 值填充新位置，如果容器变短，则末尾超出容器长度的元素被删除
 capacity();             // 容器的容量
 reserve(int len);       // 容器预留 len 个元素长度，预留位置不初始化，元素不可访问
 ```
@@ -109,135 +109,139 @@ int main() {
 ### **`vector` 排序操作**
 
 #### 默认升序排序
-   - 使用 `std::sort` 对 `vector` 进行升序排序
-   - **语法**：
-     
-     ```cpp
-     std::sort(v.begin(), v.end());
-     ```
-   - **示例**：
-     ```cpp
-     #include <algorithm>
-     #include <vector>
-     #include <iostream>
-     
-     using namespace std;
-     
-     int main() {
-         vector<int> v = {10, 30, 20, 40, 5};
-     
-         // 输出原始顺序
-         for (auto elem : v) {
-             cout << elem << ' ';
-         }
-         cout << '\n';
-     
-         // 升序排序
-         sort(v.begin(), v.end());
-     
-         // 输出排序结果
-         for (auto elem : v) {
-             cout << elem << ' ';
-         }
-         cout << '\n';
-     
-         return 0;
-     }
-     ```
 
-   - **输出**：
-     
-     ```
-     10 30 20 40 5 
-     5 10 20 30 40 
-     ```
+- 使用 `std::sort` 对 `vector` 进行升序排序
+- **语法**：
+
+  ```cpp
+  std::sort(v.begin(), v.end());
+  ```
+
+- **示例**：
+
+  ```cpp
+  #include <algorithm>
+  #include <vector>
+  #include <iostream>
+
+  using namespace std;
+
+  int main() {
+      vector<int> v = {10, 30, 20, 40, 5};
+
+      // 输出原始顺序
+      for (auto elem : v) {
+          cout << elem << ' ';
+      }
+      cout << '\n';
+
+      // 升序排序
+      sort(v.begin(), v.end());
+
+      // 输出排序结果
+      for (auto elem : v) {
+          cout << elem << ' ';
+      }
+      cout << '\n';
+
+      return 0;
+  }
+  ```
+
+- **输出**：
+
+  ```
+  10 30 20 40 5
+  5 10 20 30 40
+  ```
 
 #### 降序排序
-   - 使用 `std::sort` 和 `std::greater` 对 `vector` 进行降序排序
-   - **语法**：
-     ```cpp
-     std::sort(v.begin(), v.end(), std::greater<T>());
-     ```
-   - **示例**：
-     ```cpp
-     #include <algorithm>
-     #include <vector>
-     #include <iostream>
-     #include <functional> // 包含 greater
-     
-     using namespace std;
-     
-     int main() {
-         vector<int> v = {10, 30, 20, 40, 5};
-     
-         // 输出原始顺序
-         for (auto elem : v) {
-             cout << elem << ' ';
-         }
-         cout << '\n';
-     
-         // 降序排序
-         sort(v.begin(), v.end(), greater<int>());
-     
-         // 输出排序结果
-         for (auto elem : v) {
-             cout << elem << ' ';
-         }
-         cout << '\n';
-     
-         return 0;
-     }
-     ```
 
-   - **输出**：
-     ```bash
-     10 30 20 40 5 
-     40 30 20 10 5 
-     ```
+- 使用 `std::sort` 和 `std::greater` 对 `vector` 进行降序排序
+- **语法**：
+  ```cpp
+  std::sort(v.begin(), v.end(), std::greater<T>());
+  ```
+- **示例**：
+
+  ```cpp
+  #include <algorithm>
+  #include <vector>
+  #include <iostream>
+  #include <functional> // 包含 greater
+
+  using namespace std;
+
+  int main() {
+      vector<int> v = {10, 30, 20, 40, 5};
+
+      // 输出原始顺序
+      for (auto elem : v) {
+          cout << elem << ' ';
+      }
+      cout << '\n';
+
+      // 降序排序
+      sort(v.begin(), v.end(), greater<int>());
+
+      // 输出排序结果
+      for (auto elem : v) {
+          cout << elem << ' ';
+      }
+      cout << '\n';
+
+      return 0;
+  }
+  ```
+
+- **输出**：
+  ```bash
+  10 30 20 40 5
+  40 30 20 10 5
+  ```
 
 #### 自定义排序规则
-   - 使用自定义的比较函数或 Lambda 表达式对 `vector` 进行排序
-   - **语法**：
-     ```cpp
-     std::sort(v.begin(), v.end(), [](const T& a, const T& b) { return 自定义规则; });
-     ```
-   - **示例**：
-     ```cpp
-     #include <algorithm>
-     #include <vector>
-     #include <iostream>
-     
-     using namespace std;
-     
-     int main() {
-         vector<int> v = {10, 30, 20, 40, 5};
-     
-         // 输出原始顺序
-         for (auto elem : v) {
-             cout << elem << ' ';
-         }
-         cout << '\n';
-     
-         // 自定义排序规则：按绝对值升序排序
-         sort(v.begin(), v.end(), [](int a, int b) {
-             return abs(a) < abs(b);
-         });
-     
-         // 输出排序结果
-         for (auto elem : v) {
-             cout << elem << ' ';
-         }
-         cout << '\n';
-     
-         return 0;
-     }
-     ```
 
-   - **输出**：
-     ```bash
-     10 30 20 40 5 
-     5 10 20 30 40 
-     ```
+- 使用自定义的比较函数或 Lambda 表达式对 `vector` 进行排序
+- **语法**：
+  ```cpp
+  std::sort(v.begin(), v.end(), [](const T& a, const T& b) { return 自定义规则; });
+  ```
+- **示例**：
 
+  ```cpp
+  #include <algorithm>
+  #include <vector>
+  #include <iostream>
 
+  using namespace std;
 
+  int main() {
+      vector<int> v = {10, 30, 20, 40, 5};
+
+      // 输出原始顺序
+      for (auto elem : v) {
+          cout << elem << ' ';
+      }
+      cout << '\n';
+
+      // 自定义排序规则：按绝对值升序排序
+      sort(v.begin(), v.end(), [](int a, int b) {
+          return abs(a) < abs(b);
+      });
+
+      // 输出排序结果
+      for (auto elem : v) {
+          cout << elem << ' ';
+      }
+      cout << '\n';
+
+      return 0;
+  }
+  ```
+
+- **输出**：
+  ```bash
+  10 30 20 40 5
+  5 10 20 30 40
+  ```

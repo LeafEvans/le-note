@@ -21,4 +21,3 @@ queue& operator=(const queue &que);  // 重载等号运算符
 empty();  // 判断队列是否为空
 size();   // 返回队列的大小
 ```
-

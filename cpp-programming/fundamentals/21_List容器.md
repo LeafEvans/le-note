@@ -36,7 +36,7 @@ insert(pos, n, elem);   // 在 pos 位置插入 n 个 elem 元素，无返回值
 insert(pos, beg, end);  // 在 pos 位置插入 [beg, end) 区间的数据，无返回值
 clear();                // 移除容器所有数据
 erase(beg, end);        // 删除 [beg, end) 区间的数据
-erase(pos);             // 删除 pos 位置的数据，返回下一个数据的位置  
+erase(pos);             // 删除 pos 位置的数据，返回下一个数据的位置
 remove(elem);           // 删除容器中所有与 elem 值匹配的元素
 ```
 
@@ -71,4 +71,3 @@ back();   // 返回最后一个元素
 reverse();
 sort();     // list 排序
 ```
-
