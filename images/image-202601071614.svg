@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="394.01666259765625" height="118.01666259765625">
+  <g class="smm-container"
+    transform="matrix(0.9999999999999999,0,0,0.9999999999999999,-349.1733215332032,-338.17333984375006)">
+    <g class="smm-line-container">
+      <path
+        d="M 471.183349609375,397.183349609375L 533.583349609375,397.183349609375L 533.583349609375,366.683349609375Q 533.583349609375,361.683349609375 538.583349609375,361.683349609375L 575.183349609375,361.683349609375"
+        stroke-dasharray="none" stroke-width="3" stroke="#33383e" fill="none"></path>
+      <path
+        d="M 471.183349609375,397.183349609375L 533.583349609375,397.183349609375L 533.583349609375,427.683349609375Q 533.583349609375,432.683349609375 538.583349609375,432.683349609375L 575.183349609375,432.683349609375"
+        stroke-dasharray="none" stroke-width="3" stroke="#33383e" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,359.183349609375,382.183349609375)">
+        <path
+          d="
+      M5,0
+      L107,0
+      C107,0 112,0 112,5
+      L112,25
+      C112,25 112,30 107,30
+      L5,30
+      C5,30 0,30 0,25
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#33383e"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="82" data-height="20" data-offsetx="0" opacity="1">
+            <foreignObject width="82" height="20"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 16px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(247, 208, 160); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>网络层设备</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="116" height="34" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,575.183349609375,348.183349609375)">
+        <path
+          d="
+      M5,0
+      L153,0
+      C153,0 158,0 158,5
+      L158,22
+      C158,22 158,27 153,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#efd1b0"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="128" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="128" height="17"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(81, 58, 42); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>路由器的组成和功能</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="162" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,575.183349609375,419.183349609375)">
+        <path
+          d="
+      M5,0
+      L139,0
+      C139,0 144,0 144,5
+      L144,22
+      C144,22 144,27 139,27
+      L5,27
+      C5,27 0,27 0,22
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#efd1b0"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="114" data-height="17" data-offsetx="0" opacity="1">
+            <foreignObject width="114" height="17"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(81, 58, 42); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>路由表与路由转发</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="148" height="31" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>

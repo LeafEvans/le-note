@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="409.01666259765625" height="131.0333251953125">
+  <g class="smm-container" transform="matrix(1,0,0,1,-344.68333435058594,-337.66668701171875)">
+    <g class="smm-line-container">
+      <path
+        d="M 472.183349609375,403.183349609375L 534.583349609375,403.183349609375L 534.583349609375,368.683349609375Q 534.583349609375,363.683349609375 539.583349609375,363.683349609375L 576.183349609375,363.683349609375"
+        stroke-dasharray="none" stroke-width="3" stroke="#333333" fill="none"></path>
+      <path
+        d="M 472.183349609375,403.183349609375L 534.583349609375,403.183349609375L 534.583349609375,437.683349609375Q 534.583349609375,442.683349609375 539.583349609375,442.683349609375L 576.183349609375,442.683349609375"
+        stroke-dasharray="none" stroke-width="3" stroke="#333333" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,359.183349609375,382.183349609375)">
+        <path
+          d="
+      M5,0
+      L105,0
+      C105,0 110,0 110,5
+      L110,34
+      C110,34 110,39 105,39
+      L5,39
+      C5,39 0,39 0,34
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1.5,1.5)" fill="#161616"
+          stroke-dasharray="none" stroke-width="3" stroke="#161616"></path>
+        <g transform="matrix(1,0,0,1,16.5,6.5)">
+          <g data-width="80" data-height="29" data-offsetx="0" opacity="1">
+            <foreignObject width="80" height="29"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>移动 IP</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="117" height="46" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,576.183349609375,346.183349609375)">
+        <path
+          d="
+      M16,0
+      L133,0
+      A16,16 0 0,1 133,32 
+      L16,32
+      A16,16 0 0,1 16,0
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1.5,1.5)" fill="#f4f6fd"
+          stroke-dasharray="none" stroke-width="3" stroke=""></path>
+        <g transform="matrix(1,0,0,1,16.5,6.5)">
+          <g data-width="119" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="119" height="22"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>移动 IP 的概念</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="156" height="39" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,576.183349609375,425.183349609375)">
+        <path
+          d="
+      M16,0
+      L150,0
+      A16,16 0 0,1 150,32 
+      L16,32
+      A16,16 0 0,1 16,0
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1.5,1.5)" fill="#f4f6fd"
+          stroke-dasharray="none" stroke-width="3" stroke=""></path>
+        <g transform="matrix(1,0,0,1,16.5,6.5)">
+          <g data-width="136" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="136" height="22"
+              style="line-height: 1.2; font-family: 寒蝉半圆体, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>移动 IP 通信过程</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="173" height="39" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>
