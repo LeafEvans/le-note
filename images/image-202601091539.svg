@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.dev/svgjs" width="929.0166625976562" height="216.01666259765625">
+  <g class="smm-container" transform="matrix(1,0,0,1,-352.2499969482424,-308.9383422851563)">
+    <g class="smm-line-container">
+      <path
+        d="M 658.25,416.95001220703125L 720.65,416.95001220703125L 720.65,343.95001220703125Q 720.65,338.95001220703125 725.65,338.95001220703125L 762.25,338.95001220703125"
+        stroke-dasharray="none" stroke-width="2" stroke="#36aaa9" fill="none"></path>
+      <path
+        d="M 658.25,416.95001220703125L 720.65,416.95001220703125L 720.65,416.95001220703125L 762.25,416.95001220703125"
+        stroke-dasharray="none" stroke-width="2" stroke="#36aaa9" fill="none"></path>
+      <path
+        d="M 658.25,416.95001220703125L 720.65,416.95001220703125L 720.65,489.95001220703125Q 720.65,494.95001220703125 725.65,494.95001220703125L 762.25,494.95001220703125"
+        stroke-dasharray="none" stroke-width="2" stroke="#36aaa9" fill="none"></path>
+    </g>
+    <g class="smm-outer-frame-container"></g>
+    <g class="smm-node-container">
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,362.25,382.95001220703125)">
+        <path
+          d="
+      M5,0
+      L291,0
+      C291,0 296,0 296,5
+      L296,63
+      C296,63 296,68 291,68
+      L5,68
+      C5,68 0,68 0,63
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,0,0)" fill="#3e58ea"
+          stroke-dasharray="none" stroke-width="0" stroke=""></path>
+        <g transform="matrix(1,0,0,1,15,5)">
+          <g data-width="266" data-height="58" data-offsetx="0" opacity="1">
+            <foreignObject width="266" height="58"
+              style="line-height: 1.2; font-family: 霞鹜文楷, Microsoft YaHei; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: center;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>TCP 连接管理</p>
+                <p>（三次握手、四次挥手）</p>
+              </div>
+              <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+              </style>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="300" height="72" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,762.25,321.95001220703125)">
+        <path
+          d="
+      M5,0
+      L410,0
+      C410,0 415,0 415,5
+      L415,27
+      C415,27 415,32 410,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#e3fbff"
+          stroke-dasharray="none" stroke-width="2" stroke="#50a4b4"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="385" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="385" height="22"
+              style="line-height: 1.2; font-family: 霞鹜文楷, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(88, 170, 188); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>SYN、ACK、FIN、seq、ack_seq 的值为多少？</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="421" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,762.25,399.95001220703125)">
+        <path
+          d="
+      M5,0
+      L499,0
+      C499,0 504,0 504,5
+      L504,27
+      C504,27 504,32 499,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#e3fbff"
+          stroke-dasharray="none" stroke-width="2" stroke="#50a4b4"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="474" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="474" height="22"
+              style="line-height: 1.2; font-family: 霞鹜文楷, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(88, 170, 188); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>每发出/收到一个握手/挥手报文段后，进程的 TCP 状态转换</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="510" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+      <g class="smm-node" style="cursor: default;"
+        transform="matrix(1,0,0,1,762.25,477.95001220703125)">
+        <path
+          d="
+      M5,0
+      L314,0
+      C314,0 319,0 319,5
+      L319,27
+      C319,27 319,32 314,32
+      L5,32
+      C5,32 0,32 0,27
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    "
+          class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#e3fbff"
+          stroke-dasharray="none" stroke-width="2" stroke="#50a4b4"></path>
+        <g transform="matrix(1,0,0,1,16,6)">
+          <g data-width="289" data-height="22" data-offsetx="0" opacity="1">
+            <foreignObject width="289" height="22"
+              style="line-height: 1.2; font-family: 霞鹜文楷, Microsoft YaHei; font-size: 18px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(88, 170, 188); text-align: left;"
+              x="0" y="0">
+              <div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml"
+                style="max-width: 500px;">
+                <p>建立连接、断开连接的最短耗时分析</p>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <rect width="325" height="38" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none"
+          stroke="#5ec8f8"></rect>
+      </g>
+    </g>
+    <g class="smm-associative-line-container"></g>
+    <g class="smm-other-container"></g>
+  </g>
+  <style>
+    /* 鼠标hover和激活时渲染的矩形 */
+    .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+    }
+
+    .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+    }
+
+    .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+    }
+
+    .smm-text-node-wrap, .smm-expand-btn-text {
+    user-select: none;
+    }
+
+    .smm-richtext-node-wrap {
+    word-break: break-all;
+    user-select: none;
+    }
+
+    .ql-editor .ql-align-left,
+    .smm-richtext-node-wrap .ql-align-left {
+    text-align: left;
+    }
+
+    .smm-richtext-node-wrap .ql-align-right {
+    text-align: right;
+    }
+
+    .smm-richtext-node-wrap .ql-align-center {
+    text-align: center;
+    }
+  </style>
+</svg>
