@@ -4,20 +4,20 @@
 
 程序是指**一系列按特定顺序执行的动作**。
 
-<img src="../images/image-202409281141.png" style="zoom: 60%;" />
+<img src="../images/java-programming/image_20240928_114100.png" style="zoom: 60%;" />
 
 ## Java 的起源与发展
 
 Java 是 Sun Microsystems 于 1995 年推出的高级编程语言。
 
-<img src="../images/image-202409281153.webp" style="zoom: 50%;" />
+<img src="../images/java-programming/image_20240928_115300.webp" style="zoom: 50%;" />
 
 ## Java 的应用领域
 
 - **桌面应用开发**：如银行系统、商场结算软件
 - **互联网应用开发**：如淘宝、京东等电商网站
 
-<img src="../images/image-202409281156.webp" style="zoom: 33%;" />
+<img src="../images/java-programming/image_20240928_115600.webp" style="zoom: 33%;" />
 
 ## Java 技术简介
 
@@ -42,13 +42,13 @@ Java 是 Sun Microsystems 于 1995 年推出的高级编程语言。
 2. **编译**：使用 `javac` 命令编译源文件
 3. **运行**：使用 `java` 命令运行编译后的程序
 
-<img src="../images/image-202409281203.webp" style="zoom:50%;" />
+<img src="../images/java-programming/image_20240928_120300.webp" style="zoom:50%;" />
 
 **Java 特点**：一次编译，到处运行。
 
 ## Java 虚拟机与跨平台实现
 
-<img src="../images/image-202409281205.webp" style="zoom:50%;" />
+<img src="../images/java-programming/image_20240928_120500.webp" style="zoom:50%;" />
 
 **Java 虚拟机（JVM）**：将 Java 字节码转换为机器码，从而实现跨平台运行。
 
@@ -94,7 +94,7 @@ public class T2 {
 }
 ```
 
-<img src="../images/image-202409281406.png" style="zoom:50%;" />
+<img src="../images/java-programming/image_20240928_140600.png" style="zoom:50%;" />
 
 ## Java 编码规范
 
@@ -119,9 +119,9 @@ public class T3 {
 }
 ```
 
-<img src="../images/image-202409281428.png" style="zoom:70%;" />
+<img src="../images/java-programming/image_20240928_142800.png" style="zoom:70%;" />
 
 ## IDE 使用技巧
 
-<img src="../images/image-202409281435.webp" style="zoom: 70%;" />
+<img src="../images/java-programming/image_20240928_143500.webp" style="zoom: 70%;" />
 
