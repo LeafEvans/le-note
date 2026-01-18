@@ -4,7 +4,7 @@
 
 `set` 的特性是所有元素都会根据元素的键值**自动排序**，`set` 的元素**既是键值又是实值**。
 
-<img src="../../images/image-202501230136.webp" style="zoom:50%;" />
+<img src="../../images/cpp-programming/image_20250123_013600.webp" style="zoom:50%;" />
 
 > **注意**：`set` 不允许两个元素有相同的键值。
 

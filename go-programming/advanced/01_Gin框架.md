@@ -54,7 +54,7 @@ func main() {
 
 ```
 
-<img src="../../images/image-202510161828.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_182800.webp" style="zoom:80%;" />
 
 要改变默认启动的端口：
 
@@ -126,7 +126,7 @@ RESTful API 是目前比较成熟的一套互联网应用程序 API 设计理念
 	})
 ```
 
-<img src="../../images/image-202510161911.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_191100.webp" style="zoom:80%;" />
 
 使用 `POST` 访问一个网址时：
 
@@ -136,7 +136,7 @@ RESTful API 是目前比较成熟的一套互联网应用程序 API 设计理念
 	})
 ```
 
-<img src="../../images/image-202510161939.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_193900.webp" style="zoom:80%;" />
 
 使用 `DELETE` 访问一个网址时：
 
@@ -146,7 +146,7 @@ RESTful API 是目前比较成熟的一套互联网应用程序 API 设计理念
 	})
 ```
 
-<img src="../../images/image-202510161941.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_194100.webp" style="zoom:80%;" />
 
 在路由中获取 `GET` 传值，域名为 `/news?aid=20`：
 
@@ -157,7 +157,7 @@ RESTful API 是目前比较成熟的一套互联网应用程序 API 设计理念
 	})
 ```
 
-<img src="../../images/image-202510161944.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_194400.webp" style="zoom:80%;" />
 
 动态路由，域名为 `/user/20`：
 
@@ -168,7 +168,7 @@ RESTful API 是目前比较成熟的一套互联网应用程序 API 设计理念
 	})
 ```
 
-<img src="../../images/image-202510161947.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_194700.webp" style="zoom:80%;" />
 
 ### 响应数据格式
 
@@ -182,7 +182,7 @@ RESTful API 是目前比较成熟的一套互联网应用程序 API 设计理念
 	})
 ```
 
-<img src="../../images/image-202510161952.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_195200.webp" style="zoom:80%;" />
 
 #### `c.JSON()`
 
@@ -208,7 +208,7 @@ RESTful API 是目前比较成熟的一套互联网应用程序 API 设计理念
 	})
 ```
 
-<img src="../../images/image-202510161959.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_195900.webp" style="zoom:80%;" />
 
 因为 `c.JSON` 函数的第二个参数类型为 `any`，因此也可以自定义结构体返回：
 
@@ -221,7 +221,7 @@ RESTful API 是目前比较成熟的一套互联网应用程序 API 设计理念
 	})
 ```
 
-<img src="../../images/image-202510162006.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_200600.webp" style="zoom:80%;" />
 
 需要小写字段则添加对应的 Tag：
 
@@ -233,7 +233,7 @@ type Article struct {
 }
 ```
 
-<img src="../../images/image-202510162010.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_201000.webp" style="zoom:80%;" />
 
 #### `c.JSONP`
 
@@ -248,7 +248,7 @@ type Article struct {
 
 使用 JSONP 格式时，需通过 `callback` 查询参数指定回调函数名（例如 `/jsonp?callback=xxxx`），此时响应将被包裹在名为 `xxxx` 的函数调用中。
 
-<img src="../../images/image-202510162016.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_201600.webp" style="zoom:80%;" />
 
 #### `c.XML`
 
@@ -263,7 +263,7 @@ type Article struct {
 	})
 ```
 
-<img src="../../images/image-202510162024.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_202400.webp" style="zoom:80%;" />
 
 也可以自定结构体进行返回：
 
@@ -276,7 +276,7 @@ type Article struct {
 	})
 ```
 
-<img src="../../images/image-202510162026.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251016_202600.webp" style="zoom:80%;" />
 
 #### `c.HTML()`
 
@@ -291,7 +291,7 @@ type Article struct {
 	})
 ```
 
-<img src="../../images/image-202510162044.webp" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251016_204400.webp" style="zoom: 67%;" />
 
 在 HTML 模板中，使用 `{{}}` 包裹变量以访问后台传递的数据，例如下面的 `title`：
 
@@ -309,7 +309,7 @@ type Article struct {
 </html>
 ```
 
-<img src="../../images/image-202510162053.webp" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251016_205300.webp" style="zoom: 67%;" />
 
 ## HTML 模板渲染
 
@@ -368,7 +368,7 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510171656.webp" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251017_165600.webp" style="zoom: 67%;" />
 
 ### 不同模板放在不同目录
 
@@ -444,7 +444,7 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510171709.jpg" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251017_170900.jpg" style="zoom:67%;" />
 
 > [!tip]
 >
@@ -516,7 +516,7 @@ func main() {
 {{end}}
 ```
 
-<img src="../../images/image-202510171736.webp" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251017_173600.webp" style="zoom: 67%;" />
 
 #### 注释
 
@@ -531,12 +531,8 @@ func main() {
 可以在模板中声明变量，用来保存传入模板的数据或其他语句生成的结果。具体语法如下：
 
 ```html
-<h4>
-  {{$obj := .title}}
-</h4>
-<h4>
-  {{$obj}}
-</h4>
+<h4>{{$obj := .title}}</h4>
+<h4>{{$obj}}</h4>
 ```
 
 #### 移除空格
@@ -568,27 +564,21 @@ Go 模板语法中条件判断有如下几种：
 
 ```html
 {{if pipeline}}
-  <p>T1</p>
-{{end}}
-
-{{if pipeline}}
-	<p>T1</p>
+<p>T1</p>
+{{end}} {{if pipeline}}
+<p>T1</p>
 {{else}}
-	<p>T0</p>
-{{end}}
-
-{{if gt .score 60}}
-	<p>及格</p>
+<p>T0</p>
+{{end}} {{if gt .score 60}}
+<p>及格</p>
 {{else}}
-	<p>不及格</p>
-{{end}}
-
-{{if gt .score 90}}
-	<p>优秀</p>
+<p>不及格</p>
+{{end}} {{if gt .score 90}}
+<p>优秀</p>
 {{else if gt .score 60}}
-	<p>及格</p>
+<p>及格</p>
 {{else}}
-	<p>不及格</p>
+<p>不及格</p>
 {{end}}
 ```
 
@@ -600,7 +590,7 @@ Go 的模板语法中使用 `range` 关键字进行遍历，有以下两种写�
 
 ```html
 {{range $key, $value := .obj}}
-  <p>{{$value}}</p>
+<p>{{$value}}</p>
 {{end}}
 ```
 
@@ -608,9 +598,9 @@ Go 的模板语法中使用 `range` 关键字进行遍历，有以下两种写�
 
 ```html
 {{range $key, $value := .obj}}
-  <p>{{$value}}</p>
+<p>{{$value}}</p>
 {{else}}
-  <p>pipeline 的长度为 0</p>
+<p>pipeline 的长度为 0</p>
 {{end}}
 ```
 
@@ -627,14 +617,14 @@ Go 的模板语法中使用 `range` 关键字进行遍历，有以下两种写�
 模板如下：
 
 ```html
-    <u>
-      {{range $key, $value := .hobby}}
-      <pi>{{$key}}---{{$value}}</pi>
-      {{end}}
-    </u>
+<u>
+  {{range $key, $value := .hobby}}
+  <pi>{{$key}}---{{$value}}</pi>
+  {{end}}
+</u>
 ```
 
-<img src="../../images/image-202510171958.webp" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251017_195800.webp" style="zoom: 67%;" />
 
 #### `with`
 
@@ -672,26 +662,26 @@ func main() {
 之前输出数据需要：
 
 ```html
-  <body>
-    <h4>{{.user.Name}}</h4>
-    <h4>{{.user.Gender}}</h4>
-    <h4>{{.user.Age}}</h4>
-  </body>
+<body>
+  <h4>{{.user.Name}}</h4>
+  <h4>{{.user.Gender}}</h4>
+  <h4>{{.user.Age}}</h4>
+</body>
 ```
 
 使用 `with` 后：
 
 ```html
-  <body>
-    {{with .user}}
-    <h4>{{.Name}}</h4>
-    <h4>{{.Gender}}</h4>
-    <h4>{{.Age}}</h4>
-    {{end}}
-  </body>
+<body>
+  {{with .user}}
+  <h4>{{.Name}}</h4>
+  <h4>{{.Gender}}</h4>
+  <h4>{{.Age}}</h4>
+  {{end}}
+</body>
 ```
 
-<img src="../../images/image-202510172017.webp" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251017_201700.webp" style="zoom: 67%;" />
 
 #### 预定义函数
 
@@ -700,96 +690,95 @@ func main() {
 预定义的全局函数如下：
 
 - **`and`**：
-  
-  返回第一个**空值（empty）**参数，若所有参数均非空，则返回最后一个参数。 
-  
-  等价于：`and x y` ⇔ `if x then y else x`。  
-  
-  > [!tip]
-  >
-  > 所有参数都会被求值。
-  
-- **`or`**：
-  返回第一个**非空值（non-empty）**参数，若所有参数均为空，则返回最后一个参数。 
-  
-  等价于：`or x y` ⇔ `if x then x else y`。 
+
+  返回第一个**空值（empty）**参数，若所有参数均非空，则返回最后一个参数。
+
+  等价于：`and x y` ⇔ `if x then y else x`。
 
   > [!tip]
   >
   > 所有参数都会被求值。
-  
+
+- **`or`**：
+  返回第一个**非空值（non-empty）**参数，若所有参数均为空，则返回最后一个参数。
+
+  等价于：`or x y` ⇔ `if x then x else y`。
+
+  > [!tip]
+  >
+  > 所有参数都会被求值。
+
 - **`not`**：
-  
+
   对其唯一参数进行布尔取反，返回其布尔值的否定结果。
-  
+
 - **`len`**：
-  
+
   返回参数的长度（整数类型）。参数必须是支持 `len()` 的类型（如字符串、数组、切片、映射等）。
-  
-- **`index`**  
-  
-  使用后续参数作为索引（或键）依次访问第一个参数的嵌套元素。  
-  
-  例如：`index x 1 2 3` 等价于 `x[1][2][3]`。 
-  
+
+- **`index`**
+
+  使用后续参数作为索引（或键）依次访问第一个参数的嵌套元素。
+
+  例如：`index x 1 2 3` 等价于 `x[1][2][3]`。
+
   每一步被索引的对象必须是数组、切片或字典（map）。
-  
+
 - **`print`**：
-  
+
   等同于 Go 标准库中的 `fmt.Sprint`，将参数转换为字符串并拼接。
-  
+
 - **`printf`**：
-  
+
   等同于 `fmt.Sprintf`，支持格式化字符串。
-  
+
 - **`println`**：
-  
+
   等同于 `fmt.Sprintln`，将参数转换为字符串并以空格分隔，末尾添加换行符。
-  
+
 - **`html`**：
-  
-  返回参数文本表示的 **HTML 转义**形式（例如 `<` 转为 `&lt;`）。 
+
+  返回参数文本表示的 **HTML 转义**形式（例如 `<` 转为 `&lt;`）。
 
   > [!tip]
   >
   > 此函数在 `html/template` 包中**不可用**（因该包已自动转义）。
-  
+
 - **`urlquery`**：
-  
-  返回参数文本表示的 **URL 查询字符串转义**形式（适用于嵌入到 URL 查询参数中）。 
+
+  返回参数文本表示的 **URL 查询字符串转义**形式（适用于嵌入到 URL 查询参数中）。
 
   > [!tip]
   >
   > 此函数在 `html/template` 包中**不可用**。
-  
+
 - **`js`**：
-  返回参数文本表示的 **JavaScript 字符串转义**形式（例如换行符转为 `\n`，引号转义等）。 
-  
+  返回参数文本表示的 **JavaScript 字符串转义**形式（例如换行符转为 `\n`，引号转义等）。
+
   > [!tip]
   >
   > 此函数在 `html/template` 包中**不可用**。
-  
+
 - **`call`**：
-  
-  调用第一个参数所代表的函数，其余参数作为该函数的实参。 
-  
-  例如：`call .X.Y 1 2` 等价于 Go 代码中的 `dot.X.Y(1, 2)`，其中 `Y` 可以是函数类型的字段、map 中的函数值等。 
-  
+
+  调用第一个参数所代表的函数，其余参数作为该函数的实参。
+
+  例如：`call .X.Y 1 2` 等价于 Go 代码中的 `dot.X.Y(1, 2)`，其中 `Y` 可以是函数类型的字段、map 中的函数值等。
+
   **要求**：
-  
   - 第一个参数的求值结果必须是**函数类型**（与 `print` 等预定义函数不同，`call` 的第一个参数是动态函数值）。
   - 该函数必须有 **1 或 2 个返回值**；若为两个，第二个必须是 `error` 类型。
   - 若函数返回非 `nil` 的 `error`，模板执行将立即终止，并将该错误返回给调用者。
 
 ```html
-  <body>
-    {{len .user.Name}}
-    <br />
-    {{index .hobby 2}}
-  </body>
+<body>
+  {{len .user.Name}}
+  <br />
+  {{index .hobby 2}}
+</body>
 ```
 
-<img src="../../images/image-202510172355.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251017_235500.webp" style="zoom:67%;" />
 
 #### 自定义模板函数
 
@@ -850,7 +839,7 @@ func main() {
 {{UnixToTime .now}}
 ```
 
-<img src="../../images/image-202510180010.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251018_001000.webp" style="zoom:67%;" />
 
 ### 嵌套 `template`
 
@@ -891,7 +880,7 @@ func main() {
 {{end}}
 ```
 
-<img src="../../images/image-202510180025.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251018_002500.webp" style="zoom:67%;" />
 
 ## 静态文件服务
 
@@ -907,13 +896,13 @@ r.Static("/static", "./static")
 
 ```css
 h1 {
-    background: #000;
-    color: #fff;
-    text-align: center;
+  background: #000;
+  color: #fff;
+  text-align: center;
 }
 
 h2 {
-    color: red
+  color: red;
 }
 ```
 
@@ -966,7 +955,7 @@ func main() {
 {{end}}
 ```
 
-<img src="../../images/image-202510180051.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251018_005100.webp" style="zoom:67%;" />
 
 ## 路由详解
 
@@ -998,11 +987,11 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510181530.webp" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251018_153000.webp" style="zoom: 67%;" />
 
 在上述代码中：
 
-- `c.Query` 用于直接获取 URL 查询参数的值，若参数不存在则返回空字符串。  
+- `c.Query` 用于直接获取 URL 查询参数的值，若参数不存在则返回空字符串。
 - `c.DefaultQuery` 在参数未传入时会返回指定的默认值，适用于需要兜底值的场景。
 
 #### 动态路由传值
@@ -1014,7 +1003,7 @@ func main() {
 	})
 ```
 
-<img src="../../images/image-202510181544.webp" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251018_154400.webp" style="zoom: 67%;" />
 
 其中 `c.Param("uid")` 用于从动态路由中提取 `uid` 参数的值。
 
@@ -1064,15 +1053,15 @@ func main() {
 	})
 ```
 
-<img src="../../images/image-202510181618.jpg" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251018_161800.jpg" style="zoom:67%;" />
 
 #### 获取 `GET`、`POST` 传递的数据绑定到结构体
 
 为了更便捷地获取请求参数、提升开发效率，Gin 提供了自动绑定功能：
 
-它会根据请求的 `Content-Type` 自动识别数据类型（如 JSON、表单、查询字符串等），并利用反射机制将请求中的参数自动映射到指定的结构体字段中。 
+它会根据请求的 `Content-Type` 自动识别数据类型（如 JSON、表单、查询字符串等），并利用反射机制将请求中的参数自动映射到指定的结构体字段中。
 
-`c.ShouldBind` 方法正是实现这一功能的核心——它能智能解析请求体或 URL 查询参数（包括 JSON、`<form>` 表单和 QueryString 等格式），并将提取出的数据自动绑定到对应的结构体实例上。 
+`c.ShouldBind` 方法正是实现这一功能的核心——它能智能解析请求体或 URL 查询参数（包括 JSON、`<form>` 表单和 QueryString 等格式），并将提取出的数据自动绑定到对应的结构体实例上。
 
 定义一个 `UserInfo` 结构体：
 
@@ -1098,7 +1087,7 @@ type UserInfo struct {
 	})
 ```
 
-<img src="../../images/image-202510181712.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251018_171200.webp" style="zoom:80%;" />
 
 ##### `POST` 传值绑定到结构体
 
@@ -1137,7 +1126,7 @@ type UserInfo struct {
 {{end}}
 ```
 
-<img src="../../images/image-202510181717.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251018_171700.webp" style="zoom:67%;" />
 
 #### 获取 `POST` 请求中的 XML 数据
 
@@ -1175,7 +1164,7 @@ type Article struct {
 	})
 ```
 
-<img src="../../images/image-202510181735.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251018_173500.webp" style="zoom:80%;" />
 
 > [!tip]
 >
@@ -1231,7 +1220,7 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510181842.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251018_184200.webp" style="zoom:67%;" />
 
 ### 路由文件分组
 
@@ -1337,7 +1326,7 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510181842.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251018_184200.webp" style="zoom:67%;" />
 
 ## 自定义控制器
 
@@ -1496,7 +1485,7 @@ func (uc UserController) Edit(c *gin.Context) {
 }
 ```
 
-<img src="../../images/image-202510201545.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251020_154500.webp" style="zoom:67%;" />
 
 ## 中间件
 
@@ -1543,7 +1532,7 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510211204.jpg" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251021_120400.jpg" style="zoom:67%;" />
 
 #### `c.Next` 继续执行后续流程
 
@@ -1586,7 +1575,7 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510212320.jpg" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251021_232000.jpg" style="zoom: 67%;" />
 
 #### 一个路由配置多个中间件的执行顺序
 
@@ -1624,7 +1613,7 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510212326.jpg" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251021_232600.jpg" style="zoom:67%;" />
 
 #### `c.Abort`
 
@@ -1666,7 +1655,7 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510212331.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251021_233100.webp" style="zoom:67%;" />
 
 ### 全局中间件
 
@@ -1703,7 +1692,7 @@ func main() {
 }
 ```
 
-<img src="../../images/image-202510212343.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251021_234300.webp" style="zoom:67%;" />
 
 ### 在路由分组中配置中间件
 
@@ -1837,7 +1826,7 @@ func (ic IndexController) Index(c *gin.Context) {
 }
 ```
 
-<img src="../../images/image-202510222149.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251022_214900.webp" style="zoom:67%;" />
 
 ### 中间件注意事项
 
@@ -2008,7 +1997,7 @@ func main() {
 {{end}}
 ```
 
-<img src="../../images/image-202510271447.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251027_144700.webp" style="zoom:67%;" />
 
 ### Md5 加密
 
@@ -2050,11 +2039,11 @@ func main() {
     // 单文件
     file, _ := c.FormFile("file")
     log.Println(file.Filename)
-    
+
     dst := "./file" + file.Filename
     // 上传文件至指定的完整文件路径
     c.SaveUploadedFile(file, dst)
-    
+
     c.String(http.StatusOK, fmt.Sprintf("'%s' uploaded!", file.Filename))
     router.Run(":8080")
   })
@@ -2113,7 +2102,7 @@ func main() {
    }
    ```
 
-<img src="../../images/image-202510281145.jpg" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251028_114500.jpg" style="zoom:67%;" />
 
 ### 多文件上传
 
@@ -2172,7 +2161,7 @@ func main() {
    }
    ```
 
-<img src="../../images/image-202510281157.jpg" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251028_115700.jpg" style="zoom:67%;" />
 
 #### 相同名字的多个文件
 
@@ -2205,7 +2194,7 @@ func main() {
      </body>
    </html>
    {{end}}
-   
+
    ```
 
    > [!tip]
@@ -2221,12 +2210,12 @@ func main() {
    	username := c.PostForm("username")
    	form, _ := c.MultipartForm()
    	files := form.File["avatar[]"]
-   
+
    	for _, file := range files {
    		dst := path.Join("./static/upload", file.Filename)
    		c.SaveUploadedFile(file, dst)
    	}
-   
+
    	c.JSON(http.StatusOK, gin.H{
    		"message":  "文件上传成功",
    		"username": username,
@@ -2234,7 +2223,7 @@ func main() {
    }
    ```
 
-<img src="../../images/image-202510281309.jpg" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251028_130900.jpg" style="zoom: 67%;" />
 
 ## Cookie
 
@@ -2306,7 +2295,7 @@ func (wc WebController) Shop(c *gin.Context) {
 }
 ```
 
-<img src="../../images/image-202511021616.jpg" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251102_161600.jpg" style="zoom:80%;" />
 
 若要删除 Cookie，则可以将 `maxAge` 设置为 `-1` 等负数：
 
@@ -2317,7 +2306,7 @@ func (wc WebController) DeleteCookie(c *gin.Context) {
 }
 ```
 
-<img src="../../images/image-202511021620.png" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251102_162000.png" style="zoom:80%;" />
 
 ### 多个二级域名共享 Cookie
 
@@ -2329,10 +2318,9 @@ func (wc WebController) DeleteCookie(c *gin.Context) {
    c.SetCookie("username", "曼波", 3600, "/", ".leafevans.com", false, true)
    ```
 
-
 > [!tip]
 >
-> 以点开头（`.leafevans.com`）表示该 Cookie 对 `leafevans.com` 及其所有子域名（如 `www.leafevans.com`、`api.leafevans.com`）都有效。  
+> 以点开头（`.leafevans.com`）表示该 Cookie 对 `leafevans.com` 及其所有子域名（如 `www.leafevans.com`、`api.leafevans.com`）都有效。
 
 ## Session
 
@@ -2344,7 +2332,7 @@ Session 是另一种记录客户状态的机制，不同的是 Cookie 保存在�
 
 当客户端首次访问服务器时，服务器会创建一个 Session 对象，并生成一个唯一的 Session ID（作为 key），连同对应的会话数据（作为 value）存储在服务器。随后，服务器将该 Session ID 通过 Cookie 发送给浏览器。浏览器在后续请求中自动附带该 Cookie，服务器据此 ID 检索对应的 Session 数据。
 
-### 使用 Session 
+### 使用 Session
 
 Gin 官方并没有提供 Session 相关的文档，此时可以使用第三方的 Session 中间件来实现。
 
@@ -2361,7 +2349,7 @@ https://github.com/gin-contrib/sessions
 - [PostgreSQL](https://github.com/gin-contrib/sessions?tab=readme-ov-file#postgresql)
 - [Filesystem](https://github.com/gin-contrib/sessions?tab=readme-ov-file#Filesystem)
 
-### 基于 Cookie 存储 Session 
+### 基于 Cookie 存储 Session
 
 下载 `session` 包：
 
@@ -2450,7 +2438,7 @@ func (wc WebController) News(c *gin.Context) {
 }
 ```
 
-<img src="../../images/image-202511021909.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251102_190900.webp" style="zoom:67%;" />
 
 ### 基于 Redis 存储 Session
 
@@ -2535,4 +2523,4 @@ func (wc WebController) News(c *gin.Context) {
 }
 ```
 
-<img src="../../images/image-202511022223.jpg" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251102_222300.jpg" style="zoom:80%;" />

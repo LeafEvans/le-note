@@ -4,7 +4,7 @@
 
 `queue` 是一种先进先出（First In First Out, FIFO）的数据结构，它有两个出口，`queue` 容器允许从一端新增元素，从另一端移除元素。
 
-<img src="../../images/image-202501230123.webp" style="zoom:50%;" />
+<img src="../../images/cpp-programming/image_20250123_012300.webp" style="zoom:50%;" />
 
 `queue` 所有元素的进出都必须符合“先进先出”的条件，只有 `queue` 的第一个元素和最后一个元素才可被外界取用。`queue` 不提供遍历功能，也不提供迭代器。
 

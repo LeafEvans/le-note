@@ -4,7 +4,7 @@
 
 `vector` 容器是单向开口的连续内存空间，`deque` 则是一种双向开口的连续线性空间。所谓的双向开口，意思是可以在头尾两端分别做元素的插入和删除操作。当然，`vector` 容器也可以在头尾两端插入元素，但是在其头部操作效率奇差，无法被接受。
 
-<img src="../../images/image-202501222019.webp" style="zoom:50%;" />
+<img src="../../images/cpp-programming/image_20250122_201900.webp" style="zoom:50%;" />
 
 `deque` 容器和 `vector` 容器最大的差异：
 
@@ -27,7 +27,7 @@
 
 既然 `deque` 是分段连续内存空间，那么就必须有中央控制，维持整体连续的假象，数据结构的设计及迭代器的前进后退操作颇为繁琐。`deque` 代码的实现远比 `vector` 或 `list` 都多得多。`deque` 采取一块所谓的 map（不是 STL 的 `map` 容器）作为主控，这里所谓的 map 是一小块连续的内存空间，其中每一个元素（此处成为一个结点）都是一个指针，指向另一段连续性内存空间，称作缓冲区。缓冲区才是 `deque` 的存储空间的主体。
 
-<img src="../../images/image-202501222046.webp" style="zoom:50%;" />
+<img src="../../images/cpp-programming/image_20250122_204600.webp" style="zoom:50%;" />
 
 ## `deque` 常用 API
 

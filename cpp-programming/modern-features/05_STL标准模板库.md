@@ -108,7 +108,7 @@ STL 作为泛型编程典型代表，实现了其他编程方式难以实现的�
   }
   ```
 
-  <img src="../../images/image-202502261402.png" style="zoom:50%;" />
+  <img src="../../images/cpp-programming/image_20250226_140200.png" style="zoom:50%;" />
 
 - **`map` / `multimap`**：使用“红黑树”实现，是一种高度平衡的二叉树。
 
@@ -134,7 +134,7 @@ STL 作为泛型编程典型代表，实现了其他编程方式难以实现的�
   }
   ```
 
-  <img src="../../images/image-202502261411.png" style="zoom:50%;" />
+  <img src="../../images/cpp-programming/image_20250226_141100.png" style="zoom:50%;" />
 
 ### 无序容器
 

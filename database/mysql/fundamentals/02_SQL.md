@@ -30,7 +30,7 @@
 SHOW DATABASES;
 ```
 
-<img src="../../../images/image-202509231214.webp" style="zoom: 80%;" />
+<img src="../../../images/database/image_20250923_121400.webp" style="zoom: 80%;" />
 
 查询当前数据库：
 
@@ -38,7 +38,7 @@ SHOW DATABASES;
 SELECT DATABASE();
 ```
 
-<img src="../../../images/image-202509231248.png" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_124800.png" style="zoom:80%;" />
 
 #### 创建
 
@@ -46,7 +46,7 @@ SELECT DATABASE();
 CREATE DATABASE [IF NOT EXISTS] 数据库名 [DEFAULT CHARSET 字符集] [COLLATE 排序规则];
 ```
 
-<img src="../../../images/image-202509231221.png" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_122100.png" style="zoom:80%;" />
 
 #### 删除
 
@@ -54,7 +54,7 @@ CREATE DATABASE [IF NOT EXISTS] 数据库名 [DEFAULT CHARSET 字符集] [COLLAT
 DROP DATABASE [IF EXISTS] 数据库名;
 ```
 
-<img src="../../../images/image-202509231241.png" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_124100.png" style="zoom:80%;" />
 
 #### 使用
 
@@ -62,7 +62,7 @@ DROP DATABASE [IF EXISTS] 数据库名;
 USE 数据库名;
 ```
 
-<img src="../../../images/image-202509231245.png" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_124500.png" style="zoom:80%;" />
 
 > [!tip]
 >
@@ -78,7 +78,7 @@ USE 数据库名;
 SHOW TABLES;
 ```
 
-<img src="../../../images/image-202509231322.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_132200.webp" style="zoom:80%;" />
 
 查询表结构：
 
@@ -86,7 +86,7 @@ SHOW TABLES;
 DESC 表名;
 ```
 
-<img src="../../../images/image-202509231358.png" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_135800.png" style="zoom:80%;" />
 
 查询指定表的建表语句：
 
@@ -94,7 +94,7 @@ DESC 表名;
 SHOW CREATE TABLE 表名;
 ```
 
-<img src="../../../images/image-202509231415.png" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_141500.png" style="zoom:80%;" />
 
 #### 创建
 
@@ -112,7 +112,7 @@ CREATE TABLE 表名(
 >
 > `[...]` 为可选参数，最后一个字段后无逗号。
 
-<img src="../../../images/image-202509231354.png" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_135400.png" style="zoom:80%;" />
 
 #### 数据类型
 
@@ -194,7 +194,7 @@ create table emp(
 ) comment '员工表';
 ```
 
-<img src="../../../images/image-202509231626.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_162600.webp" style="zoom:80%;" />
 
 #### 修改
 
@@ -210,7 +210,7 @@ ALTER TABLE 表名 ADD 字段名 类型(长度) [COMMENT 注释] [约束];
 alter table emp add nickname varchar(20) comment '昵称';
 ```
 
-<img src="../../../images/image-202509231630.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_163000.webp" style="zoom:80%;" />
 
 ##### 修改字段
 
@@ -232,7 +232,7 @@ ALTER TABLE 表名 CHANGE 旧字段名 新字段名 类型(长度) [COMMENT 注�
 alter table emp change nickname username varchar(30) comment '用户名';
 ```
 
-<img src="../../../images/image-202509231638.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_163800.webp" style="zoom:80%;" />
 
 ##### 删除字段
 
@@ -246,7 +246,7 @@ ALTER TABLE 表名 DROP 字段名;
 alter table emp drop username;
 ```
 
-<img src="../../../images/image-202509231651.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_165100.webp" style="zoom:80%;" />
 
 ##### 修改表名
 
@@ -260,7 +260,7 @@ ALTER TABLE 表名 RENAME TO 新表名;
 alter table emp rename to employee;
 ```
 
-<img src="../../../images/image-202509231657.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_165700.webp" style="zoom:80%;" />
 
 #### 删除
 
@@ -270,7 +270,7 @@ alter table emp rename to employee;
 DROP TABLE [IF EXISTS] 表名;
 ```
 
-<img src="../../../images/image-202509231713.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_171300.webp" style="zoom:80%;" />
 
 **删除指定表并重新创建该表**：
 
@@ -278,7 +278,7 @@ DROP TABLE [IF EXISTS] 表名;
 TRUNCATE TABLE 表名;
 ```
 
-<img src="../../../images/image-202509231716.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20250923_171600.webp" style="zoom:80%;" />
 
 > [!tip]
 >
@@ -343,9 +343,9 @@ VALUES(
 1, '1', 'Hachimi', '男', 18, '01234567890123456X', '2005-05-14')；
 ```
 
-<img src="../../../images/image-202509232118.webp" style="zoom: 67%;" />
+<img src="../../../images/database/image_20250923_211800.webp" style="zoom: 67%;" />
 
-<img src="../../../images/image-202509232122.png" style="zoom:67%;" />
+<img src="../../../images/database/image_20250923_212200.png" style="zoom:67%;" />
 
 **给全部字段添加数据**：
 
@@ -360,9 +360,9 @@ INSERT
 VALUES(2, '2', 'Mambo', '男', 19, '012345678901234567', '2005-05-16')
 ```
 
-<img src="../../../images/image-202509232143.png" style="zoom:67%;" />
+<img src="../../../images/database/image_20250923_214300.png" style="zoom:67%;" />
 
-<img src="../../../images/image-202509232144.png" style="zoom:67%;" />
+<img src="../../../images/database/image_20250923_214400.png" style="zoom:67%;" />
 
 **批量添加数据**：
 
@@ -395,9 +395,9 @@ VALUES
 '2004-11-01')
 ```
 
-<img src="../../../images/image-202509232157.png" style="zoom:67%;" />
+<img src="../../../images/database/image_20250923_215700.png" style="zoom:67%;" />
 
-<img src="../../../images/image-202509232200.png" style="zoom:67%;" />
+<img src="../../../images/database/image_20250923_220000.png" style="zoom:67%;" />
 
 > [!tip]
 >
@@ -421,9 +421,9 @@ WHERE
 	id = 1;
 ```
 
-<img src="../../../images/image-202509232204.png" style="zoom:67%;" />
+<img src="../../../images/database/image_20250923_220400.png" style="zoom:67%;" />
 
-<img src="../../../images/image-202509232205.png" style="zoom:67%;" />
+<img src="../../../images/database/image_20250923_220500.png" style="zoom:67%;" />
 
 > [!tip]
 >
@@ -443,9 +443,9 @@ WHERE
 	gender = '女';
 ```
 
-<img src="../../../images/image-202509232209.png" style="zoom:67%;" />
+<img src="../../../images/database/image_20250923_220900.png" style="zoom:67%;" />
 
-<img src="../../../images/image-202509232210.png" style="zoom:67%;" />
+<img src="../../../images/database/image_20250923_221000.png" style="zoom:67%;" />
 
 > [!tip]
 >
@@ -520,7 +520,7 @@ SELECT idcard,
 FROM emp;
 ```
 
-<img src="../../../images/image-202509251921.webp" style="zoom: 67%;" />
+<img src="../../../images/database/image_20250925_192100.webp" style="zoom: 67%;" />
 
 #### 设置别名
 
@@ -532,7 +532,7 @@ SELECT 字段1 [AS 别名1], 字段2 [AS 别名2]... FROM 表名;
 SELECT workaddress AS `工作地址` FROM emp;
 ```
 
-<img src="../../../images/image-202509251923.webp" style="zoom:67%;" />
+<img src="../../../images/database/image_20250925_192300.webp" style="zoom:67%;" />
 
 > [!tip]
 >
@@ -549,7 +549,7 @@ SELECT DISTINCT age
 FROM emp;
 ```
 
-<img src="../../../images/image-202509251924.webp" style="zoom:67%;" />
+<img src="../../../images/database/image_20250925_192400.webp" style="zoom:67%;" />
 
 ### 条件查询（`WHERE`）
 
@@ -591,7 +591,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    WHERE age = 16;
    ```
 
-   <img src="../../../images/image-202509251944.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_194400.webp" style="zoom:67%;" />
 
 2. 查询年龄大于 25 的员工。
 
@@ -602,7 +602,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    WHERE age > 25;
    ```
 
-   <img src="../../../images/image-202509251946.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_194600.webp" style="zoom:67%;" />
 
 3. 查询年龄大于等于 25 的员工。
 
@@ -613,7 +613,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    WHERE age >= 25;
    ```
 
-   <img src="../../../images/image-202509251948.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_194800.webp" style="zoom:67%;" />
 
 4. 查询没有身份证号的员工信息。
 
@@ -624,7 +624,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    WHERE idcard IS NULL;
    ```
 
-   <img src="../../../images/image-202509251950.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_195000.webp" style="zoom:67%;" />
 
 5. 查询有身份证号的员工信息。
 
@@ -635,7 +635,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    WHERE idcard IS NOT NULL;
    ```
 
-   <img src="../../../images/image-202509251953.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_195300.webp" style="zoom:67%;" />
 
 6. 查询年龄不等于 16 的员工信息。
 
@@ -651,7 +651,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    WHERE age <> 16;
    ```
 
-   <img src="../../../images/image-202509251957.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_195700.webp" style="zoom:67%;" />
 
 7. 查询年龄在 15 岁（包含）到 20 岁（包含）之间的员工信息。
 
@@ -668,7 +668,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    WHERE age BETWEEN 15 AND 20;
    ```
 
-   <img src="../../../images/image-202509252004.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_200400.webp" style="zoom:67%;" />
 
 8. 查询性别为男且年龄小于 25 岁的员工信息。
 
@@ -680,7 +680,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
        AND age <= 25
    ```
 
-   <img src="../../../images/image-202509252010.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_201000.webp" style="zoom:67%;" />
 
 9. 查询年龄等于 18 或 20 或 40 的员工信息。
 
@@ -698,7 +698,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
    WHERE age IN(18, 20, 40)
    ```
 
-   <img src="../../../images/image-202509252014.webp" style="zoom: 67%;" />
+   <img src="../../../images/database/image_20250925_201400.webp" style="zoom: 67%;" />
 
 10. 查询姓名为三个字的员工信息。
 
@@ -709,7 +709,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
     WHERE name LIKE '___';
     ```
 
-    <img src="../../../images/image-202509252018.webp" style="zoom:67%;" />
+    <img src="../../../images/database/image_20250925_201800.webp" style="zoom:67%;" />
 
 11. 查询身份证号最后一位是 1 的员工信息。
 
@@ -720,7 +720,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
     WHERE idcard LIKE '%1';
     ```
 
-    <img src="../../../images/image-202509252020.webp" style="zoom:67%;" />
+    <img src="../../../images/database/image_20250925_202000.webp" style="zoom:67%;" />
 
 ### 聚合函数（`count`、`max`、`min`、`avg`、`sum`）
 
@@ -752,7 +752,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
    SELECT COUNT(id) FROM emp;
    ```
 
-   <img src="../../../images/image-202509252020.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_202000.webp" style="zoom:67%;" />
 
 2. 统计该企业员工的平均年龄。
 
@@ -760,7 +760,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
    SELECT AVG(age) FROM emp;
    ```
 
-   <img src="../../../images/image-202509252038.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_203800.webp" style="zoom:67%;" />
 
 3. 统计该企业员工的最大年龄。
 
@@ -769,7 +769,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
    FROM emp;
    ```
 
-   <img src="../../../images/image-202509252044.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_204400.webp" style="zoom:67%;" />
 
 4. 统计该企业员工的最小年龄。
 
@@ -778,7 +778,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
    FROM emp;
    ```
 
-   <img src="../../../images/image-202509252045.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_204500.webp" style="zoom:67%;" />
 
 5. 统计樱丘高中员工的年龄之和。
 
@@ -788,7 +788,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
    WHERE workaddress = '樱丘高中';
    ```
 
-   <img src="../../../images/image-202509252047.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_204700.webp" style="zoom:67%;" />
 
 > [!tip]
 >
@@ -818,7 +818,7 @@ SELECT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 
    GROUP BY gender;
    ```
 
-   <img src="../../../images/image-202509252101.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_210100.webp" style="zoom:67%;" />
 
    可以发现此时 `COUNT` 计算的就是各分组的数量而非整体数量。
 
@@ -831,7 +831,7 @@ SELECT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 
    GROUP BY gender;
    ```
 
-   <img src="../../../images/image-202509252103.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_210300.webp" style="zoom:67%;" />
 
 3. 查询年龄小于 25 的员工，并根据工作地址分组，获取员工数量大于等于 3 的工作地址。
 
@@ -846,7 +846,7 @@ SELECT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 
        COUNT(id) >= 3;
    ```
 
-   <img src="../../../images/image-202509252108.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_210800.webp" style="zoom:67%;" />
 
 > [!tip]
 >
@@ -882,7 +882,7 @@ SELECT 字段列表 FROM 表名 ORDER BY 字段1 排序方式1, 字段2 排序�
    ORDER BY age ASC
    ```
 
-   <img src="../../../images/image-202509252155.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_215500.webp" style="zoom:67%;" />
 
 2. 根据入职时间，对员工进行降序排序。
 
@@ -894,7 +894,7 @@ SELECT 字段列表 FROM 表名 ORDER BY 字段1 排序方式1, 字段2 排序�
    ORDER BY entrydate DESC;
    ```
 
-   <img src="../../../images/image-202509252157.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_215700.webp" style="zoom:67%;" />
 
 3. 根据年龄对公司的员工进行升序排序，年龄相同再按照入职时间进行降序排序。
 
@@ -908,7 +908,7 @@ SELECT 字段列表 FROM 表名 ORDER BY 字段1 排序方式1, 字段2 排序�
        entrydate DESC;
    ```
 
-   <img src="../../../images/image-202509252159.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_215900.webp" style="zoom:67%;" />
 
 ### 分页查询（`LIMIT`）
 
@@ -932,7 +932,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
    SELECT id, name FROM emp LIMIT 10;
    ```
 
-   <img src="../../../images/image-202509252209.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_220900.webp" style="zoom:67%;" />
 
 2. 查询第 2 页员工数据，每页展示 10 条记录。
 
@@ -943,7 +943,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
    LIMIT 10, 10;
    ```
 
-   <img src="../../../images/image-202509252210.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_221000.webp" style="zoom:67%;" />
 
 > [!tip]
 >
@@ -963,7 +963,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
        AND gender = '女';
    ```
 
-   <img src="../../../images/image-202509252223.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_222300.webp" style="zoom:67%;" />
 
 2. 查询性别为男，并且年龄在 20~40 岁（含）以内的姓名为三个字的员工。
 
@@ -978,7 +978,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
        AND name LIKE '___';
    ```
 
-   <img src="../../../images/image-202509252225.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_222500.webp" style="zoom:67%;" />
 
 3. 统计员工表中，年龄小于 30 岁的，男性员工和女性员工的人数。
 
@@ -990,7 +990,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
    GROUP BY gender;
    ```
 
-   <img src="../../../images/image-202509252229.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_222900.webp" style="zoom:67%;" />
 
 4. 查询所有年龄小于等于 30 岁员工的姓名和年龄，并对查询结果按年龄升序排序，如果年龄相同按入职时间降序排序。
 
@@ -1003,7 +1003,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
        entrydate DESC;
    ```
 
-   <img src="../../../images/image-202509252233.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_223300.webp" style="zoom:67%;" />
 
 5. 查询性别为男，且年龄在 20~40 岁（含）以内的前 5 个员工信息，对查询的结果按年龄升序排序，年龄相同按入职时间升序排序。
 
@@ -1017,23 +1017,23 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
    LIMIT 5;
    ```
 
-   <img src="../../../images/image-202509252237.webp" style="zoom:67%;" />
+   <img src="../../../images/database/image_20250925_223700.webp" style="zoom:67%;" />
 
 ### 执行顺序
 
-<img src="../../../images/image-202509252242.webp" style="zoom:67%;" />
+<img src="../../../images/database/image_20250925_224200.webp" style="zoom:67%;" />
 
 ---
 
 **知识总览**：
 
-<img src="../../../images/image-202509252256.webp" style="zoom:67%;" />
+<img src="../../../images/database/image_20250925_225600.webp" style="zoom:67%;" />
 
 ## DCL
 
 DCL 英文全称 Data Control Language（数据控制语言），用来管理数据库用户、控制数据库的访问权限。
 
-<img src="../../../images/image-202510081553.webp" style="zoom: 67%;" />
+<img src="../../../images/database/image_20251008_155300.webp" style="zoom: 67%;" />
 
 ### 管理用户
 
@@ -1045,7 +1045,7 @@ USE mysql;
 SELECT * FROM user;
 ```
 
-<img src="../../../images/image-202510081558.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20251008_155800.webp" style="zoom:80%;" />
 
 #### 创建用户
 
@@ -1059,7 +1059,7 @@ CREATE USER '用户名' @'主机名' IDENTIFIED BY '密码';
 CREATE USER 'itcast' @'localhost' IDENTIFIED by '123456';
 ```
 
-<img src="../../../images/image-202510081607.webp" style="zoom: 80%;" />
+<img src="../../../images/database/image_20251008_160700.webp" style="zoom: 80%;" />
 
 创建用户 `hachimi`，可以在任意主机访问该数据库，密码为 123456：
 
@@ -1067,7 +1067,7 @@ CREATE USER 'itcast' @'localhost' IDENTIFIED by '123456';
 CREATE USER 'hachimi' @'%' IDENTIFIED BY '123456';
 ```
 
-<img src="../../../images/image-202510081622.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20251008_162200.webp" style="zoom:80%;" />
 
 #### 修改用户密码
 
@@ -1103,7 +1103,7 @@ DROP USER '用户名' @'主机名'
 DROP USER 'itcast' @'localhost';
 ```
 
-<img src="../../../images/image-202510081658.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20251008_165800.webp" style="zoom:80%;" />
 
 > [!tip]
 >
@@ -1137,7 +1137,7 @@ SHOW GRANTS FOR '用户名' @'主机名';
 SHOW GRANTS FOR 'hachimi' @'%';
 ```
 
-<img src="../../../images/image-202510081712.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20251008_171200.webp" style="zoom:80%;" />
 
 #### 授予权限
 
@@ -1151,9 +1151,9 @@ GRANT 权限列表 ON 数据库名.表名 TO '用户名' @'主机名';
 GRANT ALL ON itcast.* TO 'hachimi' @'%';
 ```
 
-<img src="../../../images/image-202510081717.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20251008_171700.webp" style="zoom:80%;" />
 
-<img src="../../../images/image-202510081721.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20251008_172100.webp" style="zoom:80%;" />
 
 #### 撤销权限
 
@@ -1168,7 +1168,7 @@ REVOKE ALL ON itcast.*
 FROM 'hachimi' @'%';
 ```
 
-<img src="../../../images/image-202510081712.webp" style="zoom:80%;" />
+<img src="../../../images/database/image_20251008_171200.webp" style="zoom:80%;" />
 
 > [!tip]
 >

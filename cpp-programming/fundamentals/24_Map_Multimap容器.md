@@ -8,7 +8,7 @@
 
 `map` 和 `list` 拥有相同的某些性质，当对它的容器元素进行新增操作或者删除操作时，操作之前的所有迭代器，在操作完成之后依然有效，当然被删除的那个元素的迭代器必然是个例外。`multimap` 和 `map` 的操作类似，唯一区别 `multimap` 键值可重复。`map` 和 `multimap` 都是以红黑树为底层实现机制。
 
-<img src="../../images/image-202501230303.webp" style="zoom: 67%;" />
+<img src="../../images/cpp-programming/image_20250123_030300.webp" style="zoom: 67%;" />
 
 `map` 容器每个元素都是“键值-实值”成对存储，自动根据键值排序，键值不能重复，不能修改。
 

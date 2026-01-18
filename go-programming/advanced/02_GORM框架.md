@@ -4,7 +4,7 @@
 
 GORM 是 Go 语言中一个广受欢迎的 ORM（对象-关系隐射，Object-Relational Mapping）框架。ORM 技术允许开发者通过操作程序中的对象实例，以面向对象的方式完成对关系型数据库的增删改查等操作，从而显著简化数据库交互。GORM 官方支持多种主流数据库，包括 MySQL、PostgreSQL、SQLite 和 SQL Server。
 
-<img src="../../images/image-202511032237.svg" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251103_223700.svg" style="zoom:80%;" />
 
 ## 特性
 
@@ -243,7 +243,7 @@ func (UserController) Index(c *gin.Context) {
 }
 ```
 
-<img src="../../images/image-202511041329.webp" style="zoom: 67%;" />
+<img src="../../images/go-programming/image_20251104_132900.webp" style="zoom: 67%;" />
 
 #### 指定条件查找
 
@@ -255,7 +255,7 @@ func (UserController) Index(c *gin.Context) {
 }
 ```
 
-<img src="../../images/image-202511041434.webp" style="zoom:80%;" />
+<img src="../../images/go-programming/image_20251104_143400.webp" style="zoom:80%;" />
 
 #### 泛型接口
 
@@ -285,7 +285,7 @@ func (UserController) Edit(c *gin.Context) {
 }
 ```
 
-<img src="../../images/image-202511041509.webp" style="zoom:67%;" />
+<img src="../../images/go-programming/image_20251104_150900.webp" style="zoom:67%;" />
 
 ### 更新单个列
 

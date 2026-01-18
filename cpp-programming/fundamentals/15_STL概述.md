@@ -23,7 +23,7 @@
 
 STL 的一个重要特性是将数据与操作分离。数据由容器类别加以管理，操作则由特定的算法完成。
 
-<img src="../../images/image-202508270429.webp" style="zoom: 25%;" />
+<img src="../../images/cpp-programming/image_20250827_042900.webp" style="zoom: 25%;" />
 
 算法可分为**质变算法**和**非质变算法**。
 
