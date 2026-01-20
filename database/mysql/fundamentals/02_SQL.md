@@ -229,7 +229,7 @@ ALTER TABLE 表名 CHANGE 旧字段名 新字段名 类型(长度) [COMMENT 注�
 将 `emp` 表中的 `nickname` 字段修改为 `username`，类型为 `varchar(30)`。
 
 ```mysql
-alter table emp change nickname username varchar(30) comment '用户名';
+ALTER TABLE emp CHANGE nickname username VARCHAR(30) COMMENT '用户名';
 ```
 
 <img src="../../../images/database/image_20250923_163800.webp" style="zoom:80%;" />
@@ -257,7 +257,7 @@ ALTER TABLE 表名 RENAME TO 新表名;
 将 `emp` 表的表名修改为 `employee`。
 
 ```mysql
-alter table emp rename to employee;
+ALTER TABLE emp RENAME TO entryee;
 ```
 
 <img src="../../../images/database/image_20250923_165700.webp" style="zoom:80%;" />
@@ -574,11 +574,11 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
 | `LIKE` 占位符      | 模糊匹配（`_` 匹配单个字符，`%` 匹配任意个字符） |
 | `IS NULL`          | 是 `NULL`                                        |
 
-| 逻辑运算符    | 功能说明                 |
-| ------------- | ------------------------ | --- | ---------------------------- |
-| `AND` 或 `&&` | 并且（多个条件同时成立） |
-| `OR` 或 `     |                          | `   | 或者（多个条件任意一个成立） |
-| `NOT` 或 `!`  | 非、取反（否定当前条件） |
+|  逻辑运算符   |           功能说明           |
+| :-----------: | :--------------------------: |
+| `AND` 或 `&&` |   并且（多个条件同时成立）   |
+| `OR` 或 `||`  | 或者（多个条件任意一个成立） |
+| `NOT` 或 `!`  |   非、取反（否定当前条件）   |
 
 ---
 
