@@ -125,10 +125,10 @@ func (User) TableName() string {
 
 GORM 中默认定义了一个 `gorm.Model 结构体，其包含以下字段：
 
-- `ID`：主键  
-- `CreatedAt`：记录创建时间  
-- `UpdatedAt`：记录更新时间  
-- `DeletedAt`：用于实现软删除   
+- `ID`：主键
+- `CreatedAt`：记录创建时间
+- `UpdatedAt`：记录更新时间
+- `DeletedAt`：用于实现软删除
 
 ```go
 type Model struct {
@@ -151,7 +151,7 @@ type User struct {
 
 ## CURD
 
-首先，在对应数据库表的控制器中引入 `models` 模块。 
+首先，在对应数据库表的控制器中引入 `models` 模块。
 
 ### 增加
 
@@ -325,4 +325,3 @@ func (UserController) Delete(c *gin.Context) {
 	c.String(http.StatusOK, "删除用户")
 }
 ```
-
