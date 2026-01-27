@@ -25,12 +25,10 @@ INSERT INTO test VALUE (3, 'jerry');
   INSERT INTO test VALUE (7, 'tom'), (8, 'cat'), (9, 'jerry');
   COMMIT;
   ```
-  
+
 - **主键顺序插入**：
-  
   - **乱序插入**：0、1、9、21、88、2、4、15、89、5、7、3。
   - **顺序插入**：1、2、3、4、5、7、8、9、15、21、88、89。
-
 
 **大批量插入数据**：
 
@@ -47,7 +45,7 @@ mysql --local-infile -u root -p
 # 设置全局参数 local_infile 为 1，开始从本地加载文件导入数据的开关
 SET GLOBAL local_infile = 1;
 # 执行 LOAD 指令将准备好的数据加载到表结构中
-LOAD DATA LOCAL INFILE '/root/sql1.log' INTO TABLE `user` FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'; 
+LOAD DATA LOCAL INFILE '/root/sql1.log' INTO TABLE `user` FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 ```
 
 <img src="../../../images/database/image_20260126_170535.webp" style="zoom:67%;" />
@@ -302,3 +300,51 @@ CREATE INDEX idx_user_profession_age_status ON user (profession, age, status);
 ## `LIMIT` 优化
 
 <img src="../../../images/database/image_20260127_153745.webp" style="zoom:67%;" />
+
+从上述执行结果可见，查询耗时严重。这是一个典型的**“深度分页”**性能问题。
+
+当执行 `LIMIT 2000000, 10` 时，MySQL 必须扫描并（在必要时）排序前 2,000,010 条记录，然后**抛弃**前 2,000,000 条，仅返回最后 10 条。随着偏移量（Offset）的增加，扫描和丢弃的数据量越来越大，导致大量的需要 I/O 和 CPU 消耗。
+
+针对此类场景，利用**覆盖索引 + 子查询**的形式可显著提升性能。
+
+**原理**：先在子查询中利用覆盖索引（不回表）快速提取出目标分页的主键 ID，然后再通过主键关联（Inner Join）原表获取完整的行数据。这避免了对前 200 万条数据进行无意义的回表读取。
+
+```mariadb
+SELECT u1.* FROM user u1 INNER JOIN (SELECT id FROM user ORDER BY id LIMIT 5000000, 10) u2 ON u1.id = u2.id;
+```
+
+<img src="../../../images/database/image_20260127_154742.webp" style="zoom:67%;" />
+
+### `COUNT` 优化
+
+```mariadb
+EXPLAIN SELECT COUNT(*) FROM user;
+```
+
+- **MyISAM 引擎**：会将表的总行数维护在磁盘的元数据中，因此在无 `WHERE` 过滤条件时，执行 `COUNT(*)` 可直接读取元数据返回结果，无需扫描表数据，效率极高。
+- **InnoDB 引擎**：受事务隔离性和多版本并发控制（MVCC）机制影响，无法依赖元数据直接获取准确行数。执行 `COUNT(*)` 时需要扫描数据并逐行计数，性能开销较大。
+
+**业务层维护计数**：
+
+使用 Redis 等键值型内存数据库，在业务代码中维护表的行数：插入数据时对计数执行 `INCR` 操作，删除数据时执行 `DECR` 操作，以此实现高效的计数查询。该方案适合对计数实时性要求高、且能接受少量一致性偏差的场景，需注意处理并发更新时的一致性问题。
+
+### `COUNT` 的用法
+
+`COUNT()` 是 MySQL 中的聚合函数，核心逻辑为：遍历查询结果集的每一行，若函数参数值不为 `NULL`，则累计计数加 1；若为 `NULL` 则不计入，最终返回累计值。
+
+**常见用法**：`COUNT(*)`、`COUNT(主键)`、`COUNT(字段)`、`COUNT(1)`。
+
+**InnoDB 引擎下各用法的执行逻辑**：
+
+- **`COUNT(主键)`**：InnoDB 会扫描表（或最优索引），提取每一行的主键值并返回至 Server 层；由于主键值不可能为 `NULL`，Server 层直接按行累加计数。
+- **`COUNT(字段)`**：
+  - **字段无 `NOT NULL` 约束**：InnoDB 扫描表（或对应索引），提取每一行的该字段值返回至 Server 层；Server 层判断字段值是否为 `NULL`，非 `NULL` 则累加计数。
+  - **字段有 `NOT NULL` 约束**：InnoDB 扫描表（或对应索引），提取每一行的该字段值返回至 Server 层；因字段值必不为 `NULL`，Server 层直接按行累加计数。
+- **`COUNT(1)`**：InnoDB 扫描表（或最优索引），但不会提取任何字段值；Server 为每一行填充常数“1”（该值恒不为 `NULL`），直接按行累加计数。
+- **`COUNT(*)`**：MySQL 对该写法做了专属优化——InnoDB 扫描表（或最优索引）时不提前任何字段值，直接将行数信息返回至 Server 层；Server 无需额外判断，直接按行累加计数。
+
+在 InnoDB 引擎下，各用法的执行效率如下：
+
+`COUNT(字段)`（无 `NOT NULL` 约束）< `COUNT(字段)`（有 `NOT NULL` 约束）< `COUNT(主键)` < `COUNT(1)` ≈ `COUNT(*)`
+
+综上，开发中应优先使用 `COUNT(*)`，其语义最清晰且性能最优。
