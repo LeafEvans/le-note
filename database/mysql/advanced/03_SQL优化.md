@@ -348,3 +348,71 @@ EXPLAIN SELECT COUNT(*) FROM user;
 `COUNT(字段)`（无 `NOT NULL` 约束）< `COUNT(字段)`（有 `NOT NULL` 约束）< `COUNT(主键)` < `COUNT(1)` ≈ `COUNT(*)`
 
 综上，开发中应优先使用 `COUNT(*)`，其语义最清晰且性能最优。
+
+## `UPDATE` 优化
+
+**初始数据**：
+
+<img src="../../../images/database/image_20260127_175537.webp" style="zoom: 67%;" />
+
+开启两个独立会话，同时执行以下事务：
+
+```mariadb
+START TRANSACTION;
+UPDATE course SET name='C#' WHERE id=1;
+COMMIT;
+```
+
+```mariadb
+START TRANSACTION;
+UPDATE course SET name='Golang' WHERE id=4;
+COMMIT;
+```
+
+在 MySQL 默认的**可重复度（RR）隔离级别**下，由于 `id` 是主键索引，`UPDATE` 会触发**行级锁**，仅锁住 `id=1` 和 `id=4` 的两行数据，彼此互不影响，两个事务可以并行执行。
+
+开启两个独立会话，同时执行以下事务：
+
+```mariadb
+START TRANSACTION;
+UPDATE course SET name='Rust' WHERE name='PHP';
+COMMIT;
+```
+
+```mariadb
+START TRANSACTION;
+UPDATE course SET name='Zig' WHERE id=4;
+COMMIT;
+```
+
+<img src="../../../images/database/image_20260127_175917.webp" style="zoom:67%;" />
+
+由于 `name` 字段未创建索引，MySQL 无法通过索引定位目标行，只能全表扫描，因此会触发**表级锁**（锁住整个 `course` 表）。这导致会话 2 的 `UPDATE` 操作被阻塞，最终因锁等待超时失败；只有当会话 1 提交事务释放表锁后，会话 2 才能执行成功。
+
+---
+
+`UPDATE` 语句的核心优化原则是：**确保 `WHERE` 条件的过滤字段存在有效索引**，让 MySQL 能快速定位目标行，从而触发行级锁，避免全表扫描和表级锁，提高并发性能。
+
+```mariadb
+CREATE INDEX idx_course_name ON course (name);
+```
+
+InnoDB 的行级锁是基于索引而非具体数据记录加锁的；若加锁依赖的索引失效（如索引未命中、无有效索引），行锁会升级为表级锁，导致并发性能显著下降。
+
+---
+
+**知识回顾**：
+
+1. **插入数据**：
+   - **`INSERT`**：批量插入、手动控制事务、主键顺序插入。
+   - **大批量插入**：`LOAD DATA LOCAL INFILE`。
+2. **主键优化**：
+   - 主键长度尽量短、顺序插入。
+   - 使用 `AUTO_INCREMENT`、不使用 `UUID`。
+3. **`ORDER BY`** 优化：
+   - **Using index**：直接通过索引返回数据，性能高。
+   - **Using filesort**：需要将返回的结果在排序缓冲区中排序。
+4. **`GROUP BY` 优化**：索引、多字段分组满足最左前缀原则。
+5. **`LIMIT` 优化**：覆盖索引 + 子查询。
+6. **`COUNT` 优化**：`COUNT(字段)` < `COUNT(主键)` < `COUNT(1)` ≈ `COUNT(*)`。
+7. **`UPDATE` 优化**：尽量根据主键/索引字段进行数据更新。
