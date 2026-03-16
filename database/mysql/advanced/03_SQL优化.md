@@ -81,7 +81,7 @@ LOAD DATA LOCAL INFILE '/home/leafevans/test/data_100w.txt' INTO TABLE user FIEL
 
 ## 主键优化
 
-### 数组组织方式
+### 数据组织方式
 
 在 InnoDB 存储引擎中，数据表的**数据行**会按照主键顺序进行组织和存储，采用这种存储方式的表被称为<span style="color:#C3110C">索引组织表</span>（Index Organized Table, <span style="color:#C3110C">IOT</span>）。
 
@@ -310,7 +310,13 @@ CREATE INDEX idx_user_profession_age_status ON user (profession, age, status);
 **原理**：先在子查询中利用覆盖索引（不回表）快速提取出目标分页的主键 ID，然后再通过主键关联（Inner Join）原表获取完整的行数据。这避免了对前 200 万条数据进行无意义的回表读取。
 
 ```mariadb
-SELECT u1.* FROM user u1 INNER JOIN (SELECT id FROM user ORDER BY id LIMIT 5000000, 10) u2 ON u1.id = u2.id;
+SELECT u1.*
+FROM user u1
+    JOIN (
+        SELECT id
+        FROM user
+        LIMIT 5000000, 10
+    ) u2 ON u1.id = u2.id;
 ```
 
 <img src="../../../images/database/image_20260127_154742.webp" style="zoom:67%;" />
