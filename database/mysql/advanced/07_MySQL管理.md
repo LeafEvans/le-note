@@ -41,7 +41,7 @@ mysql -uroot -p db01 -e "SELECT * FROM stu";
 
 ### `mysqladmin`
 
-`mysqladmin` 是 MySQL 官方提供的**命令行管理客户端**，用于快速执行数据库服务器的各类运维操作，核心能力包括检查服务器配置与运行状态、创建 / 删除数据库、刷新全新等。
+`mysqladmin` 是 MySQL 官方提供的**命令行管理客户端**，用于快速执行数据库服务器的各类运维操作，核心能力包括检查服务器配置与运行状态、创建 / 删除数据库、刷新权限等。
 
 若需获取所有可用操作与参数，可执行帮助命令：
 
@@ -95,6 +95,20 @@ mysqlbinlog [options] log-file1 [log-file2 ...]
 | `--stop-datetime=date2`  |  -   |                仅解析 `date2` 时间点之前的日志                 |
 | `--start-position=pos1`  |  -   |               仅解析从日志位置 `pos1` 开始的内容               |
 |  `--stop-position=pos2`  |  -   |               仅解析到日志位置 `pos2` 结束的内容               |
+
+```bash
+mysqladmin binlog.000012
+```
+
+<img src="../../../images/database/image_20260402_114036.png" style="zoom:80%;" />
+
+```sh
+mysqladmin -s binlog.000012
+```
+
+<img src="../../../images/database/image_20260402_124826.webp" style="zoom:67%;" />
+
+添加 `-s`（`--short-form`）参数，日志以精简格式输出，省略非核心数据信息，只保留关键操作内容。
 
 ### `mysqlshow`
 
@@ -176,14 +190,14 @@ mysqldump [options] --all-database/-A
 
 **输出选项**：
 
-| 选项格式               | 功能说明                                                                                     |
-| ---------------------- | -------------------------------------------------------------------------------------------- |
-| `--add-drop-database`  | 在每个数据库创建语句前，自动添加 `DROP DATABASE` 语句                                        |
-| `-add-drop-table`      | 在每个表创建语句前，自动添加 `DROP TABLE` 语句（默认开启；关闭需用 `--skip-add-drop-table`） |
-| `-n, --no-create-db`   | 备份文件中不包含数据库的创建语句                                                             |
-| `-t, --no-create-info` | 备份文件中不包含表的创建语句                                                                 |
-| `-d, --no-data`        | 备份文件中仅保留表结构，不包含任何数据                                                       |
-| `-T, --tab=name`       | 自动生成两个文件：`.sql` 文件（存储表结构创建语句）、`.txt` 文件（存储表数据）               |
+| 选项格式               | 功能说明                                                     |
+| ---------------------- | ------------------------------------------------------------ |
+| `--add-drop-database`  | 在每个数据库创建语句前，自动添加 `DROP DATABASE` 语句        |
+| `--add-drop-table`     | 在每个表创建语句前，自动添加 `DROP TABLE` 语句（默认开启；关闭需用 `--skip-add-drop-table`） |
+| `-n, --no-create-db`   | 备份文件中不包含数据库的创建语句                             |
+| `-t, --no-create-info` | 备份文件中不包含表的创建语句                                 |
+| `-d, --no-data`        | 备份文件中仅保留表结构，不包含任何数据                       |
+| `-T, --tab=name`       | 自动生成两个文件：`.sql` 文件（存储表结构创建语句）、`.txt` 文件（存储表数据） |
 
 <img src="../../../images/database/image_20260206_012618.webp" style="zoom:67%;" />
 
