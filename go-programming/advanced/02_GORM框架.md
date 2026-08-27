@@ -642,8 +642,566 @@ https://gorm.io/zh_CN/docs/sql_builder.html
 
 ### 删除数据
 
-使用原生 SQL 删除 `users` 表中的一条数据：
+原生 SQL 删除 `users` 表单条数据：
 
 ```go
+func (uc UserController) Delete(c *gin.Context) {
+	res := models.DB.Exec("DELETE FROM users WHERE id = ?", 3)
+	c.JSON(http.StatusOK, gin.H{
+		"result": res.RowsAffected,
+	})
+}
+```
+
+<img src="../../images/go-programming/image_20260406_185038.webp" style="zoom:67%;" />
+
+<img src="../../images/go-programming/image_20260406_185102.webp" style="zoom:67%;" />
+
+### 修改数据
+
+原生 SQL 更新 `users` 表单条数据。
+
+```go
+func (uc UserController) Edit(c *gin.Context) {
+	res := models.DB.Exec("UPDATE users SET username = ? WHERE id = 2", "叮咚鸡")
+	c.JSON(http.StatusOK, gin.H{
+		"result": res.RowsAffected,
+	})
+}
+```
+
+<img src="../../images/go-programming/image_20260406_185621.webp" style="zoom:67%;" />
+
+<img src="../../images/go-programming/image_20260406_185634.webp" style="zoom:67%;" />
+
+### 查询数据
+
+> [!note]
+>
+> `Exec` 对应 DML 操作，`Raw` 对应 DQL 操作。
+
+#### 查询单条数据
+
+```go
+func (uc UserController) Index(c *gin.Context) {
+	var user models.User
+	models.DB.Raw("SELECT * FROM users WHERE id = ?", 2).Scan(&user)
+	c.JSON(http.StatusOK, gin.H{
+		"result": user,
+	})
+}
+```
+
+<img src="../../images/go-programming/image_20260406_190946.webp" style="zoom:67%;" />
+
+#### 查询所有数据
+
+```go
+func (uc UserController) Index(c *gin.Context) {
+	var users []models.User
+	models.DB.Raw("SELECT * FROM users").Scan(&users)
+	c.JSON(http.StatusOK, gin.H{
+		"result": users,
+	})
+}
+```
+
+<img src="../../images/go-programming/image_20260406_191233.webp" style="zoom:67%;" />
+
+### 统计数据
+
+```go
+func (uc UserController) Index(c *gin.Context) {
+	var count int
+	models.DB.Raw("SELECT COUNT(*) FROM users").Scan(&count)
+	c.JSON(http.StatusOK, gin.H{
+		"result": count,
+	})
+}
+```
+
+<img src="../../images/go-programming/image_20260406_192605.webp" style="zoom:50%;" />
+
+## Gin 中使用 GORM 实现关联表查询
+
+<img src="../../images/go-programming/image_20260406_193909.webp" style="zoom:67%;" />
+
+### 一对一
+
+如图所示，文章与文章分类为**一对一关联**，一篇文章对应一个分类。文章表的 `cate_id` 作为外键，存储文章分类的主键 ID。查询文章时同步获取分类数据，需使用一对一关联查询；`foreignKey` 用于指定当前表的外键，`references` 用于指定关联表的关联字段。
+
+`article.go`：
+
+```go
+package models
+
+type Article struct {
+	ID          int         `json:"id"`
+	Title       string      `json:"title"`
+	Description int         `json:"description"`
+	CateID      int      `json:"cate_id"`
+	State       int         `json:"state"`
+	ArticleCate ArticleCate `gorm:"foreignKey:CateID;references:ID"`
+}
+
+func TableName() string {
+	return "articles"
+}
+
+```
+
+`article_cate.go`：
+
+```go
+package models
+
+type ArticleCate struct {
+	ID    int    `json:"id"`
+	Title string `json:"title"`
+	State int    `json:"state"`
+}
+
+func (ArticleCate) TableName() string {
+	return "article_cates"
+}
+```
+
+**查询所有文章及关联分类信息**：
+
+```go
+func (ac ArticleController) Index(c *gin.Context) {
+	var articleList []models.Article
+	models.DB.Preload("ArticleCate").Limit(2).Find(&articleList)
+	c.JSON(http.StatusOK, gin.H{
+		"result": articleList,
+	})
+}
+```
+
+<img src="../../images/go-programming/image_20260406_201237.webp" style="zoom:67%;" />
+
+> [!note]
+>
+> `Preload("ArticleCate")` 的作用是实现**一对多级联查询**，它会自动通过外键关联，在查询文章列表的同时，预加载并填充所有文章对应的 `ArticleCate`（分类）详细数据。
+
+**按指定条件查询文章及关联分类信息**：
+
+```go
+func (ac ArticleController) Index(c *gin.Context) {
+	var articleList []models.Article
+	models.DB.Preload("ArticleCate").Where("id >= ?", 4).Find(&articleList)
+	c.JSON(http.StatusOK, gin.H{
+		"result": articleList,
+	})
+}
+```
+
+<img src="../../images/go-programming/image_20260406_202515.webp" style="zoom:67%;" />
+
+### 一对多
+
+一对多关联在实际项目中应用极为广泛，是最核心的关联关系之一。
+
+以常见业务场景为例：点餐系统里，一个菜品分类对应多个菜品；订单业务中，一个订单对应多个订单商品，这都是标准的一对多关系。
+
+如图所示，文章分类表（`article_cates`）与文章表（`articles`）同样满足一对多关联：单个分类可关联多篇文章，文章表通过外键 `cate_id` 关联分类表的主键 ID。
+
+因此，在查询文章分类数据时，若需要联动获取该分类下的全部文章信息，就需要实现一对多关联查询。
+
+`article_cates.go`：
+
+```go
+package models
+
+type ArticleCate struct {
+	ID       int       `json:"id"`
+	Title    string    `json:"title"`
+	State    int       `json:"state"`
+	Articles []Article `gorm:"foreignKey:CateID"`
+}
+
+func (ArticleCate) TableName() string {
+	return "article_cates"
+}
+```
+
+`article.go`：
+
+```go
+package models
+
+type Article struct {
+	ID          int    `json:"id"`
+	Title       string `json:"title"`
+	Description string `json:"description"`
+	CateID      int    `json:"cate_id"`
+	State       int    `json:"state"`
+}
+
+func TableName() string {
+	return "articles"
+}
+```
+
+**查询所有分类及下属文章信息**：
+
+```go
+func (ac ArticleController) Index(c *gin.Context) {
+	var articleCateList []models.ArticleCate
+	models.DB.Preload("Articles").Find(&articleCateList)
+	c.JSON(http.StatusOK, gin.H{
+		"result": articleCateList,
+	})
+}
+```
+
+<img src="../../images/go-programming/image_20260406_224056.webp" style="zoom:67%;" />
+
+**按指定条件查询全部分类及下属文章信息**：
+
+```go
+func (ac ArticleController) Index(c *gin.Context) {
+	var articleCateList []models.ArticleCate
+	models.DB.Preload("Articles").Where("id > 0").Offset(1).Limit(1).Find(&articleCateList)
+	c.JSON(http.StatusOK, gin.H{
+		"result": articleCateList,
+	})
+}
+```
+
+<img src="../../images/go-programming/image_20260406_224541.webp" style="zoom:67%;" />
+
+**程序常见关联查询需求**：
+
+1. 查询文章时，同步获取所属文件信息。
+2. 查询分类时，同步获取下属文章信息。
+
+```go
+package models
+
+type Article struct {
+	ID          int         `json:"id"`
+	Title       string      `json:"title"`
+	Description string      `json:"description"`
+	CateID      int         `json:"cate_id"`
+	State       int         `json:"state"`
+	ArticleCate ArticleCate `gorm:"foreignKey;references:ID"`
+}
+
+func TableName() string {
+	return "articles"
+}
+
+```
+
+```go
+package models
+
+type ArticleCate struct {
+	ID       int       `json:"id"`
+	Title    string    `json:"title"`
+	State    int       `json:"state"`
+	Articles []Article `gorm:"foreignKey:CateID"`
+}
+
+func (ArticleCate) TableName() string {
+	return "article_cates"
+}
+
+```
+
+> [!tip]
+>
+> 1. **嵌入原则**
+>    - **按需嵌入**：谁需要使用对方的数据，就把对方嵌入当前结构体
+>    - **格式区分**：一对一 → 嵌**单个结构体**；一对多 → 嵌**切片**
+>    - **底层逻辑**：数据库仅需外键，嵌入字段完全由业务需求决定
+> 2. **Tag 标签规则**
+>    - **书写位置**：标签永远写在**嵌入的关联字段后面**
+>    - `foreignKey`：固定指向**子表的外键字段**
+>    - `references`：固定指向**父表的主键字段**（默认 ID 可省略）
+
+### 多对多
+
+<img src="../../images/go-programming/image_20260406_225856.png" style="zoom:67%;" />
+
+定义学生表、课程表与选课中间表的模型，若需根据课程查询选修该课程的学生列表，需在 Lesson 课程模型中关联 Student 学生模型。
+
+`lesson.go`：
+
+```go
+package models
+
+type Lesson struct {
+	ID       int        `json:"id"`
+	Name     string     `json:"name"`
+	Students []*Student `gorm:"many2many:lesson_students"`
+}
+
+func (Lesson) TableName() string {
+	return "lessons"
+}
+```
+
+`student.go`：
+
+```go
+package models
+
+type Student struct {
+	ID       int
+	Number   string
+	Password string
+	ClassID  int
+	Name     string
+	Lessons  []*Lesson `gorm:"many2many:lesson_students"`
+}
+
+func (Student) TableName() string {
+	return "students"
+}
+```
+
+`lesson_student.go`：
+
+```go
+package models
+
+type LessonStudent struct {
+	LessonID  int
+	StudentID int
+}
+
+func (LessonStudent) TableName() string {
+	return "lesson_students"
+}
+
+```
+
+> [!note]
+>
+> 在 Tag 中声明 `gorm:"many2many:lesson_students` 标签，就能告知 GROM 多对多关联的中间表信息。
+
+**获取学生信息及关联课表信息**：
+
+```go
+func (sc StudentController) Index(c *gin.Context) {
+	students := []models.Student{}
+	models.DB.Find(&students)
+	c.JSON(http.StatusOK, students)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_110050.webp" style="zoom:67%;" />
+
+```go
+func (lc LessonController) Index(c *gin.Context) {
+	lessons := []models.Lesson{}
+	models.DB.Find(&lessons)
+	c.JSON(http.StatusOK, lessons)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_110147.webp" style="zoom:67%;" />
+
+**查询学生信息并获取其选课信息**：
+
+```go
+func (sc StudentController) Index(c *gin.Context) {
+	students := []models.Student{}
+	models.DB.Preload("Lessons").Find(&students)
+	c.JSON(http.StatusOK, students)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_111935.webp" style="zoom:67%;" />
+
+**查询张三的选修课程**：
+
+```go
+func (sc StudentController) Index(c *gin.Context) {
+	students := []models.Student{}
+	models.DB.Preload("Lessons").Where("id = ?", 1).Find(&students)
+	c.JSON(http.StatusOK, students)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_112211.webp" style="zoom:67%;" />
+
+**查询课程的选修学生**：
+
+```go
+func (lc LessonController) Index(c *gin.Context) {
+	lessons := []models.Lesson{}
+	models.DB.Preload("Students").Find(&lessons)
+	c.JSON(http.StatusOK, lessons)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_112523.webp" style="zoom:67%;" />
+
+**查询 Go 语言核心编程的选修学生**：
+
+```go
+func (lc LessonController) Index(c *gin.Context) {
+	lessons := []models.Lesson{}
+	models.DB.Preload("Students").Where("id = ?", 1).Find(&lessons)
+	c.JSON(http.StatusOK, lessons)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_112744.webp" style="zoom:67%;" />
+
+**条件查询数据**：
+
+```go
+func (lc LessonController) Index(c *gin.Context) {
+	lessons := []models.Lesson{}
+	models.DB.Preload("Students").Offset(1).Limit(2).Find(&lessons)
+	c.JSON(http.StatusOK, lessons)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_113147.webp" style="zoom:67%;" />
+
+**关联查询时，为关联子集设置筛选条件**：
+
+https://gorm.io/zh_CN/docs/preload.html
+
+**查询课程选修学生，排除已开除的张三**：
+
+```go
+func (lc LessonController) Index(c *gin.Context) {
+	lessons := []models.Lesson{}
+	models.DB.Preload("Students", "id != 1").Find(&lessons)
+	c.JSON(http.StatusOK, lessons)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_113914.webp" style="zoom:67%;" />
+
+**查询课程选修学生，排除已开除的张三和李四**：
+
+```go
+func (lc LessonController) Index(c *gin.Context) {
+	lessons := []models.Lesson{}
+	models.DB.Preload("Students", "id NOT IN (?, ?)", 1, 2).Find(&lessons)
+	c.JSON(http.StatusOK, lessons)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_114252.webp" style="zoom:67%;" />
+
+**自定义预加载 SQL**：
+
+查询课程选修学生，按学生 ID 倒序。
+
+```go
+func (lc LessonController) Index(c *gin.Context) {
+	lessons := []models.Lesson{}
+	models.DB.Preload("Students", func(db *gorm.DB) *gorm.DB {
+		return db.Order("id DESC")
+	}).Find(&lessons)
+	c.JSON(http.StatusOK, lessons)
+}
+```
+
+<img src="../../images/go-programming/image_20260407_115747.webp" style="zoom:67%;" />
+
+## GORM 中使用事务
+
+事务可维护数据库完整性，保证批量 SQL 语句要么全部执行，要么全部不执行。
+
+### 禁用默认事务
+
+为保证数据一致性，GORM 默认在事务中执行创建、更新、删除等写入操作；若无此需求，初始化时可禁用，性能提升约 30% 以上。
+
+```go
+package models
+
+import (
+	"fmt"
+
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
+)
+
+var DB *gorm.DB
+
+func init() {
+	dsn := "leafevans:Qq20050514@tcp(127.0.0.1:3307)/test?charset=utf8mb4&parseTime=True&loc=Local"
+	var err error
+	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
+		QueryFields:            true,
+		SkipDefaultTransaction: true,
+	})
+
+	if err != nil {
+		fmt.Println(err)
+	}
+}
+
+```
+
+在 `gorm.Config` 中设置 `SkipDefaultTransaction: true` 即可跳过默认事务。
+
+> [!note]
+>
+> GORM 默认将单条增删改操作封装为事务以保证数据完整性；如需将多条增删改作为原子操作，可使用 `Transaction` 实现。
+
+### 事务
+
+https://gorm.io/zh_CN/docs/transactions.html
+
+#### 事务（自动控制）
+
+在事务中执行一系列操作，可参考以下流程。
+
+```go
+
+func (uc UserController) Add(c *gin.Context) {
+	user := models.User{
+		Username: "哈基米",
+		Age:      18,
+		Email:    "hachimi@foxmail.com",
+		AddTime:  int(time.Now().Unix()),
+	}
+
+	models.DB.Transaction(func(tx *gorm.DB) error {
+		if err := tx.Create(&user).Error; err != nil {
+			return err
+		}
+		return nil
+	})
+
+	c.String(http.StatusOK, "add 成功")
+}
+```
+
+GORM 事务的自动执行机制，是将原子操作的业务流程封装到 `Transaction` 函数接收的匿名函数中执行。
+
+#### 事务（手动控制）
+
+```go
+func (uc UserController) Add(c *gin.Context) {
+	user := models.User{
+		Username: "哈基米",
+		Age:      18,
+		Email:    "hachimi@foxmail.com",
+		AddTime:  int(time.Now().Unix()),
+	}
+
+	tx := models.DB.Begin()
+
+	if err := tx.Create(&user).Error; err != nil {
+		tx.Rollback()
+		c.String(http.StatusInternalServerError, "add 失败")
+    return
+	}
+
+	tx.Commit()
+
+	c.String(http.StatusOK, "add 成功")
+}
 ```
 
